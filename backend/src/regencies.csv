@@ -1,0 +1,515 @@
+province_name;name
+Aceh;Simeulue
+Aceh;Aceh Singkil
+Aceh;Aceh Selatan
+Aceh;Aceh Tenggara
+Aceh;Aceh Timur
+Aceh;Aceh Tengah
+Aceh;Aceh Barat
+Aceh;Aceh Besar
+Aceh;Pidie
+Aceh;Bireuen
+Aceh;Aceh Utara
+Aceh;Aceh Barat Daya
+Aceh;Gayo Lues
+Aceh;Aceh Tamiang
+Aceh;Nagan Raya
+Aceh;Aceh Jaya
+Aceh;Bener Meriah
+Aceh;Pidie Jaya
+Aceh;Banda Aceh
+Aceh;Sabang
+Aceh;Langsa
+Aceh;Lhokseumawe
+Aceh;Subulussalam
+Sumatera Utara;Nias
+Sumatera Utara;Mandailing Natal
+Sumatera Utara;Tapanuli Selatan
+Sumatera Utara;Tapanuli Tengah
+Sumatera Utara;Tapanuli Utara
+Sumatera Utara;Toba Samosir
+Sumatera Utara;Labuhanbatu
+Sumatera Utara;Asahan
+Sumatera Utara;Simalungun
+Sumatera Utara;Dairi
+Sumatera Utara;Karo
+Sumatera Utara;Deli Serdang
+Sumatera Utara;Langkat
+Sumatera Utara;Nias Selatan
+Sumatera Utara;Humbang Hasundutan
+Sumatera Utara;Pakpak Barat
+Sumatera Utara;Samosir
+Sumatera Utara;Serdang Bedagai
+Sumatera Utara;Batu Bara
+Sumatera Utara;Padang Lawas Utara
+Sumatera Utara;Padang Lawas
+Sumatera Utara;Labuhanbatu Selatan
+Sumatera Utara;Labuhanbatu Utara
+Sumatera Utara;Nias Utara
+Sumatera Utara;Nias Barat
+Sumatera Utara;Sibolga
+Sumatera Utara;Kota Tanjungbalai
+Sumatera Utara;Pematangsiantar
+Sumatera Utara;Tebingtinggi
+Sumatera Utara;Kota Medan
+Sumatera Utara;Kota Binjai
+Sumatera Utara;Padangsidimpuan
+Sumatera Utara;Gunungsitoli
+Sumatera Barat;Kepulauan Mentawai
+Sumatera Barat;Pesisir Selatan
+Sumatera Barat;Solok
+Sumatera Barat;Sijunjung
+Sumatera Barat;Tanah Datar
+Sumatera Barat;Padang Pariaman
+Sumatera Barat;Agam
+Sumatera Barat;Lima Puluh Kota
+Sumatera Barat;Pasaman
+Sumatera Barat;Solok Selatan
+Sumatera Barat;Dharmasraya
+Sumatera Barat;Pasaman Barat
+Sumatera Barat;Padang
+Sumatera Barat;Kota Solok
+Sumatera Barat;Sawahlunto
+Sumatera Barat;Padang Panjang
+Sumatera Barat;Bukittinggi
+Sumatera Barat;Payakumbuh
+Sumatera Barat;Pariaman
+Riau;Kuantan Singingi
+Riau;Indragiri Hulu
+Riau;Indragiri Hilir
+Riau;Pelalawan
+Riau;Siak
+Riau;Kampar
+Riau;Rokan Hulu
+Riau;Bengkalis
+Riau;Rokan Hilir
+Riau;Kepulauan Meranti
+Riau;Pekanbaru
+Riau;Dumai
+Jambi;Kerinci
+Jambi;Merangin
+Jambi;Sarolangun
+Jambi;Batang Hari
+Jambi;Muaro Jambi
+Jambi;Tanjung Jabung T
+Jambi;Tanjung Jabung B
+Jambi;Tebo
+Jambi;Bungo
+Jambi;Jambi
+Jambi;Sungai Penuh
+Sumatera Selatan;Ogan Komering Ulu
+Sumatera Selatan;Ogan Komering Ilir
+Sumatera Selatan;Muara Enim
+Sumatera Selatan;Lahat
+Sumatera Selatan;Musi Rawas
+Sumatera Selatan;Musi Banyuasin
+Sumatera Selatan;Banyu Asin
+Sumatera Selatan;Ogan Komering Ulu Selatan
+Sumatera Selatan;Ogan Komering Ulu Timur
+Sumatera Selatan;Ogan Ilir
+Sumatera Selatan;Empat Lawang
+Sumatera Selatan;Penukal Abab Lematang llir
+Sumatera Selatan;Musi Rawas Utara
+Sumatera Selatan;Palembang
+Sumatera Selatan;Prabumulih
+Sumatera Selatan;Pagar Alam
+Sumatera Selatan;Lubuklinggau
+Bengkulu;Bengkulu Selatan
+Bengkulu;Rejang Lebong
+Bengkulu;Bengkulu Utara
+Bengkulu;Kaur
+Bengkulu;Seluma
+Bengkulu;Mukomuko
+Bengkulu;Lebong
+Bengkulu;Kepahiang
+Bengkulu;Bengkulu Tengah
+Bengkulu;Bengkulu
+Lampung;Lampung Barat
+Lampung;Tanggamus
+Lampung;Lampung Selatan
+Lampung;Lampung Timur
+Lampung;Lampung Tengah
+Lampung;Lampung Utara
+Lampung;Way Kanan
+Lampung;Tulangbawang
+Lampung;Pesawaran
+Lampung;Pringsewu
+Lampung;Mesuji
+Lampung;Tulang Bawang Barat
+Lampung;Pesisir Barat
+Lampung;Bandar Lampung
+Lampung;Metro
+Bangka Belitung;Bangka
+Bangka Belitung;Belitung
+Bangka Belitung;Bangka Barat
+Bangka Belitung;Bangka Tengah
+Bangka Belitung;Bangka Selatan
+Bangka Belitung;Belitung Timur
+Bangka Belitung;Pangkalpinang
+Kepulauan Riau;Karimun
+Kepulauan Riau;Bintan
+Kepulauan Riau;Natuna
+Kepulauan Riau;Lingga
+Kepulauan Riau;Kepulauan Anambas
+Kepulauan Riau;Batam
+Kepulauan Riau;Tanjungpinang
+DKI Jakarta;Kepulauan Seribu
+DKI Jakarta;Jakarta Selatan
+DKI Jakarta;Jakarta Timur
+DKI Jakarta;Jakarta Pusat
+DKI Jakarta;Jakarta Barat
+DKI Jakarta;Jakarta Utara
+Jawa Barat;Bogor
+Jawa Barat;Sukabumi
+Jawa Barat;Cianjur
+Jawa Barat;Bandung
+Jawa Barat;Garut
+Jawa Barat;Tasikmalaya
+Jawa Barat;Ciamis
+Jawa Barat;Kuningan
+Jawa Barat;Cirebon
+Jawa Barat;Majalengka
+Jawa Barat;Sumedang
+Jawa Barat;Indramayu
+Jawa Barat;Subang
+Jawa Barat;Purwakarta
+Jawa Barat;Karawang
+Jawa Barat;Bekasi
+Jawa Barat;Bandung Barat
+Jawa Barat;Pangandaran
+Jawa Barat;Kota Bogor
+Jawa Barat;Kota Sukabumi
+Jawa Barat;Kota Bandung
+Jawa Barat;Kota Cirebon
+Jawa Barat;Kota Bekasi
+Jawa Barat;Depok
+Jawa Barat;Cimahi
+Jawa Barat;Kota Tasikmalaya
+Jawa Barat;Kota Banjar
+Jawa Tengah;Cilacap
+Jawa Tengah;Banyumas
+Jawa Tengah;Purbalingga
+Jawa Tengah;Banjarnegara
+Jawa Tengah;Kebumen
+Jawa Tengah;Purworejo
+Jawa Tengah;Wonosobo
+Jawa Tengah;Magelang
+Jawa Tengah;Boyolali
+Jawa Tengah;Klaten
+Jawa Tengah;Sukoharjo
+Jawa Tengah;Wonogiri
+Jawa Tengah;Karanganyar
+Jawa Tengah;Sragen
+Jawa Tengah;Grobogan
+Jawa Tengah;Blora
+Jawa Tengah;Rembang
+Jawa Tengah;Pati
+Jawa Tengah;Kudus
+Jawa Tengah;Jepara
+Jawa Tengah;Demak
+Jawa Tengah;Semarang
+Jawa Tengah;Temanggung
+Jawa Tengah;Kendal
+Jawa Tengah;Batang
+Jawa Tengah;Pekalongan
+Jawa Tengah;Pemalang
+Jawa Tengah;Tegal
+Jawa Tengah;Brebes
+Jawa Tengah;Kota Magelang
+Jawa Tengah;Surakarta
+Jawa Tengah;Salatiga
+Jawa Tengah;Kota Semarang
+Jawa Tengah;Kota Pekalongan
+Jawa Tengah;Kota Tegal
+DI Yogyakarta;Kulon Progo
+DI Yogyakarta;Bantul
+DI Yogyakarta;Gunung Kidul
+DI Yogyakarta;Sleman
+DI Yogyakarta;Kota Yogyakarta
+Jawa Timur;Pacitan
+Jawa Timur;Ponorogo
+Jawa Timur;Trenggalek
+Jawa Timur;Tulungagung
+Jawa Timur;Blitar
+Jawa Timur;Kediri
+Jawa Timur;Malang
+Jawa Timur;Lumajang
+Jawa Timur;Jember
+Jawa Timur;Banyuwangi
+Jawa Timur;Bondowoso
+Jawa Timur;Situbondo
+Jawa Timur;Probolinggo
+Jawa Timur;Pasuruan
+Jawa Timur;Sidoarjo
+Jawa Timur;Mojokerto
+Jawa Timur;Jombang
+Jawa Timur;Nganjuk
+Jawa Timur;Madiun
+Jawa Timur;Magetan
+Jawa Timur;Ngawi
+Jawa Timur;Bojonegoro
+Jawa Timur;Tuban
+Jawa Timur;Lamongan
+Jawa Timur;Gresik
+Jawa Timur;Bangkalan
+Jawa Timur;Sampang
+Jawa Timur;Pamekasan
+Jawa Timur;Sumenep
+Jawa Timur;Kota Kediri
+Jawa Timur;Kota Blitar
+Jawa Timur;Kota Malang
+Jawa Timur;Kota Probolinggo
+Jawa Timur;Kota Pasuruan
+Jawa Timur;Kota Mojokerto
+Jawa Timur;Kota Madiun
+Jawa Timur;Surabaya
+Jawa Timur;Batu
+Banten;Pandeglang
+Banten;Lebak
+Banten;Tangerang
+Banten;Serang
+Banten;Kota Tangerang
+Banten;Cilegon
+Banten;Kota Serang
+Banten;Tangerang Selatan
+Bali;Jembrana
+Bali;Tabanan
+Bali;Badung
+Bali;Gianyar
+Bali;Klungkung
+Bali;Bangli
+Bali;Karangasem
+Bali;Buleleng
+Bali;Denpasar
+Nusa Tenggara Barat;Lombok Barat
+Nusa Tenggara Barat;Lombok Tengah
+Nusa Tenggara Barat;Lombok Timur
+Nusa Tenggara Barat;Sumbawa
+Nusa Tenggara Barat;Dompu
+Nusa Tenggara Barat;Bima
+Nusa Tenggara Barat;Sumbawa Barat
+Nusa Tenggara Barat;Lombok Utara
+Nusa Tenggara Barat;Mataram
+Nusa Tenggara Barat;Kota Bima
+Nusa Tenggara Timur;Sumba Barat
+Nusa Tenggara Timur;Sumba Timur
+Nusa Tenggara Timur;Kupang
+Nusa Tenggara Timur;Timor Tengah Selatan
+Nusa Tenggara Timur;Timor Tengah Utara
+Nusa Tenggara Timur;Belu
+Nusa Tenggara Timur;Alor
+Nusa Tenggara Timur;Lembata
+Nusa Tenggara Timur;Flores Timur
+Nusa Tenggara Timur;Sikka
+Nusa Tenggara Timur;Ende
+Nusa Tenggara Timur;Ngada
+Nusa Tenggara Timur;Manggarai
+Nusa Tenggara Timur;Rote Ndao
+Nusa Tenggara Timur;Manggarai Barat
+Nusa Tenggara Timur;Sumba Tengah
+Nusa Tenggara Timur;Sumba Barat Daya
+Nusa Tenggara Timur;Nagekeo
+Nusa Tenggara Timur;Manggarai Timur
+Nusa Tenggara Timur;Sabu Raijua
+Nusa Tenggara Timur;Malaka
+Nusa Tenggara Timur;Kota Kupang
+Kalimantan Barat;Sambas
+Kalimantan Barat;Bengkayang
+Kalimantan Barat;Landak
+Kalimantan Barat;Pontianak
+Kalimantan Barat;Sanggau
+Kalimantan Barat;Ketapang
+Kalimantan Barat;Sintang
+Kalimantan Barat;Kapuas Hulu
+Kalimantan Barat;Sekadau
+Kalimantan Barat;Melawi
+Kalimantan Barat;Kayong Utara
+Kalimantan Barat;Kubu Raya
+Kalimantan Barat;Kota Pontianak
+Kalimantan Barat;Singkawang
+Kalimantan Tengah;Kotawaringin Barat
+Kalimantan Tengah;Kotawaringin Timur
+Kalimantan Tengah;Kapuas
+Kalimantan Tengah;Barito Selatan
+Kalimantan Tengah;Barito Utara
+Kalimantan Tengah;Sukamara
+Kalimantan Tengah;Lamandau
+Kalimantan Tengah;Seruyan
+Kalimantan Tengah;Katingan
+Kalimantan Tengah;Pulang Pisau
+Kalimantan Tengah;Gunung Mas
+Kalimantan Tengah;Barito Timur
+Kalimantan Tengah;Murung Raya
+Kalimantan Tengah;Palangka Raya
+Kalimantan Selatan;Tanah Laut
+Kalimantan Selatan;Kota Baru
+Kalimantan Selatan;Banjar
+Kalimantan Selatan;Barito Kuala
+Kalimantan Selatan;Tapin
+Kalimantan Selatan;Hulu Sungai Selatan
+Kalimantan Selatan;Hulu Sungai Tengah
+Kalimantan Selatan;Hulu Sungai Utara
+Kalimantan Selatan;Tabalong
+Kalimantan Selatan;Tanah Bumbu
+Kalimantan Selatan;Balangan
+Kalimantan Selatan;Banjarmasin
+Kalimantan Selatan;Banjar Baru
+Kalimantan Timur;Paser
+Kalimantan Timur;Kutai Barat
+Kalimantan Timur;Kutai Kartanegara
+Kalimantan Timur;Kutai Timur
+Kalimantan Timur;Berau
+Kalimantan Timur;Penajam Paser Utara
+Kalimantan Timur;Mahakam Hulu
+Kalimantan Timur;Balikpapan
+Kalimantan Timur;Samarinda
+Kalimantan Timur;Bontang
+Kalimantan Utara;Malinau
+Kalimantan Utara;Bulungan
+Kalimantan Utara;Tana Tidung
+Kalimantan Utara;Nunukan
+Kalimantan Utara;Tarakan
+Sulawesi Utara;Bolaang Mongondow
+Sulawesi Utara;Minahasa
+Sulawesi Utara;Kepulauan Sangihe
+Sulawesi Utara;Kepulauan Talaud
+Sulawesi Utara;Minahasa Selatan
+Sulawesi Utara;Minahasa Utara
+Sulawesi Utara;Bolaang Mongondow Utara
+Sulawesi Utara;Siau Tagulandang Biaro
+Sulawesi Utara;Minahasa Tenggara
+Sulawesi Utara;Bolaang Mongondow Selatan
+Sulawesi Utara;Bolaang Mongondow Timur
+Sulawesi Utara;Manado
+Sulawesi Utara;Bitung
+Sulawesi Utara;Tomohon
+Sulawesi Utara;Kotamobagu
+Sulawesi Tengah;Banggai Kepulauan
+Sulawesi Tengah;Banggai
+Sulawesi Tengah;Morowali
+Sulawesi Tengah;Poso
+Sulawesi Tengah;Donggala
+Sulawesi Tengah;Toli-Toli
+Sulawesi Tengah;Buol
+Sulawesi Tengah;Parigi Moutong
+Sulawesi Tengah;Tojo Una-Una
+Sulawesi Tengah;Sigi
+Sulawesi Tengah;Banggai Laut
+Sulawesi Tengah;Morowali Utara
+Sulawesi Tengah;Palu
+Sulawesi Selatan;Kepulauan Selayar
+Sulawesi Selatan;Bulukumba
+Sulawesi Selatan;Bantaeng
+Sulawesi Selatan;Jeneponto
+Sulawesi Selatan;Takalar
+Sulawesi Selatan;Gowa
+Sulawesi Selatan;Sinjai
+Sulawesi Selatan;Maros
+Sulawesi Selatan;Pangkajene Dan Kepulauan
+Sulawesi Selatan;Barru
+Sulawesi Selatan;Bone
+Sulawesi Selatan;Soppeng
+Sulawesi Selatan;Wajo
+Sulawesi Selatan;Sidenreng Rappang
+Sulawesi Selatan;Pinrang
+Sulawesi Selatan;Enrekang
+Sulawesi Selatan;Luwu
+Sulawesi Selatan;Tana Toraja
+Sulawesi Selatan;Luwu Utara
+Sulawesi Selatan;Luwu Timur
+Sulawesi Selatan;Toraja Utara
+Sulawesi Selatan;Makassar
+Sulawesi Selatan;Parepare
+Sulawesi Selatan;Palopo
+Sulawesi Tenggara;Buton
+Sulawesi Tenggara;Muna
+Sulawesi Tenggara;Konawe
+Sulawesi Tenggara;Kolaka
+Sulawesi Tenggara;Konawe Selatan
+Sulawesi Tenggara;Bombana
+Sulawesi Tenggara;Wakatobi
+Sulawesi Tenggara;Kolaka Utara
+Sulawesi Tenggara;Buton Utara
+Sulawesi Tenggara;Konawe Utara
+Sulawesi Tenggara;Kolaka Timur
+Sulawesi Tenggara;Konawe Kepulauan
+Sulawesi Tenggara;Muna Barat
+Sulawesi Tenggara;Buton Tengah
+Sulawesi Tenggara;Buton Selatan
+Sulawesi Tenggara;Kendari
+Sulawesi Tenggara;Bau-Bau
+Gorontalo;Boalemo
+Gorontalo;Gorontalo
+Gorontalo;Pohuwato
+Gorontalo;Bone Bolango
+Gorontalo;Gorontalo Utara
+Gorontalo;Kota Gorontalo
+Sulawesi Barat;Majene
+Sulawesi Barat;Polewali Mandar
+Sulawesi Barat;Mamasa
+Sulawesi Barat;Mamuju
+Sulawesi Barat;Mamuju Utara
+Sulawesi Barat;Mamuju Tengah
+Maluku;Maluku Tenggara Barat
+Maluku;Maluku Tenggara
+Maluku;Maluku Tengah
+Maluku;Buru
+Maluku;Kepulauan Aru
+Maluku;Seram Bagian Barat
+Maluku;Seram Bagian Timur
+Maluku;Maluku Barat Daya
+Maluku;Buru Selatan
+Maluku;Ambon
+Maluku;Tual
+Maluku Utara;Halmahera Barat
+Maluku Utara;Halmahera Tengah
+Maluku Utara;Kepulauan Sula
+Maluku Utara;Halmahera Selatan
+Maluku Utara;Halmahera Utara
+Maluku Utara;Halmahera Timur
+Maluku Utara;Pulau Morotai
+Maluku Utara;Pulau Taliabu
+Maluku Utara;Ternate
+Maluku Utara;Tidore Kepulauan
+Papua Barat;Fakfak
+Papua Barat;Kaimana
+Papua Barat;Teluk Wondama
+Papua Barat;Teluk Bintuni
+Papua Barat;Manokwari
+Papua Barat;Sorong Selatan
+Papua Barat;Sorong
+Papua Barat;Raja Ampat
+Papua Barat;Tambrauw
+Papua Barat;Maybrat
+Papua Barat;Manokwari Selatan
+Papua Barat;Pegunungan Arfak
+Papua Barat;Kota Sorong
+Papua;Merauke
+Papua;Jayawijaya
+Papua;Jayapura
+Papua;Nabire
+Papua;Kepulauan Yapen
+Papua;Biak Numfor
+Papua;Paniai
+Papua;Puncak Jaya
+Papua;Mimika
+Papua;Boven Digoel
+Papua;Mappi
+Papua;Asmat
+Papua;Yahukimo
+Papua;Pegunungan Bintang
+Papua;Tolikara
+Papua;Sarmi
+Papua;Keerom
+Papua;Waropen
+Papua;Supiori
+Papua;Mamberamo Raya
+Papua;Nduga
+Papua;Lanny Jaya
+Papua;Mamberamo Tengah
+Papua;Yalimo
+Papua;Puncak
+Papua;Dogiyai
+Papua;Intan Jaya
+Papua;Deiyai
+Papua;Kota Jayapura
