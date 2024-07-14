@@ -13,6 +13,7 @@ app.use(express.json());
 app.use('/api/provinces', require('./routes/provinces'));
 app.use('/api/regencies', require('./routes/regencies'));
 app.use('/api/poverties', require('./routes/poverties'));
+app.use('/api/users', require('./routes/users'));
 
 app.listen(process.env.PORT, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
