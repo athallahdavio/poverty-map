@@ -1,48 +1,129 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 import Select from "react-select";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
-import { House, Map, BarChart3, BarChart4, Sheet } from "lucide-react";
+import { House, Map, BarChart3, Database } from "lucide-react";
 import DataTableComponent from "../Components/DataTableComponent";
+import axios from "axios";
 
 const DataPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
+  const [columns, setColumns] = useState([]);
   const [povertyData, setPovertyData] = useState(null);
-  const [year, setYear] = useState({ value: 2020, label: "2020" });
+  const [year, setYear] = useState({value: 2022, label: 2022});
+  const [yearOptions, setYearOptions] = useState(null);
+  const [level, setLevel] = useState({ value: "province", label: "Provinsi" });
   const [filtering, setFiltering] = useState("");
 
   useEffect(() => {
-    fetch(API_URL + `/api/poverties/regency-poverty-by-year?year=${year.value}`)
+    const fetchYearOptions = async () => {
+      if (level.value == "province") {
+        const response = await axios.get(
+          `${API_URL}/api/poverties/province-year`
+        );
+        try {
+          const yearOptionsFromApi = response.data.map((year) => ({
+            value: year,
+            label: year.toString(),
+          }));
+          setYearOptions(yearOptionsFromApi);
+        } catch (error) {
+          console.error("Error fetching year options:", error);
+        }
+      } else {
+        const response = await axios.get(
+          `${API_URL}/api/poverties/regency-year`
+        );
+        try {
+          const yearOptionsFromApi = response.data.map((year) => ({
+            value: year,
+            label: year.toString(),
+          }));
+          setYearOptions(yearOptionsFromApi);
+        } catch (error) {
+          console.error("Error fetching year options:", error);
+        }
+      }
+    };
+    fetchYearOptions();
+  }, [API_URL, level]);
+
+  useEffect(() => {
+    const endpoint =
+      level.value === "province"
+        ? "/api/poverties/province/year"
+        : "/api/poverties/regency/year";
+
+    if (level.value === "province") {
+      setColumns([
+        {
+          header: "Provinsi",
+          accessorKey: "province_id.name",
+        },
+        {
+          header: "Jumlah Penduduk Miskin",
+          accessorKey: "poverty_amount",
+        },
+        {
+          header: "Persentase Kemiskinan",
+          accessorKey: "poverty_percentage",
+        },
+        {
+          header: "Persentase Tidak Bekerja",
+          accessorKey: "unemployed_percentage",
+        },
+        {
+          header: "Persentase Tidak Menyelesaikan Pendidikan",
+          accessorKey: "uneducated_percentage",
+        },
+      ]);
+    } else {
+      setColumns([
+        {
+          header: "Kabupaten/Kota",
+          accessorKey: "regency_id.name",
+        },
+        {
+          header: "Provinsi",
+          accessorKey: "province_id.name",
+        },
+        {
+          header: "Jumlah Penduduk Miskin",
+          accessorKey: "poverty_amount",
+        },
+        {
+          header: "Persentase Kemiskinan",
+          accessorKey: "poverty_percentage",
+        },
+        {
+          header: "Persentase Tidak Bekerja",
+          accessorKey: "unemployed_percentage",
+        },
+        {
+          header: "Persentase Tidak Menyelesaikan Pendidikan",
+          accessorKey: "uneducated_percentage",
+        },
+      ]);
+    }
+
+    if (year) {
+      fetchPovertyData(year.value, endpoint);
+    }
+  }, [year, level]);
+
+  const fetchPovertyData = (selectedYear, endpoint) => {
+    fetch(API_URL + `${endpoint}?year=${selectedYear}`)
       .then((response) => response.json())
-      .then((data) => setPovertyData(data));
-  }, [year]);
+      .then((data) => setPovertyData(data))
+      .catch((error) => console.error("Error fetching poverty data:", error));
+  };
 
-  const columns = [
-    {
-      header: "Provinsi",
-      accessorKey: "province_id.name",
-    },
-    {
-      header: "Kabupaten/Kota",
-      accessorKey: "regency_id.name",
-    },
-    {
-      header: "Persentase Kemiskinan",
-      accessorKey: "poverty_percentage",
-    },
-    {
-      header: "Persentase Tidak Bekerja",
-      accessorKey: "unemployed_percentage",
-    },
-    {
-      header: "Persentase Tidak Menyelesaikan Pendidikan",
-      accessorKey: "uneducated_percentage",
-    },
-  ];
+  const handleYearChange = (selectedYear) => {
+    setYear(selectedYear);
+  };
 
-  const yearOptions = [
-    { value: 2020, label: "2020" },
-    { value: 2021, label: "2021" },
-    { value: 2022, label: "2022" },
+  const levelOptions = [
+    { value: "province", label: "Provinsi" },
+    { value: "regency", label: "Kabupaten/Kota" },
   ];
 
   return (
@@ -50,19 +131,10 @@ const DataPage = () => {
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} />
-        <SidebarItem
-          text={"Grafik Provinsi"}
-          icon={<BarChart3 />}
-          to={"/province-chart"}
-        />
-        <SidebarItem
-          text={"Grafik Kabupaten/Kota"}
-          icon={<BarChart4 />}
-          to={"/regency-chart"}
-        />
+        <SidebarItem text={"Grafik"} icon={<BarChart3 />} to={"/chart"} />
         <SidebarItem
           text={"Data"}
-          icon={<Sheet />}
+          icon={<Database />}
           to={"/data"}
           active={true}
         />
@@ -72,22 +144,35 @@ const DataPage = () => {
           <div className="font-semibold text-3xl text-blue-800">
             Data Kemiskinan Penduduk Indonesia
           </div>
-          <div className="flex flex-row mt-4 justify-between">
-            <div className="w-1/4">
+          <div className="flex flex-row mt-4 gap-8">
+            <div className="w-1/5">
+              <label htmlFor="level-select" className="font-medium">
+                Pilih Tingkat:
+              </label>
+              <Select
+                id="level-select"
+                value={level}
+                onChange={setLevel}
+                options={levelOptions}
+                placeholder="Pilih Tingkat..."
+                className="mt-2"
+              />
+            </div>
+            <div className="w-1/5">
               <label htmlFor="year-select" className="font-medium">
                 Pilih Tahun:
               </label>
               <Select
                 id="year-select"
                 value={year}
-                onChange={setYear}
-                options={yearOptions}
+                onChange={handleYearChange}
+                options={yearOptions || []}
                 placeholder="Pilih Tahun..."
                 className="mt-2"
               />
             </div>
             {povertyData && (
-              <div className="flex flex-col w-1/4">
+              <div className="flex flex-col w-1/4 ml-auto">
                 <label htmlFor="filter-input" className="font-medium">
                   Filter Data:
                 </label>

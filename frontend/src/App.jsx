@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import MapPage from "./Pages/MapPage";
-import ProvinceChartPage from "./Pages/ProvinceChartPage";
-import RegencyChartPage from "./Pages/RegencyChartPage";
+import ChartPage from "./Pages/ChartPage";
 import DataPage from "./Pages/DataPage";
+import LoginPage from "./Pages/LoginPage";
+import AdminPage from "./Pages/AdminPage";
 
 function App() {
   return (
@@ -11,9 +12,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/map" element={<MapPage />} />
-        <Route path="/province-chart" element={<ProvinceChartPage />} />
-        <Route path="/regency-chart" element={<RegencyChartPage />} />
+        <Route path="/chart" element={<ChartPage />} />
         <Route path="/data" element={<DataPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/admin" element={<AdminPage />} />
       </Routes>
     </Router>
   );

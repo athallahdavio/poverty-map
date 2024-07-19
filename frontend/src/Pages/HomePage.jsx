@@ -1,25 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
-import { House, Map, BarChart3, BarChart4, Sheet } from "lucide-react";
+import { House, Map, BarChart3, Database } from "lucide-react";
 import LandingPage from "../assets/landing-page.png";
+import axios from "axios";
 
 const HomePage = () => {
+  const API_URL = import.meta.env.VITE_API_URL;
+  const [povertyData, setPovertyData] = useState(null);
+
+  useEffect(() => {
+    const year = 2022; // Ganti tahun ini sesuai kebutuhan
+    axios.get(API_URL + `/api/poverties/overall/${year}`).then((response) => {
+      setPovertyData(response.data);
+    });
+    console.log(povertyData);
+  }, []);
+
   return (
     <div className="h-full flex flex-row">
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} active={true} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} />
-        <SidebarItem
-          text={"Grafik Provinsi"}
-          icon={<BarChart3 />}
-          to={"/province-chart"}
-        />
-        <SidebarItem
-          text={"Grafik Kabupaten/Kota"}
-          icon={<BarChart4 />}
-          to={"/regency-chart"}
-        />
-        <SidebarItem text={"Data"} icon={<Sheet />} to={"/data"} />
+        <SidebarItem text={"Grafik"} icon={<BarChart3 />} to={"/chart"} />
+        <SidebarItem text={"Data"} icon={<Database />} to={"/data"} />
       </Sidebar>
       <div className="h-full w-full flex flex-col">
         <section className="relative">
@@ -33,13 +36,12 @@ const HomePage = () => {
               Selamat Datang di Poverty Map
             </div>
             <div className="text-xl font-normal text-white">
-              Selamat datang di situs resmi yang didedikasikan untuk memberikan
-              informasi komprehensif tentang kemiskinan di Indonesia. Situs ini
-              bertujuan untuk memberikan wawasan, data, dan analisis yang
-              mendalam mengenai isu kemiskinan di berbagai wilayah Indonesia.
-              Dengan adanya informasi ini, diharapkan dapat membantu dalam
-              penyusunan kebijakan, penelitian, dan upaya pengentasan
-              kemiskinan.
+              Selamat datang di situs yang didedikasikan untuk memberikan
+              informasi tentang kemiskinan di Indonesia. Situs ini bertujuan
+              untuk memberikan wawasan, data, dan analisis yang mendalam
+              mengenai isu kemiskinan di berbagai wilayah Indonesia. Dengan
+              adanya informasi ini, diharapkan dapat membantu dalam penyusunan
+              kebijakan, penelitian, dan upaya pengentasan kemiskinan.
             </div>
             <div>
               <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
@@ -48,6 +50,114 @@ const HomePage = () => {
             </div>
           </div>
         </section>
+        {povertyData && (
+          <section className="flex flex-row relative">
+            <div className="h-screen flex flex-col mx-20 mt-14 gap-8 w-full">
+              <div className="text-4xl font-semibold text-blue-800">
+                Rangkuman Data
+              </div>
+              <div className="flex flex-row gap-8">
+                <div className="grid grid-cols-2 gap-8 w-1/2">
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Provinsi dengan Persentase Penduduk Miskin Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                    {povertyData.highestPovertyProvince.province_id.name}<br />
+                      {povertyData.highestPovertyProvince.poverty_percentage}%
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Kabupaten/Kota dengan Persentase Penduduk Miskin Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestPovertyRegency.regency_id.name}
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestPovertyRegency.poverty_percentage}%
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Provinsi dengan Persentase Penduduk Tidak Bekerja
+                      Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestUnemployedProvince.province_id.name}
+                    </div>
+                    <div className="ml-auto">
+                      {
+                        povertyData.highestUnemployedProvince
+                          .unemployed_percentage
+                      }
+                      %
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Kabupaten/Kota dengan Persentase Penduduk Tidak Bekerja
+                      Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestUnemployedRegency.regency_id.name}
+                    </div>
+                    <div className="ml-auto">
+                      {
+                        povertyData.highestUnemployedRegency
+                          .unemployed_percentage
+                      }
+                      %
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Provinsi dengan Persentase Penduduk Tidak Menyelesaikan
+                      Pendidikan Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestUneducatedProvince.province_id.name}
+                    </div>
+                    <div className="ml-auto">
+                      {
+                        povertyData.highestUneducatedProvince
+                          .uneducated_percentage
+                      }
+                      %
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
+                    <div>
+                      Kabupaten/Kota dengan Persentase Penduduk Tidak
+                      Menyelesaikan Pendidikan Tertinggi
+                    </div>
+                    <div className="ml-auto">
+                      {povertyData.highestUneducatedRegency.regency_id.name}
+                    </div>
+                    <div className="ml-auto">
+                      {
+                        povertyData.highestUneducatedRegency
+                          .uneducated_percentage
+                      }
+                      %
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col w-1/2 gap-8">
+                  <div className="flex flex-col shadow-md border p-6 h-52 w-full justify-between">
+                    <div>Jumlah Penduduk Miskin</div>
+                    <div className="ml-auto">
+                      {povertyData.totalPovertyAmount}
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-6 w-full">
+                    Grafik Persentase Kemiskinan 3 Tahun Terakhir
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
         <section className="flex flex-row relative">
           <div className="w-2/5"></div>
           <div className="h-screen flex flex-col mx-20 justify-center w-3/5 gap-8">

@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const MapComponent = ({ data, geojson, upper, lower, level }) => {
-
   const logMismatchedNames = (geojsonNames, dataNames) => {
-    const missingInData = geojsonNames.filter(name => !dataNames.includes(name));
-    const missingInGeojson = dataNames.filter(name => !geojsonNames.includes(name));
+    const missingInData = geojsonNames.filter(
+      (name) => !dataNames.includes(name)
+    );
+    const missingInGeojson = dataNames.filter(
+      (name) => !geojsonNames.includes(name)
+    );
 
     if (missingInData.length > 0) {
       console.log("Names in GeoJSON but not in data:", missingInData);
@@ -18,39 +21,28 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
 
   useEffect(() => {
     if (geojson && data) {
-      const geojsonNames = geojson.features.map(feature => feature.properties.NAME_2 || feature.properties.NAME_1);
-      const dataNames = data.map(d => d.regency_id?.name || d.province_id?.name);
+      const geojsonNames = geojson.features.map(
+        (feature) => feature.properties.NAME_2 || feature.properties.NAME_1
+      );
+      const dataNames = data.map(
+        (d) => d.regency_id?.name || d.province_id?.name
+      );
       logMismatchedNames(geojsonNames, dataNames);
     }
   }, [geojson, data]);
 
   const onEachFeature = (feature, layer) => {
     let properties = feature.properties;
-    let additionalInfo = '';
+    let additionalInfo = "";
 
     if (level === "regency") {
       let regencyName = properties.NAME_2;
-      let povertyInfo = data?.find(p => p.regency_id?.name === regencyName);
+      let povertyInfo = data?.find((p) => p.regency_id?.name === regencyName);
 
       if (povertyInfo) {
         additionalInfo = `
-          <b>${regencyName}</b><br>
-          Kemiskinan: ${povertyInfo.poverty_percentage}%<br>
-          Tidak Bekerja: ${povertyInfo.unemployed_percentage}%<br>
-          Tidak Menyelesaikan Pendidikan: ${povertyInfo.uneducated_percentage}%
-        `;
-      }
-
-      layer.bindPopup(additionalInfo, {
-        minWidth: 310
-      });
-    } else {
-      let provinceName = properties.NAME_1;
-      let povertyInfo = data?.find(p => p.province_id?.name === provinceName);
-
-      if (povertyInfo) {
-        additionalInfo = `
-          <b>Provinsi ${provinceName}</b><br><br> 
+          <b>${regencyName}</b><br><br>
+          Jumlah Penduduk Miskin: ${povertyInfo.poverty_amount}<br>
           Persentase Kemiskinan: ${povertyInfo.poverty_percentage}%<br>
           Persentase Tidak Bekerja: ${povertyInfo.unemployed_percentage}%<br>
           Persentase Tidak Menyelesaikan Pendidikan: ${povertyInfo.uneducated_percentage}%
@@ -58,14 +50,31 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
       }
 
       layer.bindPopup(additionalInfo, {
-        minWidth: 310
+        minWidth: 310,
+      });
+    } else {
+      let provinceName = properties.NAME_1;
+      let povertyInfo = data?.find((p) => p.province_id?.name === provinceName);
+
+      if (povertyInfo) {
+        additionalInfo = `
+          <b>Provinsi ${provinceName}</b><br><br> 
+          Jumlah Penduduk Miskin: ${povertyInfo.poverty_amount}<br>
+          Persentase Kemiskinan: ${povertyInfo.poverty_percentage}%<br>
+          Persentase Tidak Bekerja: ${povertyInfo.unemployed_percentage}%<br>
+          Persentase Tidak Menyelesaikan Pendidikan: ${povertyInfo.uneducated_percentage}%
+        `;
+      }
+
+      layer.bindPopup(additionalInfo, {
+        minWidth: 310,
       });
     }
   };
 
-  const getColor = (povertyPercentage) => {
-    if (povertyPercentage > upper) return "red";
-    if (povertyPercentage < lower) return "green";
+  const getColor = (povertyAmount) => {
+    if (povertyAmount > upper) return "red";
+    if (povertyAmount < lower) return "green";
     return "yellow";
   };
 
@@ -73,10 +82,10 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
     if (level === "regency") {
       const regencyName = feature.properties.NAME_2;
       const povertyInfo = data?.find((p) => p.regency_id?.name === regencyName);
-      const povertyPercentage = povertyInfo?.poverty_percentage;
+      const povertyAmount = povertyInfo?.poverty_amount;
 
       return {
-        fillColor: getColor(povertyPercentage),
+        fillColor: getColor(povertyAmount),
         weight: 1,
         opacity: 1,
         color: "grey",
@@ -84,11 +93,13 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
       };
     } else {
       const provinceName = feature.properties.NAME_1;
-      const povertyInfo = data?.find((p) => p.province_id?.name === provinceName);
-      const povertyPercentage = povertyInfo?.poverty_percentage;
+      const povertyInfo = data?.find(
+        (p) => p.province_id?.name === provinceName
+      );
+      const povertyAmount = povertyInfo?.poverty_amount;
 
       return {
-        fillColor: getColor(povertyPercentage),
+        fillColor: getColor(povertyAmount),
         weight: 1,
         opacity: 1,
         color: "grey",

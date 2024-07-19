@@ -33,13 +33,14 @@ export default function Sidebar({ children }) {
   );
 }
 
-export function SidebarItem({ icon, text, active, alert, to }) {
+export function SidebarItem({ icon, text, active, alert, to, onClick }) {
   const { expanded } = useContext(SidebarContext);
 
   return (
     <li className="relative">
       <Link
         to={to}
+        onClick={onClick}
         className={`
           flex items-center py-2 px-3 my-1
           font-medium rounded-md cursor-pointer

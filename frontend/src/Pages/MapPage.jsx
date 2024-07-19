@@ -5,7 +5,7 @@ import BatasKabupatenKota from "../assets/kota-kabupaten.json";
 import BatasProvinsi from "../assets/provinsi.json";
 import MapComponent from "../Components/MapComponent";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
-import { House, Map, BarChart3, BarChart4, Sheet } from "lucide-react";
+import { House, Map, BarChart3, Database } from "lucide-react";
 
 const MapPage = () => {
   const [API_URL] = useState(import.meta.env.VITE_API_URL);
@@ -64,16 +64,11 @@ const MapPage = () => {
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} active={true} />
         <SidebarItem
-          text={"Grafik Provinsi"}
+          text={"Grafik"}
           icon={<BarChart3 />}
-          to={"/province-chart"}
+          to={"/chart"}
         />
-        <SidebarItem
-          text={"Grafik Kabupaten/Kota"}
-          icon={<BarChart4 />}
-          to={"/regency-chart"}
-        />
-        <SidebarItem text={"Data"} icon={<Sheet />} to={"/data"} />
+        <SidebarItem text={"Data"} icon={<Database />} to={"/data"} />
       </Sidebar>
       {isLoading ? (
         <div className="flex justify-center items-center w-full h-full">
@@ -113,24 +108,24 @@ const MapPage = () => {
 
       <div className="absolute bottom-3 right-3 bg-white p-4 rounded shadow-lg z-50 flex flex-col gap-1">
         <div className="font-medium mb-1">
-          Klasifikasi Berdasarkan Persentase Kemiskinan:
+          Klasifikasi Berdasarkan Jumlah Penduduk Miskin:
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-red-500 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : Persentase Kemiskinan &gt; {upper.toFixed(2)}%
+            : Jumlah Penduduk Miskin &gt; {upper.toFixed(0)}
           </div>
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-yellow-200 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : {upper.toFixed(2)}% ≤ Persentase Kemiskinan ≥ {lower.toFixed(2)}%
+            : {upper.toFixed(0)} ≤ Jumlah Penduduk Miskin ≥ {lower.toFixed(0)}
           </div>
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-green-600 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : Persentase Kemiskinan &lt; {lower.toFixed(2)}%
+            : Jumlah Penduduk Miskin &lt; {lower.toFixed(0)}
           </div>
         </div>
       </div>

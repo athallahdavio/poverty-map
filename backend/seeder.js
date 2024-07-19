@@ -15,7 +15,7 @@ async function main() {
     await connectDB();
     console.log("MongoDB Connected");
     await seedAdminUser();
-    await importProvinces(); // Chain the calls
+    await importProvinces();
   } catch (err) {
     console.error("MongoDB connection error:", err);
   }
@@ -29,10 +29,9 @@ async function seedAdminUser() {
     const user = new User({
       username: "admin",
       email: "admin@povertymap.com",
-      password: "password", // Password will be hashed in the model pre-save hook
+      password: "password",
     });
 
-    // Save the user
     await user.save();
     console.log("Admin user created");
   } catch (err) {
@@ -52,11 +51,11 @@ async function importProvinces() {
           const insertedProvinces = await Province.insertMany(provinces);
           console.log("Provinces imported:", insertedProvinces);
           await importRegencies(insertedProvinces);
-          await fillProvincePovertyData(insertedProvinces); // Tambahkan pemanggilan fungsi ini
-          resolve(); // Resolve the promise after all operations are done
+          await fillProvincePovertyData(insertedProvinces);
+          resolve();
         } catch (error) {
           console.error("Error importing provinces:", error);
-          reject(error); // Reject the promise on error
+          reject(error);
         }
       });
   });
@@ -84,10 +83,10 @@ async function importRegencies(insertedProvinces) {
           const insertedRegencies = await Regency.insertMany(regencies);
           console.log("Regencies imported:", insertedRegencies);
           await fillRegencyPovertyData(insertedRegencies);
-          resolve(); // Resolve the promise after all operations are done
+          resolve();
         } catch (error) {
           console.error("Error importing regencies:", error);
-          reject(error); // Reject the promise on error
+          reject(error);
         }
       });
   });
@@ -116,6 +115,7 @@ async function fillProvincePovertyData(insertedProvinces) {
             max: 10,
             precision: 0.01,
           }),
+          poverty_amount: faker.datatype.number({ min: 1000, max: 100000 }),
         });
         console.log("Creating Province Poverty record:", poverty);
         await poverty.save();
@@ -134,7 +134,7 @@ async function fillRegencyPovertyData(insertedRegencies) {
       for (const year of years) {
         const poverty = new RegencyPoverty({
           province_id: regency.province_id,
-          regency_id: regency._id, // Ensure regency_id is assigned correctly
+          regency_id: regency._id,
           year: year,
           poverty_percentage: faker.datatype.float({
             min: 5,
@@ -151,8 +151,9 @@ async function fillRegencyPovertyData(insertedRegencies) {
             max: 10,
             precision: 0.01,
           }),
+          poverty_amount: faker.datatype.number({ min: 1000, max: 100000 }),
         });
-        console.log("Creating Regency Poverty record:", poverty); // Add log to verify data
+        console.log("Creating Regency Poverty record:", poverty);
         await poverty.save();
       }
     }
