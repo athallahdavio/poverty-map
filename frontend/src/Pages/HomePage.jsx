@@ -3,13 +3,28 @@ import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import LandingPage from "../assets/landing-page.png";
 import axios from "axios";
+import BarChartComponent from "../Components/BarChartComponent";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
   const [povertyData, setPovertyData] = useState(null);
 
+  const chartData = {
+    labels: ["2019", "2020", "2021"],
+    datasets: [
+      {
+        label: "Persentase Kemiskinan",
+        data: [10.14, 9.54, 9.36],
+        backgroundColor: "rgba(54, 162, 235, 0.2)",
+        borderColor: "rgba(54, 162, 235, 1)",
+        borderWidth: 1,
+      },
+    ],
+  };
+
   useEffect(() => {
-    const year = 2022; // Ganti tahun ini sesuai kebutuhan
+    const year = 2022;
     axios.get(API_URL + `/api/poverties/overall/${year}`).then((response) => {
       setPovertyData(response.data);
     });
@@ -44,49 +59,66 @@ const HomePage = () => {
               kebijakan, penelitian, dan upaya pengentasan kemiskinan.
             </div>
             <div>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+              <a href="#overall" className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
                 Mulai Jelajahi
-              </button>
+              </a>
             </div>
           </div>
         </section>
         {povertyData && (
-          <section className="flex flex-row relative">
+          <section className="flex flex-row relative" id="overall">
             <div className="h-screen flex flex-col mx-20 mt-14 gap-8 w-full">
               <div className="text-4xl font-semibold text-blue-800">
                 Rangkuman Data
               </div>
-              <div className="flex flex-row gap-8">
-                <div className="grid grid-cols-2 gap-8 w-1/2">
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+              <div className="flex flex-row gap-6">
+                <div className="flex flex-col w-1/2 gap-6 h-full">
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-full">
+                    <div className="text-2xl font-medium">
+                      Jumlah Penduduk Miskin Indonesia
+                    </div>
+                    <div className="text-center text-4xl my-auto">
+                      {povertyData.totalPovertyAmount}
+                    </div>
+                  </div>
+                  <div className="flex flex-col shadow-md border p-5 h-2/3 w-full">
+                    <div className="text-2xl font-medium">
+                      Grafik Persentase Kemiskinan 3 Tahun Terakhir
+                    </div>
+                    <div className="mt-8">
+                      <BarChartComponent data={chartData} />
+                    </div>
+                  </div>
+                </div>
+                <div className="grid grid-cols-2 gap-6 w-1/2 h-full">
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Provinsi dengan Persentase Penduduk Miskin Tertinggi
                     </div>
-                    <div className="ml-auto">
-                    {povertyData.highestPovertyProvince.province_id.name}<br />
+                    <div className="ml-auto text-right text-lg">
+                      {povertyData.highestPovertyProvince.province_id.name}
+                      <br />
                       {povertyData.highestPovertyProvince.poverty_percentage}%
                     </div>
                   </div>
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Kabupaten/Kota dengan Persentase Penduduk Miskin Tertinggi
                     </div>
-                    <div className="ml-auto">
+                    <div className="ml-auto text-right text-lg">
                       {povertyData.highestPovertyRegency.regency_id.name}
-                    </div>
-                    <div className="ml-auto">
+                      <br />
                       {povertyData.highestPovertyRegency.poverty_percentage}%
                     </div>
                   </div>
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Provinsi dengan Persentase Penduduk Tidak Bekerja
                       Tertinggi
                     </div>
-                    <div className="ml-auto">
+                    <div className="ml-auto text-right text-lg">
                       {povertyData.highestUnemployedProvince.province_id.name}
-                    </div>
-                    <div className="ml-auto">
+                      <br />
                       {
                         povertyData.highestUnemployedProvince
                           .unemployed_percentage
@@ -94,15 +126,14 @@ const HomePage = () => {
                       %
                     </div>
                   </div>
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Kabupaten/Kota dengan Persentase Penduduk Tidak Bekerja
                       Tertinggi
                     </div>
-                    <div className="ml-auto">
+                    <div className="ml-auto text-right text-lg">
                       {povertyData.highestUnemployedRegency.regency_id.name}
-                    </div>
-                    <div className="ml-auto">
+                      <br />
                       {
                         povertyData.highestUnemployedRegency
                           .unemployed_percentage
@@ -110,15 +141,14 @@ const HomePage = () => {
                       %
                     </div>
                   </div>
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Provinsi dengan Persentase Penduduk Tidak Menyelesaikan
                       Pendidikan Tertinggi
                     </div>
-                    <div className="ml-auto">
+                    <div className="ml-auto text-right text-lg">
                       {povertyData.highestUneducatedProvince.province_id.name}
-                    </div>
-                    <div className="ml-auto">
+                      <br />
                       {
                         povertyData.highestUneducatedProvince
                           .uneducated_percentage
@@ -126,32 +156,20 @@ const HomePage = () => {
                       %
                     </div>
                   </div>
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-76 justify-between">
-                    <div>
+                  <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
+                    <div className="text-lg font-medium">
                       Kabupaten/Kota dengan Persentase Penduduk Tidak
                       Menyelesaikan Pendidikan Tertinggi
                     </div>
-                    <div className="ml-auto">
+                    <div className="ml-auto text-right text-lg">
                       {povertyData.highestUneducatedRegency.regency_id.name}
-                    </div>
-                    <div className="ml-auto">
+                      <br />
                       {
                         povertyData.highestUneducatedRegency
                           .uneducated_percentage
                       }
                       %
                     </div>
-                  </div>
-                </div>
-                <div className="flex flex-col w-1/2 gap-8">
-                  <div className="flex flex-col shadow-md border p-6 h-52 w-full justify-between">
-                    <div>Jumlah Penduduk Miskin</div>
-                    <div className="ml-auto">
-                      {povertyData.totalPovertyAmount}
-                    </div>
-                  </div>
-                  <div className="flex flex-col shadow-md border p-6 w-full">
-                    Grafik Persentase Kemiskinan 3 Tahun Terakhir
                   </div>
                 </div>
               </div>
@@ -175,9 +193,12 @@ const HomePage = () => {
               tahun ke tahun.
             </div>
             <div>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+              <Link
+                to={"/map"}
+                className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded"
+              >
                 Jelajahi Peta
-              </button>
+              </Link>
             </div>
           </div>
         </section>
@@ -197,9 +218,9 @@ const HomePage = () => {
               kemiskinan di Indonesia.
             </div>
             <div>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+              <Link to={"/chart"} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
                 Jelajahi Grafik
-              </button>
+              </Link>
             </div>
           </div>
           <div className="w-2/5"></div>
@@ -221,9 +242,9 @@ const HomePage = () => {
               mengurangi kemiskinan di Indonesia.
             </div>
             <div>
-              <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
+              <Link to={"/data"} className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded">
                 Jelajahi Data
-              </button>
+              </Link>
             </div>
           </div>
         </section>

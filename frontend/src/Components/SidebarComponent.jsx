@@ -11,12 +11,14 @@ export default function Sidebar({ children }) {
     <aside className="sticky top-0 z-20 h-screen">
       <nav className="h-full flex flex-col bg-white border-r shadow-sm">
         <div className="p-4 pb-2 flex justify-between items-center">
-          <div
+          <Link
+            to={"/"}
             className={`overflow-hidden transition-all font-semibold text-lg text-blue-600 ${
               expanded ? "w-40" : "w-0"
             }`}
-          >Poverty Map
-          </div>
+          >
+            Poverty Map
+          </Link>
           <button
             onClick={() => setExpanded((curr) => !curr)}
             className="p-1.5 rounded-lg bg-gray-50 hover:bg-gray-100"
