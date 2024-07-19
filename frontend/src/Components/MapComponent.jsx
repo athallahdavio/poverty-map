@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const MapComponent = ({ data, geojson, upper, lower, level }) => {
   const logMismatchedNames = (geojsonNames, dataNames) => {
