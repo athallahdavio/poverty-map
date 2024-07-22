@@ -13,7 +13,7 @@ const MapPage = () => {
   const [upper, setUpper] = useState(0);
   const [lower, setLower] = useState(0);
   const [level, setLevel] = useState("province");
-  const [year, setYear] = useState(2022);
+  const [year, setYear] = useState(2023);
   const [geojson, setGeojson] = useState();
   const [isLoading, setIsLoading] = useState(true);
 
@@ -45,9 +45,9 @@ const MapPage = () => {
   ];
 
   const yearOptions = [
-    { value: 2020, label: "2020" },
     { value: 2021, label: "2021" },
     { value: 2022, label: "2022" },
+    { value: 2023, label: "2023" },
   ];
 
   const handleLevelChange = (selectedOption) => {

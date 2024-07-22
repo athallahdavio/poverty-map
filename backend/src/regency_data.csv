@@ -1,0 +1,1543 @@
+year;province_name;regency_name;poverty_amount;poverty_percentage;unemployed_percentage;uneducated_percentage
+2023;Aceh;Simeulue;17620;17,92;55,42;69
+2023;Aceh;Aceh Singkil;24620;19,15;46,66;69,95
+2023;Aceh;Aceh Selatan;30360;12,1;60,49;70,65
+2023;Aceh;Aceh Tenggara;27960;12,45;46,95;57,1
+2023;Aceh;Aceh Timur;60630;13,39;55,87;70,92
+2023;Aceh;Aceh Tengah;31680;14,38;26,24;58,92
+2023;Aceh;Aceh Barat;38840;17,86;43,02;64,43
+2023;Aceh;Aceh Besar;58940;13,38;38,2;57,35
+2023;Aceh;Pidie;86790;18,78;48,28;63,62
+2023;Aceh;Bireuen;59210;12,12;40,42;74,18
+2023;Aceh;Aceh Utara;106770;16,64;49,11;71,56
+2023;Aceh;Aceh Barat Daya;24310;15,43;50,62;65,24
+2023;Aceh;Gayo Lues;18240;18,82;28,75;76,19
+2023;Aceh;Aceh Tamiang;38370;12,51;56,79;55,69
+2023;Aceh;Nagan Raya;29780;17,25;41,43;55,21
+2023;Aceh;Aceh Jaya;12220;12,42;37,89;73,81
+2023;Aceh;Bener Meriah;28190;18,31;28,41;45,17
+2023;Aceh;Pidie Jaya;30740;18,4;53,03;49,15
+2023;Aceh;Banda Aceh;19940;7,04;51,55;34,43
+2023;Aceh;Sabang;5140;14,59;42,26;43,46
+2023;Aceh;Langsa;19500;10,53;53,93;60,58
+2023;Aceh;Lhokseumawe;23100;10,73;51,21;60,28
+2023;Aceh;Subulussalam;13800;16,41;54,56;71,31
+2023;Sumatera Utara;Nias;21990;15,1;27,42;81,24
+2023;Sumatera Utara;Mandailing Natal;41040;8,86;43,11;78,22
+2023;Sumatera Utara;Tapanuli Selatan;20090;7,01;34,53;61,69
+2023;Sumatera Utara;Tapanuli Tengah;47090;11,5;31,8;74,9
+2023;Sumatera Utara;Tapanuli Utara;26390;8,54;17,45;39,01
+2023;Sumatera Utara;Toba Samosir;14940;8,04;14,03;57,57
+2023;Sumatera Utara;Labuhanbatu;42580;7,99;40,17;65,67
+2023;Sumatera Utara;Asahan;61690;8,21;45,83;68,61
+2023;Sumatera Utara;Simalungun;69210;7,87;38,97;54,72
+2023;Sumatera Utara;Dairi;21420;7,47;11,45;58,91
+2023;Sumatera Utara;Karo;35650;7,98;19,93;51,46
+2023;Sumatera Utara;Deli Serdang;82750;3,44;54,9;55,03
+2023;Sumatera Utara;Langkat;98160;9,23;61,59;73,08
+2023;Sumatera Utara;Nias Selatan;54290;16,39;36,1;75,37
+2023;Sumatera Utara;Humbang Hasundutan;17140;8,69;16,16;55,36
+2023;Sumatera Utara;Pakpak Barat;4010;7,54;25,53;74,76
+2023;Sumatera Utara;Samosir;14860;11,66;15,46;58,49
+2023;Sumatera Utara;Serdang Bedagai;45880;7,44;46,66;72,41
+2023;Sumatera Utara;Batu Bara;49180;11,38;45,89;70,52
+2023;Sumatera Utara;Padang Lawas Utara;26170;8,79;21,14;60,87
+2023;Sumatera Utara;Padang Lawas;24510;7,89;26,75;66,84
+2023;Sumatera Utara;Labuhanbatu Selatan;29830;8,06;39,52;79,24
+2023;Sumatera Utara;Labuhanbatu Utara;34130;9,08;46,75;67,82
+2023;Sumatera Utara;Nias Utara;30780;21,79;28,47;77,31
+2023;Sumatera Utara;Nias Barat;18860;22,81;25,57;81,48
+2023;Sumatera Utara;Sibolga;10020;11,42;47,43;60,89
+2023;Sumatera Utara;Kota Tanjungbalai;22450;12,21;42,41;66,45
+2023;Sumatera Utara;Pematangsiantar;18960;7,24;47,6;45,36
+2023;Sumatera Utara;Tebingtinggi;16360;9,49;39,53;51,52
+2023;Sumatera Utara;Kota Medan;187280;8;41,28;52,56
+2023;Sumatera Utara;Kota Binjai;13850;4,79;42,92;47,03
+2023;Sumatera Utara;Padangsidimpuan;16150;6,85;42,3;58,13
+2023;Sumatera Utara;Gunungsitoli;22030;14,78;40,71;61,59
+2023;Sumatera Barat;Kepulauan Mentawai;13760;13,72;27,26;89,06
+2023;Sumatera Barat;Pesisir Selatan;35090;7,34;49,08;62,83
+2023;Sumatera Barat;Solok;27330;7,13;44,28;80,46
+2023;Sumatera Barat;Sijunjung;15020;5,88;34,18;82,75
+2023;Sumatera Barat;Tanah Datar;14570;4,16;37,3;67,19
+2023;Sumatera Barat;Padang Pariaman;26930;6,34;53,31;70,44
+2023;Sumatera Barat;Agam;33410;6,6;25,66;66,24
+2023;Sumatera Barat;Lima Puluh Kota;27020;6,8;35,88;78,93
+2023;Sumatera Barat;Pasaman;19990;6,8;44,22;81,4
+2023;Sumatera Barat;Solok Selatan;11910;6,45;40,93;66,29
+2023;Sumatera Barat;Dharmasraya;15490;5,56;29,93;69,11
+2023;Sumatera Barat;Pasaman Barat;33520;6,92;44,2;71,63
+2023;Sumatera Barat;Padang;41970;4,17;41,28;56,54
+2023;Sumatera Barat;Kota Solok;2350;3,05;29,64;42,17
+2023;Sumatera Barat;Sawahlunto;1470;2,27;46,45;63,59
+2023;Sumatera Barat;Padang Panjang;2990;5,24;59,37;47,9
+2023;Sumatera Barat;Bukittinggi;5780;4,11;44,59;58,52
+2023;Sumatera Barat;Payakumbuh;7880;5,44;36,59;57,25
+2023;Sumatera Barat;Pariaman;3910;4,2;46,28;66,51
+2023;Riau;Kuantan Singingi;26100;8,07;46,86;73,36
+2023;Riau;Indragiri Hulu;27400;6,06;43,42;81,55
+2023;Riau;Indragiri Hilir;40860;5,64;47,17;83,59
+2023;Riau;Pelalawan;45300;8,15;56,93;69,9
+2023;Riau;Siak;26990;5,23;32,18;56,99
+2023;Riau;Kampar;63840;7,04;49,15;57,56
+2023;Riau;Rokan Hulu;74380;9,72;54,34;73,32
+2023;Riau;Bengkalis;36100;6,31;50,26;68,62
+2023;Riau;Rokan Hilir;53040;7,07;58,52;72,57
+2023;Riau;Kepulauan Meranti;43820;22,98;45,78;78,76
+2023;Riau;Pekanbaru;37670;3,16;57,67;42,83
+2023;Riau;Dumai;10150;3,21;54,55;76,98
+2023;Jambi;Kerinci;18210;7,54;45,83;57,2
+2023;Jambi;Merangin;35190;8,9;38,28;82,8
+2023;Jambi;Sarolangun;26770;8,54;46,84;83,15
+2023;Jambi;Batang Hari;25880;9,45;50,69;76,68
+2023;Jambi;Muaro Jambi;20830;4,43;59,52;65,05
+2023;Jambi;Tanjung Jabung T;23330;10,85;44,52;76,77
+2023;Jambi;Tanjung Jabung B;33610;9,79;33,48;78,27
+2023;Jambi;Tebo;23470;6,46;42,31;73,71
+2023;Jambi;Bungo;20650;5,29;38,87;86,55
+2023;Jambi;Jambi;50090;8,24;44,27;54,15
+2023;Jambi;Sungai Penuh;2660;3;52,38;83,11
+2023;Sumatera Selatan;Ogan Komering Ulu;44110;11,46;38,58;79,55
+2023;Sumatera Selatan;Ogan Komering Ilir;114480;13,15;43,43;81,42
+2023;Sumatera Selatan;Muara Enim;73240;10,93;41,13;81,77
+2023;Sumatera Selatan;Lahat;63360;15;35,97;75,94
+2023;Sumatera Selatan;Musi Rawas;59750;14,13;33,72;79,53
+2023;Sumatera Selatan;Musi Banyuasin;101630;14,9;52,48;71,68
+2023;Sumatera Selatan;Banyu Asin;85880;9,58;42,58;80,48
+2023;Sumatera Selatan;Ogan Komering Ulu Selatan;39300;10,36;46,84;70,65
+2023;Sumatera Selatan;Ogan Komering Ulu Timur;69910;9,99;43;77,77
+2023;Sumatera Selatan;Ogan Ilir;59330;13,28;41,92;81,97
+2023;Sumatera Selatan;Empat Lawang;30780;11,8;36,67;70,11
+2023;Sumatera Selatan;Penukal Abab Lematang llir;21723;10,91;30,87;85,98
+2023;Sumatera Selatan;Musi Rawas Utara;36680;18,26;34,96;76,03
+2023;Sumatera Selatan;Palembang;179450;10,22;49,31;55,64
+2023;Sumatera Selatan;Prabumulih;22330;11,23;35,11;64,12
+2023;Sumatera Selatan;Pagar Alam;12730;8,88;38,88;64,44
+2023;Sumatera Selatan;Lubuklinggau;31020;12,65;51,41;73,24
+2023;Bengkulu;Bengkulu Selatan;31890;17,51;41,68;66,63
+2023;Bengkulu;Rejang Lebong;41180;14,79;31,07;67,32
+2023;Bengkulu;Bengkulu Utara;35260;11,29;37,22;72,98
+2023;Bengkulu;Kaur;22450;17,83;34,58;74,04
+2023;Bengkulu;Seluma;36320;18;35,2;76,85
+2023;Bengkulu;Mukomuko;20700;10,76;46,14;64,74
+2023;Bengkulu;Lebong;13230;11,15;32,36;76,7
+2023;Bengkulu;Kepahiang;20320;14,12;34,15;79,92
+2023;Bengkulu;Bengkulu Tengah;11010;9,4;31,33;81,89
+2023;Bengkulu;Bengkulu;56100;14,71;42,31;50,15
+2023;Lampung;Lampung Barat;34730;11,17;37,35;77,48
+2023;Lampung;Tanggamus;65180;10,52;43,67;81,58
+2023;Lampung;Lampung Selatan;133670;12,79;40,76;76,32
+2023;Lampung;Lampung Timur;148260;13,8;46,29;71,89
+2023;Lampung;Lampung Tengah;140290;10,65;36,38;76,75
+2023;Lampung;Lampung Utara;107210;17,17;49,34;71,16
+2023;Lampung;Way Kanan;51260;11,02;44,16;78,8
+2023;Lampung;Tulangbawang;37830;8,04;49,42;69,16
+2023;Lampung;Pesawaran;59290;12,89;40,87;71,46
+2023;Lampung;Pringsewu;37600;9,14;45,58;77,09
+2023;Lampung;Mesuji;13710;6,73;45,1;72,58
+2023;Lampung;Tulang Bawang Barat;20320;7,25;54,96;83,96
+2023;Lampung;Pesisir Barat;21449;13,49;40,27;72,39
+2023;Lampung;Bandar Lampung;87080;7,77;38,25;70,82
+2023;Lampung;Metro;12800;7,28;51,52;65,32
+2023;Bangka Belitung;Bangka;14870;4,32;26,94;73,65
+2023;Bangka Belitung;Belitung;12510;6,46;42,21;82,13
+2023;Bangka Belitung;Bangka Barat;5910;2,71;50,68;89,88
+2023;Bangka Belitung;Bangka Tengah;10580;5,29;53,5;90,62
+2023;Bangka Belitung;Bangka Selatan;6660;3,11;55,27;90,5
+2023;Bangka Belitung;Belitung Timur;8890;6,73;49,24;82,2
+2023;Bangka Belitung;Pangkalpinang;9270;4,27;53,49;64,39
+2023;Kepulauan Riau;Karimun;14330;5,95;45,38;83,11
+2023;Kepulauan Riau;Bintan;9860;5,9;42,76;66,39
+2023;Kepulauan Riau;Natuna;4300;5,25;44,5;62,83
+2023;Kepulauan Riau;Lingga;10180;11,26;42,79;86,24
+2023;Kepulauan Riau;Kepulauan Anambas;3080;6,95;51,47;70,84
+2023;Kepulauan Riau;Batam;83090;5,02;44,27;63,38
+2023;Kepulauan Riau;Tanjungpinang;17670;7,95;47,43;52,5
+2023;DKI Jakarta;Kepulauan Seribu;3470;13,13;47,91;70,43
+2023;DKI Jakarta;Jakarta Selatan;71900;3,1;48,02;49,5
+2023;DKI Jakarta;Jakarta Timur;124220;4,2;52,46;47,23
+2023;DKI Jakarta;Jakarta Pusat;42780;4,68;58,65;40,69
+2023;DKI Jakarta;Jakarta Barat;109490;4,09;60,03;61,6
+2023;DKI Jakarta;Jakarta Utara;125980;6,78;53,64;67,69
+2023;Jawa Barat;Bogor;453760;7,27;53,97;82,68
+2023;Jawa Barat;Sukabumi;178710;7,01;52,64;87,49
+2023;Jawa Barat;Cianjur;240060;10,22;48,49;87,18
+2023;Jawa Barat;Bandung;245490;6,4;50,81;74,16
+2023;Jawa Barat;Garut;260480;9,77;47,3;84,94
+2023;Jawa Barat;Tasikmalaya;186870;10,28;42,17;88,1
+2023;Jawa Barat;Ciamis;90840;7,42;41,4;86,06
+2023;Jawa Barat;Kuningan;133880;12,12;49,34;83,92
+2023;Jawa Barat;Cirebon;249180;11,2;57,9;81,35
+2023;Jawa Barat;Majalengka;138740;11,21;50,41;86,52
+2023;Jawa Barat;Sumedang;111390;9,36;44,62;75,55
+2023;Jawa Barat;Indramayu;214740;12,13;49,93;79,96
+2023;Jawa Barat;Subang;152330;9,52;38,62;80,29
+2023;Jawa Barat;Purwakarta;81540;8,46;51,1;80,24
+2023;Jawa Barat;Karawang;187230;7,87;51,84;86,3
+2023;Jawa Barat;Bekasi;204090;4,93;43,02;78,92
+2023;Jawa Barat;Bandung Barat;179430;10,52;52,47;82,42
+2023;Jawa Barat;Pangandaran;36700;8,98;31,97;87,49
+2023;Jawa Barat;Kota Bogor;74950;6,67;44,57;67,61
+2023;Jawa Barat;Kota Sukabumi;24960;7,5;55,71;59,28
+2023;Jawa Barat;Kota Bandung;102800;3,96;54,74;72,45
+2023;Jawa Barat;Kota Cirebon;29490;9,16;40,22;76,67
+2023;Jawa Barat;Kota Bekasi;129400;4,1;53,35;40,26
+2023;Jawa Barat;Depok;61950;2,38;33,61;66,55
+2023;Jawa Barat;Cimahi;28560;4,66;58,02;58,48
+2023;Jawa Barat;Kota Tasikmalaya;79370;11,53;45,4;80,95
+2023;Jawa Barat;Kota Banjar;11660;6,14;44,64;75,63
+2023;Jawa Tengah;Cilacap;191000;10,99;47,64;86,68
+2023;Jawa Tengah;Banyumas;216500;12,53;42,56;80,98
+2023;Jawa Tengah;Purbalingga;143410;14,99;36,3;89,79
+2023;Jawa Tengah;Banjarnegara;138990;14,9;34,23;86,02
+2023;Jawa Tengah;Kebumen;195450;16,34;34,22;82,74
+2023;Jawa Tengah;Purworejo;81280;11,33;38,01;67,64
+2023;Jawa Tengah;Wonosobo;123700;15,58;34,94;91,27
+2023;Jawa Tengah;Magelang;144490;10,96;35,82;79
+2023;Jawa Tengah;Boyolali;97480;9,81;33,49;78,77
+2023;Jawa Tengah;Klaten;144430;12,28;43,89;65,04
+2023;Jawa Tengah;Sukoharjo;68790;7,58;45,41;62,08
+2023;Jawa Tengah;Wonogiri;104820;10,94;26,28;79,14
+2023;Jawa Tengah;Karanganyar;88640;9,79;39,87;68,54
+2023;Jawa Tengah;Sragen;114620;12,87;42,58;67,11
+2023;Jawa Tengah;Grobogan;162520;11,72;28,32;78,77
+2023;Jawa Tengah;Blora;99610;11,49;24,69;75,99
+2023;Jawa Tengah;Rembang;91970;14,17;42,15;76,1
+2023;Jawa Tengah;Pati;118180;9,31;42,45;80,7
+2023;Jawa Tengah;Kudus;65160;7,24;49,32;68,21
+2023;Jawa Tengah;Jepara;86750;6,61;42,41;82,58
+2023;Jawa Tengah;Demak;143260;12,01;47,12;69,89
+2023;Jawa Tengah;Semarang;78350;7,17;36,66;83,63
+2023;Jawa Tengah;Temanggung;72960;9,26;37,33;89,79
+2023;Jawa Tengah;Kendal;92640;9,39;43,18;85,53
+2023;Jawa Tengah;Batang;69970;8,92;38,88;87,94
+2023;Jawa Tengah;Pekalongan;87930;9,67;36;81,63
+2023;Jawa Tengah;Pemalang;195570;15,03;39,55;83,42
+2023;Jawa Tengah;Tegal;105030;7,3;46,89;83,05
+2023;Jawa Tengah;Brebes;286140;15,78;41,7;83,57
+2023;Jawa Tengah;Kota Magelang;7450;6,11;58,27;57,32
+2023;Jawa Tengah;Surakarta;43890;8,44;45,08;61,07
+2023;Jawa Tengah;Salatiga;9410;4,66;34,61;55,6
+2023;Jawa Tengah;Kota Semarang;80530;4,23;45,84;67,92
+2023;Jawa Tengah;Kota Pekalongan;21360;6,81;41,53;79,34
+2023;Jawa Tengah;Kota Tegal;19220;7,68;53,65;50,29
+2023;DI Yogyakarta;Kulon Progo;70740;15,64;26,76;69,46
+2023;DI Yogyakarta;Bantul;128510;11,96;37,4;63,21
+2023;DI Yogyakarta;Gunung Kidul;122240;15,6;36,29;84,31
+2023;DI Yogyakarta;Sleman;97500;7,52;39,18;57,46
+2023;DI Yogyakarta;Kota Yogyakarta;29480;6,49;40,35;53,33
+2023;Jawa Timur;Pacitan;76200;13,65;34,2;79,37
+2023;Jawa Timur;Ponorogo;83710;9,53;29,57;85,73
+2023;Jawa Timur;Trenggalek;74580;10,63;33,54;85,76
+2023;Jawa Timur;Tulungagung;68810;6,53;32,55;80,09
+2023;Jawa Timur;Blitar;101940;8,69;44,44;82,8
+2023;Jawa Timur;Kediri;171180;10,72;41,1;72,8
+2023;Jawa Timur;Malang;251360;9,45;45,48;81,96
+2023;Jawa Timur;Lumajang;93820;8,93;42,57;76,96
+2023;Jawa Timur;Jember;236460;9,51;46,09;85,5
+2023;Jawa Timur;Banyuwangi;119520;7,34;38,71;76,18
+2023;Jawa Timur;Bondowoso;105130;13,34;34,62;87,42
+2023;Jawa Timur;Situbondo;82620;11,9;37,99;82,53
+2023;Jawa Timur;Probolinggo;205020;17,19;42,4;88,37
+2023;Jawa Timur;Pasuruan;154090;9,24;44,47;76,41
+2023;Jawa Timur;Sidoarjo;119150;5;39;62,76
+2023;Jawa Timur;Mojokerto;112860;9,8;39,52;72,74
+2023;Jawa Timur;Jombang;117360;9,15;43,37;70,55
+2023;Jawa Timur;Nganjuk;115860;10,89;43,01;72,58
+2023;Jawa Timur;Madiun;75870;11,04;43,57;82,51
+2023;Jawa Timur;Magetan;62490;9,8;31,17;74,23
+2023;Jawa Timur;Ngawi;121300;14,4;34,45;75,56
+2023;Jawa Timur;Bojonegoro;153250;12,18;44,81;80,77
+2023;Jawa Timur;Tuban;177250;14,91;41,59;80,74
+2023;Jawa Timur;Lamongan;149940;12,42;41,83;65,37
+2023;Jawa Timur;Gresik;149750;10,96;39,89;59,62
+2023;Jawa Timur;Bangkalan;196660;19,35;28,14;84,55
+2023;Jawa Timur;Sampang;221710;21,76;33,67;87,18
+2023;Jawa Timur;Pamekasan;126430;13,85;40;70,38
+2023;Jawa Timur;Sumenep;206100;18,7;34,27;80,43
+2023;Jawa Timur;Kota Kediri;21030;7,15;43,28;58,54
+2023;Jawa Timur;Kota Blitar;10610;7,3;36,86;65,32
+2023;Jawa Timur;Kota Malang;37780;4,26;44,01;54,79
+2023;Jawa Timur;Kota Probolinggo;15860;6,48;37,26;65,14
+2023;Jawa Timur;Kota Pasuruan;13560;6,6;46,93;59,04
+2023;Jawa Timur;Kota Mojokerto;7650;5,77;58;64,4
+2023;Jawa Timur;Kota Madiun;8460;4,74;46,06;49,19
+2023;Jawa Timur;Surabaya;136370;4,65;40,97;62,72
+2023;Jawa Timur;Batu;7100;3,31;38,67;60,04
+2023;Banten;Pandeglang;114230;9,27;47,63;89,54
+2023;Banten;Lebak;114540;8,68;51,61;88,55
+2023;Banten;Tangerang;276330;6,93;55,6;72,7
+2023;Banten;Serang;73830;4,85;56,92;94
+2023;Banten;Kota Tangerang;137700;5,89;53,89;59,39
+2023;Banten;Cilegon;18200;3,98;40,16;70,63
+2023;Banten;Kota Serang;44990;6,2;44,63;92,5
+2023;Banten;Tangerang Selatan;46310;2,57;52,72;60,2
+2023;Bali;Jembrana;14120;4,96;32,96;66,3
+2023;Bali;Tabanan;21420;4,7;42,61;65,32
+2023;Bali;Badung;17010;2,3;35,99;57,63
+2023;Bali;Gianyar;23760;4,47;34;58,54
+2023;Bali;Klungkung;10220;5,61;36,78;66,67
+2023;Bali;Bangli;12240;5,28;39,76;83,28
+2023;Bali;Karangasem;27830;6,56;26,65;83,13
+2023;Bali;Buleleng;39520;5,85;28,86;74,67
+2023;Bali;Denpasar;27690;2,68;47,23;63,28
+2023;Nusa Tenggara Barat;Lombok Barat;102710;13,67;32,68;85,72
+2023;Nusa Tenggara Barat;Lombok Tengah;129740;12,93;32,13;88,14
+2023;Nusa Tenggara Barat;Lombok Timur;197630;15,63;43,82;72,95
+2023;Nusa Tenggara Barat;Sumbawa;67400;13,91;35;74,22
+2023;Nusa Tenggara Barat;Dompu;34380;12,62;43,48;67,48
+2023;Nusa Tenggara Barat;Bima;74740;14,39;35,74;65,82
+2023;Nusa Tenggara Barat;Sumbawa Barat;21770;12,95;39,84;69,67
+2023;Nusa Tenggara Barat;Lombok Utara;60130;25,8;37,24;83,79
+2023;Nusa Tenggara Barat;Mataram;46210;8,62;43,18;68,62
+2023;Nusa Tenggara Barat;Kota Bima;16530;8,67;51,48;66,1
+2023;Nusa Tenggara Timur;Sumba Barat;37150;27,17;34,01;89,64
+2023;Nusa Tenggara Timur;Sumba Timur;75660;28,08;29,17;78,05
+2023;Nusa Tenggara Timur;Kupang;90230;21,78;36,42;84,19
+2023;Nusa Tenggara Timur;Timor Tengah Selatan;119510;25,18;30,8;85,06
+2023;Nusa Tenggara Timur;Timor Tengah Utara;57190;21,85;36,43;78,79
+2023;Nusa Tenggara Timur;Belu;33190;14,3;40,45;88,94
+2023;Nusa Tenggara Timur;Alor;41910;19,97;34,82;80,09
+2023;Nusa Tenggara Timur;Lembata;37940;24,78;37,95;87,45
+2023;Nusa Tenggara Timur;Flores Timur;30930;11,77;36,14;89,6
+2023;Nusa Tenggara Timur;Sikka;40810;12,56;32,81;89,7
+2023;Nusa Tenggara Timur;Ende;63100;22,86;27,22;80,72
+2023;Nusa Tenggara Timur;Ngada;20570;12,06;39,11;85,72
+2023;Nusa Tenggara Timur;Manggarai;70000;19,69;33,79;86,92
+2023;Nusa Tenggara Timur;Rote Ndao;53550;27,05;36,44;84,69
+2023;Nusa Tenggara Timur;Manggarai Barat;49950;16,82;22,96;89,62
+2023;Nusa Tenggara Timur;Sumba Tengah;24240;31,78;37,41;87,75
+2023;Nusa Tenggara Timur;Sumba Barat Daya;101400;27,48;28,54;84,54
+2023;Nusa Tenggara Timur;Nagekeo;18570;12,33;42,42;79,67
+2023;Nusa Tenggara Timur;Manggarai Timur;74400;25,06;25,55;84,41
+2023;Nusa Tenggara Timur;Sabu Raijua;30430;28,37;44,73;83,32
+2023;Nusa Tenggara Timur;Malaka;29187;14,42;41,88;83,01
+2023;Nusa Tenggara Timur;Kota Kupang;41200;8,61;53,7;66,87
+2023;Kalimantan Barat;Sambas;38710;7,08;40,29;88,28
+2023;Kalimantan Barat;Bengkayang;16870;6,28;54,98;85,18
+2023;Kalimantan Barat;Landak;38920;9,97;35,07;79,07
+2023;Kalimantan Barat;Pontianak;14150;5,21;58,69;80,29
+2023;Kalimantan Barat;Sanggau;23340;4,79;44,15;87,87
+2023;Kalimantan Barat;Ketapang;49950;9,25;53,44;78,84
+2023;Kalimantan Barat;Sintang;35490;8,18;41,75;83,83
+2023;Kalimantan Barat;Kapuas Hulu;22590;8,16;32,18;82,77
+2023;Kalimantan Barat;Sekadau;12090;5,9;30,73;83,6
+2023;Kalimantan Barat;Melawi;24180;11,12;29,08;88,1
+2023;Kalimantan Barat;Kayong Utara;10770;9,13;46,63;88,64
+2023;Kalimantan Barat;Kubu Raya;25330;4,23;50,55;84,3
+2023;Kalimantan Barat;Kota Pontianak;29920;4,45;56,27;74,8
+2023;Kalimantan Barat;Singkawang;11060;4,7;48,61;78,37
+2023;Kalimantan Tengah;Kotawaringin Barat;13440;4,18;41,83;71,92
+2023;Kalimantan Tengah;Kotawaringin Timur;26570;5,69;47,44;85,01
+2023;Kalimantan Tengah;Kapuas;19190;5,21;41,73;82,7
+2023;Kalimantan Tengah;Barito Selatan;6660;4,72;61,33;66,8
+2023;Kalimantan Tengah;Barito Utara;7140;5,35;48,4;66,7
+2023;Kalimantan Tengah;Sukamara;2710;3,96;38,42;85,97
+2023;Kalimantan Tengah;Lamandau;2630;3,12;43,57;78,9
+2023;Kalimantan Tengah;Seruyan;15710;7,12;42,23;85,51
+2023;Kalimantan Tengah;Katingan;8950;4,99;46,67;76,43
+2023;Kalimantan Tengah;Pulang Pisau;5920;4,58;41,15;77,87
+2023;Kalimantan Tengah;Gunung Mas;6550;5,47;35,52;76,41
+2023;Kalimantan Tengah;Barito Timur;8590;6,63;51,35;72,26
+2023;Kalimantan Tengah;Murung Raya;7810;6,44;48,46;92,97
+2023;Kalimantan Tengah;Palangka Raya;10310;3,44;51,77;72,7
+2023;Kalimantan Selatan;Tanah Laut;13220;3,73;49,05;79,34
+2023;Kalimantan Selatan;Kota Baru;15320;4,32;68,74;94,06
+2023;Kalimantan Selatan;Banjar;14770;2,44;46,94;83,6
+2023;Kalimantan Selatan;Barito Kuala;14710;4,6;46,57;88,11
+2023;Kalimantan Selatan;Tapin;6220;3,19;47,6;95,51
+2023;Kalimantan Selatan;Hulu Sungai Selatan;9610;4,01;30,24;84,84
+2023;Kalimantan Selatan;Hulu Sungai Tengah;16010;5,84;40,99;78,3
+2023;Kalimantan Selatan;Hulu Sungai Utara;15020;6,25;47,2;82,03
+2023;Kalimantan Selatan;Tabalong;15150;5,77;36,95;77,65
+2023;Kalimantan Selatan;Tanah Bumbu;17170;4,12;41,72;64,34
+2023;Kalimantan Selatan;Balangan;7070;5,22;27,62;86,38
+2023;Kalimantan Selatan;Banjarmasin;33470;4,63;47,31;80,6
+2023;Kalimantan Selatan;Banjar Baru;11180;3,92;43,91;91,54
+2023;Kalimantan Timur;Paser;26390;9,11;51,53;57,22
+2023;Kalimantan Timur;Kutai Barat;14690;9,72;49,46;74,77
+2023;Kalimantan Timur;Kutai Kartanegara;60860;7,61;52,06;72,21
+2023;Kalimantan Timur;Kutai Timur;37040;9,06;44,1;69,77
+2023;Kalimantan Timur;Berau;13260;5,54;40,95;73,73
+2023;Kalimantan Timur;Penajam Paser Utara;11190;6,97;41,77;72,17
+2023;Kalimantan Timur;Mahakam Hulu;3060;11,38;34,43;76,08
+2023;Kalimantan Timur;Balikpapan;14990;2,31;46,53;62,09
+2023;Kalimantan Timur;Samarinda;41890;4,81;50,97;52,78
+2023;Kalimantan Timur;Bontang;7710;4,11;38,5;62,74
+2023;Kalimantan Utara;Malinau;5950;6,54;37,89;81,67
+2023;Kalimantan Utara;Bulungan;12190;8,99;37,48;76,18
+2023;Kalimantan Utara;Tana Tidung;1470;4,62;49,54;91,49
+2023;Kalimantan Utara;Nunukan;11880;5,53;46,89;84,79
+2023;Kalimantan Utara;Tarakan;16490;6,1;50,44;78,1
+2023;Sulawesi Utara;Bolaang Mongondow;19020;7,37;50,96;68,88
+2023;Sulawesi Utara;Minahasa;23860;6,87;59,12;48,56
+2023;Sulawesi Utara;Kepulauan Sangihe;14600;11,01;48,12;66,1
+2023;Sulawesi Utara;Kepulauan Talaud;7970;8,46;46,92;66,07
+2023;Sulawesi Utara;Minahasa Selatan;18900;8,89;53,93;56,2
+2023;Sulawesi Utara;Minahasa Utara;13660;6,65;55,34;75,68
+2023;Sulawesi Utara;Bolaang Mongondow Utara;6560;7,9;39,03;82,65
+2023;Sulawesi Utara;Siau Tagulandang Biaro;5920;8,76;53,93;73,87
+2023;Sulawesi Utara;Minahasa Tenggara;12700;11,84;44,02;78,9
+2023;Sulawesi Utara;Bolaang Mongondow Selatan;8280;12,04;55,82;79,4
+2023;Sulawesi Utara;Bolaang Mongondow Timur;4320;5,8;50,46;73,54
+2023;Sulawesi Utara;Manado;25170;5,79;51,47;63,81
+2023;Sulawesi Utara;Bitung;15000;6,56;55,2;76,05
+2023;Sulawesi Utara;Tomohon;6240;5,6;55,19;57,4
+2023;Sulawesi Utara;Kotamobagu;6820;5,03;38,61;78
+2023;Sulawesi Tengah;Banggai Kepulauan;15500;12,9;34,89;86,11
+2023;Sulawesi Tengah;Banggai;27380;6,94;45,58;74,6
+2023;Sulawesi Tengah;Morowali;15750;12,31;54,23;84,26
+2023;Sulawesi Tengah;Poso;41480;15,16;44,01;68,15
+2023;Sulawesi Tengah;Donggala;50370;16,25;43,81;81,23
+2023;Sulawesi Tengah;Toli-Toli;31130;12,85;47,16;70,8
+2023;Sulawesi Tengah;Buol;23130;13,36;51,44;78,34
+2023;Sulawesi Tengah;Parigi Moutong;77180;14,91;39,69;87,95
+2023;Sulawesi Tengah;Tojo Una-Una;26510;16,74;35,24;77,65
+2023;Sulawesi Tengah;Sigi;31470;12,83;34,32;85,13
+2023;Sulawesi Tengah;Banggai Laut;11271;14,15;58,65;73,74
+2023;Sulawesi Tengah;Morowali Utara;17663;12,85;51,09;82,71
+2023;Sulawesi Tengah;Palu;26830;6,56;52,13;70,12
+2023;Sulawesi Selatan;Kepulauan Selayar;16890;12,27;44,92;73,8
+2023;Sulawesi Selatan;Bulukumba;30650;7,22;47,47;73,74
+2023;Sulawesi Selatan;Bantaeng;17490;9,18;38,54;82,13
+2023;Sulawesi Selatan;Jeneponto;48320;13,06;39,7;70,06
+2023;Sulawesi Selatan;Takalar;25010;8,29;62,57;76,44
+2023;Sulawesi Selatan;Gowa;59100;7,42;49,99;77,25
+2023;Sulawesi Selatan;Sinjai;21140;8,55;51,57;75,48
+2023;Sulawesi Selatan;Maros;34960;9,65;46,88;73,74
+2023;Sulawesi Selatan;Pangkajene Dan Kepulauan;46060;13,4;44,46;67,35
+2023;Sulawesi Selatan;Barru;14880;8,46;58,84;75,75
+2023;Sulawesi Selatan;Bone;80120;10,53;47,22;82,82
+2023;Sulawesi Selatan;Soppeng;17210;7,48;52,67;79,16
+2023;Sulawesi Selatan;Wajo;27540;6,73;53,42;79,53
+2023;Sulawesi Selatan;Sidenreng Rappang;15750;5,14;55,95;65,26
+2023;Sulawesi Selatan;Pinrang;34230;8,9;59,63;71,93
+2023;Sulawesi Selatan;Enrekang;26970;12,69;43,74;74,71
+2023;Sulawesi Selatan;Luwu;47670;12,71;47,95;64,32
+2023;Sulawesi Selatan;Tana Toraja;30230;12,48;40,15;73,07
+2023;Sulawesi Selatan;Luwu Utara;40790;12,66;41,39;79,22
+2023;Sulawesi Selatan;Luwu Timur;21570;6,93;44,57;74,05
+2023;Sulawesi Selatan;Toraja Utara;29140;12,12;46,2;70,19
+2023;Sulawesi Selatan;Makassar;80320;5,07;69,01;50,92
+2023;Sulawesi Selatan;Parepare;7980;5,34;59,34;77,74
+2023;Sulawesi Selatan;Palopo;14850;7,69;51,87;73,2
+2023;Sulawesi Tenggara;Buton;14150;13,77;49,43;74,14
+2023;Sulawesi Tenggara;Muna;32240;14,07;43,09;79,84
+2023;Sulawesi Tenggara;Konawe;33090;13,02;40,93;71,48
+2023;Sulawesi Tenggara;Kolaka;32960;11,8;45,19;75,15
+2023;Sulawesi Tenggara;Konawe Selatan;36840;11,26;40,91;73,57
+2023;Sulawesi Tenggara;Bombana;20520;10,73;58,59;84,5
+2023;Sulawesi Tenggara;Wakatobi;15340;14,81;45,4;81,03
+2023;Sulawesi Tenggara;Kolaka Utara;21790;13,57;47,33;78,94
+2023;Sulawesi Tenggara;Buton Utara;9090;14,06;39,42;76,57
+2023;Sulawesi Tenggara;Konawe Utara;9010;13,48;57,44;69,49
+2023;Sulawesi Tenggara;Kolaka Timur;20408;14,04;44,7;67,61
+2023;Sulawesi Tenggara;Konawe Kepulauan;5435;15,9;47;62,66
+2023;Sulawesi Tenggara;Muna Barat;11811;14,03;46,24;79,27
+2023;Sulawesi Tenggara;Buton Tengah;14455;15,43;35,44;86,56
+2023;Sulawesi Tenggara;Buton Selatan;11875;14,76;46,64;75,51
+2023;Sulawesi Tenggara;Kendari;19240;4,59;52,94;63,56
+2023;Sulawesi Tenggara;Bau-Bau;13290;7,53;47,49;66,99
+2023;Gorontalo;Boalemo;31940;18,38;40,28;83,52
+2023;Gorontalo;Gorontalo;65880;17,48;39,31;83,77
+2023;Gorontalo;Pohuwato;29390;17,64;41,5;81,45
+2023;Gorontalo;Bone Bolango;24720;15,51;45,88;79,33
+2023;Gorontalo;Gorontalo Utara;19170;17,03;43,53;90,65
+2023;Gorontalo;Kota Gorontalo;12620;5,64;44,02;80,95
+2023;Sulawesi Barat;Majene;25800;14,54;50,56;61,35
+2023;Sulawesi Barat;Polewali Mandar;71920;16,08;39,42;72,45
+2023;Sulawesi Barat;Mamasa;23580;14,31;33,17;72,44
+2023;Sulawesi Barat;Mamuju;23500;7,57;52,15;74,89
+2023;Sulawesi Barat;Mamuju Utara;8940;4,79;47,62;84,98
+2023;Sulawesi Barat;Mamuju Tengah;10391;7,32;39,25;71,29
+2023;Maluku;Maluku Tenggara Barat;27640;24,47;35,57;66,43
+2023;Maluku;Maluku Tenggara;22020;21,79;52,01;58,84
+2023;Maluku;Maluku Tengah;67220;17,84;49,16;68,01
+2023;Maluku;Buru;25190;16,53;54,43;65,62
+2023;Maluku;Kepulauan Aru;23130;24,21;46,99;80,09
+2023;Maluku;Seram Bagian Barat;38870;22,39;44,02;71
+2023;Maluku;Seram Bagian Timur;24260;21,08;43,64;74,82
+2023;Maluku;Maluku Barat Daya;21230;28,78;38,26;73,32
+2023;Maluku;Buru Selatan;9770;15,28;34,09;78,73
+2023;Maluku;Ambon;25870;5,25;54,99;52,48
+2023;Maluku;Tual;16410;20,68;58,68;62,15
+2023;Maluku Utara;Halmahera Barat;10530;8,74;42,71;72,65
+2023;Maluku Utara;Halmahera Tengah;6740;11,44;44,75;70,59
+2023;Maluku Utara;Kepulauan Sula;8450;8,17;50,02;82,29
+2023;Maluku Utara;Halmahera Selatan;13650;5,68;29,49;85,82
+2023;Maluku Utara;Halmahera Utara;9180;4,62;49,82;90,3
+2023;Maluku Utara;Halmahera Timur;12590;12,47;38,65;75,59
+2023;Maluku Utara;Pulau Morotai;3810;5,38;41,78;76,97
+2023;Maluku Utara;Pulau Taliabu;4025;7,31;41,55;73,81
+2023;Maluku Utara;Ternate;8360;3,39;58,99;37,44
+2023;Maluku Utara;Tidore Kepulauan;6480;6,35;36,43;65,59
+2023;Papua Barat;Fakfak;17840;21,38;46,2;68,42
+2023;Papua Barat;Kaimana;9900;14,57;37,51;71,17
+2023;Papua Barat;Teluk Wondama;10240;28,9;32,74;68,45
+2023;Papua Barat;Teluk Bintuni;19820;28,24;49,29;71,38
+2023;Papua Barat;Manokwari;33350;18,73;36,52;61,09
+2023;Papua Barat;Sorong Selatan;9350;18,11;19,69;80,3
+2023;Papua Barat;Sorong;26270;26,88;40,74;68,07
+2023;Papua Barat;Raja Ampat;8510;16,76;52,9;72,73
+2023;Papua Barat;Tambrauw;5130;31,23;35;69,48
+2023;Papua Barat;Maybrat;13570;30,28;32,87;64,53
+2023;Papua Barat;Manokwari Selatan;7693;27,8;28,98;73,86
+2023;Papua Barat;Pegunungan Arfak;11714;32,29;22,96;77,06
+2023;Papua Barat;Kota Sorong;41610;14,41;59,12;56,34
+2023;Papua;Merauke;24030;10,01;31,15;63,86
+2023;Papua;Jayawijaya;73420;34,71;21,64;77,16
+2023;Papua;Jayapura;14910;11,45;53,26;57,03
+2023;Papua;Nabire;34830;23,35;45,69;55,17
+2023;Papua;Kepulauan Yapen;26030;25,89;48,49;67,87
+2023;Papua;Biak Numfor;35700;23,53;49,46;60,57
+2023;Papua;Paniai;61140;35,39;24,69;86,56
+2023;Papua;Puncak Jaya;47500;35,6;35,52;86,39
+2023;Papua;Mimika;30310;13,55;32,45;86,35
+2023;Papua;Boven Digoel;14250;19,8;33,73;83,21
+2023;Papua;Mappi;26820;25,72;53,97;73,27
+2023;Papua;Asmat;25580;24,36;29,62;90,24
+2023;Papua;Yahukimo;72140;36,08;14,83;88,58
+2023;Papua;Pegunungan Bintang;23320;29,79;36,76;90,23
+2023;Papua;Tolikara;48400;31,57;12,22;93,05
+2023;Papua;Sarmi;5450;13,21;41,87;66,26
+2023;Papua;Keerom;9320;15,68;59,99;77,15
+2023;Papua;Waropen;9860;29,16;57,05;68,73
+2023;Papua;Supiori;7940;36,99;59,99;63,65
+2023;Papua;Mamberamo Raya;7560;29,63;63,37;66,24
+2023;Papua;Nduga;43270;37,09;0,74;89,28
+2023;Papua;Lanny Jaya;76430;36,94;9,33;87,06
+2023;Papua;Mamberamo Tengah;19830;35,42;10,77;75,4
+2023;Papua;Yalimo;21670;30,97;18,79;86,34
+2023;Papua;Puncak;42010;36,44;6,79;97,56
+2023;Papua;Dogiyai;29320;29,2;15,93;90,76
+2023;Papua;Intan Jaya;21160;40,01;21,08;90,3
+2023;Papua;Deiyai;30180;38,66;44,23;85,46
+2023;Papua;Kota Jayapura;32790;10,5;53,63;45,89
+2022;Aceh;Simeulue;17860;18,37;54,47;68,98
+2022;Aceh;Aceh Singkil;24330;19,18;61,22;73,76
+2022;Aceh;Aceh Selatan;30780;12,43;47,37;77,49
+2022;Aceh;Aceh Tenggara;28420;12,83;36,42;57,71
+2022;Aceh;Aceh Timur;62160;13,91;57,98;80,14
+2022;Aceh;Aceh Tengah;31500;14,5;36,58;55,26
+2022;Aceh;Aceh Barat;38460;17,93;50,01;68,41
+2022;Aceh;Aceh Besar;58180;13,38;48,09;62,65
+2022;Aceh;Pidie;85870;18,79;41,47;69,78
+2022;Aceh;Bireuen;60290;12,51;43,07;70,77
+2022;Aceh;Aceh Utara;107020;16,86;55,76;59,58
+2022;Aceh;Aceh Barat Daya;24000;15,44;52,95;66,86
+2022;Aceh;Gayo Lues;18090;18,87;31,26;63,49
+2022;Aceh;Aceh Tamiang;38250;12,61;46,46;66,97
+2022;Aceh;Nagan Raya;29630;17,38;44,09;52,26
+2022;Aceh;Aceh Jaya;12130;12,51;37,44;72,43
+2022;Aceh;Bener Meriah;27930;18,39;35,1;51,34
+2022;Aceh;Pidie Jaya;30410;18,45;49,33;52,61
+2022;Aceh;Banda Aceh;19900;7,13;53,2;44,96
+2022;Aceh;Sabang;5140;14,66;47,6;46,11
+2022;Aceh;Langsa;19410;10,62;46,53;64,95
+2022;Aceh;Lhokseumawe;23030;10,84;48,38;62,45
+2022;Aceh;Subulussalam;14060;16,94;52,97;73,3
+2022;Sumatera Utara;Nias;23230;16;20,09;81,76
+2022;Sumatera Utara;Mandailing Natal;40980;8,92;37,97;77,77
+2022;Sumatera Utara;Tapanuli Selatan;23050;8,07;26,14;64,88
+2022;Sumatera Utara;Tapanuli Tengah;47070;11,71;34,08;69,97
+2022;Sumatera Utara;Tapanuli Utara;27470;8,93;21,59;54,59
+2022;Sumatera Utara;Toba Samosir;16480;8,89;20,13;33,82
+2022;Sumatera Utara;Labuhanbatu;43270;8,26;55,04;63,35
+2022;Sumatera Utara;Asahan;64490;8,64;40,37;65,93
+2022;Sumatera Utara;Simalungun;72470;8,26;42,76;61,18
+2022;Sumatera Utara;Dairi;22530;7,88;10,84;63,05
+2022;Sumatera Utara;Karo;35930;8,17;26,88;59,96
+2022;Sumatera Utara;Deli Serdang;85280;3,62;42,78;59,41
+2022;Sumatera Utara;Langkat;100450;9,49;48,25;64,98
+2022;Sumatera Utara;Nias Selatan;54160;16,48;37,37;80,39
+2022;Sumatera Utara;Humbang Hasundutan;17330;8,86;9,63;54,85
+2022;Sumatera Utara;Pakpak Barat;4520;8,66;14,16;65,33
+2022;Sumatera Utara;Samosir;14970;11,77;25,1;55,66
+2022;Sumatera Utara;Serdang Bedagai;48220;7,82;42,02;59,67
+2022;Sumatera Utara;Batu Bara;49390;11,53;39,81;63,4
+2022;Sumatera Utara;Padang Lawas Utara;26090;8,94;22,6;59,74
+2022;Sumatera Utara;Padang Lawas;24450;8,05;35,55;68,17
+2022;Sumatera Utara;Labuhanbatu Selatan;29380;8,09;53,31;77,29
+2022;Sumatera Utara;Labuhanbatu Utara;33910;9,09;40,27;68,74
+2022;Sumatera Utara;Nias Utara;32870;23,4;32,36;78,97
+2022;Sumatera Utara;Nias Barat;20420;24,75;24,35;75,49
+2022;Sumatera Utara;Sibolga;10050;11,47;50,39;55,65
+2022;Sumatera Utara;Kota Tanjungbalai;22650;12,45;43,84;65,39
+2022;Sumatera Utara;Pematangsiantar;20530;7,88;46,9;37,4
+2022;Sumatera Utara;Tebingtinggi;16340;9,59;39,84;63,16
+2022;Sumatera Utara;Kota Medan;187740;8,07;47,35;46,74
+2022;Sumatera Utara;Kota Binjai;14610;5,1;39,06;50,82
+2022;Sumatera Utara;Padangsidimpuan;16030;6,89;45,87;59,47
+2022;Sumatera Utara;Gunungsitoli;21850;14,81;44,17;67,06
+2022;Sumatera Barat;Kepulauan Mentawai;13740;13,97;35,57;80,06
+2022;Sumatera Barat;Pesisir Selatan;33780;7,11;45,78;72,32
+2022;Sumatera Barat;Solok;27160;7,12;47,43;80,1
+2022;Sumatera Barat;Sijunjung;15070;6;40,93;73,62
+2022;Sumatera Barat;Tanah Datar;14910;4,26;44,04;63,74
+2022;Sumatera Barat;Padang Pariaman;26440;6,25;50,82;69,49
+2022;Sumatera Barat;Agam;31330;6,22;47,42;70,55
+2022;Sumatera Barat;Lima Puluh Kota;26000;6,59;47,2;82,99
+2022;Sumatera Barat;Pasaman;19940;6,85;39,49;81,6
+2022;Sumatera Barat;Solok Selatan;11810;6,51;41,81;59,51
+2022;Sumatera Barat;Dharmasraya;15080;5,56;38,63;79,09
+2022;Sumatera Barat;Pasaman Barat;32910;6,93;62,83;73,35
+2022;Sumatera Barat;Padang;42370;4,26;59,61;58,49
+2022;Sumatera Barat;Kota Solok;2280;3,02;48,58;46,72
+2022;Sumatera Barat;Sawahlunto;1470;2,28;30,21;61,64
+2022;Sumatera Barat;Padang Panjang;2890;5,14;48,97;46,46
+2022;Sumatera Barat;Bukittinggi;6160;4,46;43,87;57,33
+2022;Sumatera Barat;Payakumbuh;8080;5,66;37,27;54,69
+2022;Sumatera Barat;Pariaman;3800;4,13;52,21;68,69
+2022;Riau;Kuantan Singingi;26610;8,24;57,54;76,12
+2022;Riau;Indragiri Hulu;27460;6,14;40,06;87,28
+2022;Riau;Indragiri Hilir;43220;5,98;55,59;85,43
+2022;Riau;Pelalawan;47840;8,97;50,08;70,6
+2022;Riau;Siak;25710;5,07;45,14;54,56
+2022;Riau;Kampar;63550;7,12;51,4;59,88
+2022;Riau;Rokan Hulu;73810;9,95;43,15;67,97
+2022;Riau;Bengkalis;36030;6,32;47,21;64,8
+2022;Riau;Rokan Hilir;49590;6,73;56,91;74,66
+2022;Riau;Kepulauan Meranti;45250;23,84;42,28;76,67
+2022;Riau;Pekanbaru;35960;3,06;50,39;50,5
+2022;Riau;Dumai;10000;3,2;49,55;72,24
+2022;Jambi;Kerinci;18200;7,57;50,51;66,3
+2022;Jambi;Merangin;34140;8,7;43,86;88,15
+2022;Jambi;Sarolangun;26230;8,48;52,92;81,02
+2022;Jambi;Batang Hari;26240;9,63;50,59;72,51
+2022;Jambi;Muaro Jambi;20640;4,47;49,86;81,61
+2022;Jambi;Tanjung Jabung T;23420;10,91;44,46;72,86
+2022;Jambi;Tanjung Jabung B;33950;10;45,28;74,7
+2022;Jambi;Tebo;22810;6,34;38,31;82,05
+2022;Jambi;Bungo;20690;5,38;50,17;83,32
+2022;Jambi;Jambi;50400;8,33;52,05;55,08
+2022;Jambi;Sungai Penuh;2640;2,97;37,7;71,77
+2022;Sumatera Selatan;Ogan Komering Ulu;44200;11,61;39,67;76,87
+2022;Sumatera Selatan;Ogan Komering Ilir;113790;13,23;42,18;76,18
+2022;Sumatera Selatan;Muara Enim;73530;11,12;51,36;73,91
+2022;Sumatera Selatan;Lahat;65390;15,61;35,88;74,14
+2022;Sumatera Selatan;Musi Rawas;55800;13,34;42,53;74,67
+2022;Sumatera Selatan;Musi Banyuasin;102240;15,19;48,02;79,5
+2022;Sumatera Selatan;Banyu Asin;88550;10;48,27;86,12
+2022;Sumatera Selatan;Ogan Komering Ulu Selatan;39610;10,56;40,87;78,93
+2022;Sumatera Selatan;Ogan Komering Ulu Timur;69690;10,05;41,23;76,11
+2022;Sumatera Selatan;Ogan Ilir;54550;12,33;39,82;78,28
+2022;Sumatera Selatan;Empat Lawang;31060;12,03;35,24;76,04
+2022;Sumatera Selatan;Penukal Abab Lematang llir;23140;11,76;29,96;77,32
+2022;Sumatera Selatan;Musi Rawas Utara;36650;18,45;38;73,39
+2022;Sumatera Selatan;Palembang;181650;10,48;48,83;50,63
+2022;Sumatera Selatan;Prabumulih;22120;11,28;48,39;65,69
+2022;Sumatera Selatan;Pagar Alam;12050;8,47;41,32;68,51
+2022;Sumatera Selatan;Lubuklinggau;30680;12,68;39,51;72,78
+2022;Bengkulu;Bengkulu Selatan;31830;17,86;28,86;62,25
+2022;Bengkulu;Rejang Lebong;43180;15,65;26,87;79,12
+2022;Bengkulu;Bengkulu Utara;35510;11,48;46,63;78,62
+2022;Bengkulu;Kaur;22570;18,1;36,78;73,61
+2022;Bengkulu;Seluma;36710;18,36;34,34;73,2
+2022;Bengkulu;Mukomuko;21810;11,44;50,17;78,59
+2022;Bengkulu;Lebong;14140;12,03;40,41;74,25
+2022;Bengkulu;Kepahiang;20730;14,53;39,65;73,17
+2022;Bengkulu;Bengkulu Tengah;11330;9,76;51,33;75,99
+2022;Bengkulu;Bengkulu;59430;15,73;44,47;50,45
+2022;Lampung;Lampung Barat;36200;11,71;32,38;72,01
+2022;Lampung;Tanggamus;67430;10,98;44,68;70,81
+2022;Lampung;Lampung Selatan;136210;13,14;46,2;76,06
+2022;Lampung;Lampung Timur;149120;13,98;41,07;78,72
+2022;Lampung;Lampung Tengah;143340;10,96;36,77;80,84
+2022;Lampung;Lampung Utara;114670;18,41;42,64;76,69
+2022;Lampung;Way Kanan;54280;11,76;36,81;87,22
+2022;Lampung;Tulangbawang;39190;8,42;43,84;84,44
+2022;Lampung;Pesawaran;63170;13,85;43,93;82,28
+2022;Lampung;Pringsewu;38180;9,34;42,51;81,26
+2022;Lampung;Mesuji;13880;6,84;37,06;82,03
+2022;Lampung;Tulang Bawang Barat;20720;7,44;53,74;83,67
+2022;Lampung;Pesisir Barat;21850;13,84;46,65;71,05
+2022;Lampung;Bandar Lampung;90510;8,21;37,24;56
+2022;Lampung;Metro;13680;7,87;47,8;57,46
+2022;Bangka Belitung;Bangka;14500;4,26;54,76;68,06
+2022;Bangka Belitung;Belitung;12340;6,45;56,05;74,74
+2022;Bangka Belitung;Bangka Barat;5300;2,46;49,97;82,28
+2022;Bangka Belitung;Bangka Tengah;9610;4,86;52,07;74,38
+2022;Bangka Belitung;Bangka Selatan;6810;3,22;56,37;90,39
+2022;Bangka Belitung;Belitung Timur;8470;6,49;48,56;80,27
+2022;Bangka Belitung;Pangkalpinang;9760;4,55;57,12;68,03
+2022;Kepulauan Riau;Karimun;16440;6,87;43,23;79,77
+2022;Kepulauan Riau;Bintan;10670;6,44;55,34;71,3
+2022;Kepulauan Riau;Natuna;4320;5,32;59,5;60,5
+2022;Kepulauan Riau;Lingga;12700;14,05;52,25;84,89
+2022;Kepulauan Riau;Kepulauan Anambas;3290;7,51;60,2;57,13
+2022;Kepulauan Riau;Batam;82590;5,19;55,05;59,38
+2022;Kepulauan Riau;Tanjungpinang;21670;9,85;57,01;58,51
+2022;DKI Jakarta;Kepulauan Seribu;3670;14,11;52,78;64,48
+2022;DKI Jakarta;Jakarta Selatan;81110;3,52;63,7;46,51
+2022;DKI Jakarta;Jakarta Timur;126630;4,3;51,6;46,21
+2022;DKI Jakarta;Jakarta Pusat;44720;4,9;50,55;32,41
+2022;DKI Jakarta;Jakarta Barat;112180;4,22;55,54;59,1
+2022;DKI Jakarta;Jakarta Utara;133730;7,24;54,1;45,72
+2022;Jawa Barat;Bogor;474740;7,73;54,32;89,24
+2022;Jawa Barat;Sukabumi;186280;7,34;56,8;87,53
+2022;Jawa Barat;Cianjur;246810;10,55;46,92;80,51
+2022;Jawa Barat;Bandung;258610;6,8;47,3;76,73
+2022;Jawa Barat;Garut;276670;10,42;56,16;84,18
+2022;Jawa Barat;Tasikmalaya;194100;10,73;49,68;89,38
+2022;Jawa Barat;Ciamis;93960;7,72;46,8;89,29
+2022;Jawa Barat;Kuningan;140250;12,76;44,04;81,58
+2022;Jawa Barat;Cirebon;266100;12,01;50,44;73,76
+2022;Jawa Barat;Majalengka;147120;11,94;48,65;82,38
+2022;Jawa Barat;Sumedang;120120;10,14;45,83;85,59
+2022;Jawa Barat;Indramayu;225040;12,77;46,23;71,61
+2022;Jawa Barat;Subang;155340;9,75;50,3;78,39
+2022;Jawa Barat;Purwakarta;83440;8,7;49,36;85,13
+2022;Jawa Barat;Karawang;199910;8,44;54,93;80,29
+2022;Jawa Barat;Bekasi;201140;5,01;57,27;73,67
+2022;Jawa Barat;Bandung Barat;183670;10,82;49,8;74,45
+2022;Jawa Barat;Pangandaran;37910;9,32;28,37;84,49
+2022;Jawa Barat;Kota Bogor;79150;7,1;56,38;68,28
+2022;Jawa Barat;Kota Sukabumi;26590;8,02;53,1;73,65
+2022;Jawa Barat;Kota Bandung;109820;4,25;44,19;67,11
+2022;Jawa Barat;Kota Cirebon;31470;9,82;45,09;73,48
+2022;Jawa Barat;Kota Bekasi;137390;4,43;48,43;44,61
+2022;Jawa Barat;Depok;64360;2,53;53,74;58,76
+2022;Jawa Barat;Cimahi;31160;5,11;51,74;78,77
+2022;Jawa Barat;Kota Tasikmalaya;87130;12,72;46,24;72,75
+2022;Jawa Barat;Kota Banjar;12730;6,73;52,87;65,4
+2022;Jawa Tengah;Cilacap;190960;11,02;45,66;84,27
+2022;Jawa Tengah;Banyumas;220470;12,84;43,86;83,94
+2022;Jawa Tengah;Purbalingga;145330;15,3;41,65;85,27
+2022;Jawa Tengah;Banjarnegara;141250;15,2;39,64;86,05
+2022;Jawa Tengah;Kebumen;196160;16,41;38,03;78,45
+2022;Jawa Tengah;Purworejo;82640;11,53;36,27;79,41
+2022;Jawa Tengah;Wonosobo;128110;16,17;38,7;88,91
+2022;Jawa Tengah;Magelang;145330;11,09;32,62;85,91
+2022;Jawa Tengah;Boyolali;97180;9,82;38,98;82,62
+2022;Jawa Tengah;Klaten;144870;12,33;50,47;58,99
+2022;Jawa Tengah;Sukoharjo;68720;7,61;45,58;66,31
+2022;Jawa Tengah;Wonogiri;105190;10,99;38,26;82,55
+2022;Jawa Tengah;Karanganyar;88560;9,85;43,76;75,78
+2022;Jawa Tengah;Sragen;115140;12,94;39,39;81,76
+2022;Jawa Tengah;Grobogan;163200;11,8;36,58;88,86
+2022;Jawa Tengah;Blora;99830;11,53;37,89;82,02
+2022;Jawa Tengah;Rembang;94560;14,65;46,01;81,27
+2022;Jawa Tengah;Pati;118040;9,33;41,33;73,18
+2022;Jawa Tengah;Kudus;66060;7,41;45,55;70,3
+2022;Jawa Tengah;Jepara;89080;6,88;45,2;79,46
+2022;Jawa Tengah;Demak;143010;12,09;40,41;71,09
+2022;Jawa Tengah;Semarang;78600;7,27;40,52;84,69
+2022;Jawa Tengah;Temanggung;73040;9,33;32,14;85,31
+2022;Jawa Tengah;Kendal;93030;9,48;39,75;90,32
+2022;Jawa Tengah;Batang;69940;8,98;39,32;84,26
+2022;Jawa Tengah;Pekalongan;87530;9,67;38,32;88,07
+2022;Jawa Tengah;Pemalang;195840;15,06;45,15;81,54
+2022;Jawa Tengah;Tegal;113620;7,9;39,75;87,8
+2022;Jawa Tengah;Brebes;290660;16,05;45,35;86,78
+2022;Jawa Tengah;Kota Magelang;8650;7,1;45,58;66,25
+2022;Jawa Tengah;Surakarta;45940;8,84;41,7;58,32
+2022;Jawa Tengah;Salatiga;9450;4,73;38,87;47,21
+2022;Jawa Tengah;Kota Semarang;79870;4,25;48,96;70,82
+2022;Jawa Tengah;Kota Pekalongan;21810;7;32,95;76,65
+2022;Jawa Tengah;Kota Tegal;19780;7,91;50,36;63,53
+2022;DI Yogyakarta;Kulon Progo;73210;16,39;28,54;71,22
+2022;DI Yogyakarta;Bantul;130130;12,27;38,25;70,41
+2022;DI Yogyakarta;Gunung Kidul;122820;15,86;39;80,55
+2022;DI Yogyakarta;Sleman;98920;7,74;31,47;57,1
+2022;DI Yogyakarta;Kota Yogyakarta;29680;6,62;39,16;63,82
+2022;Jawa Timur;Pacitan;76930;13,8;29,85;80,58
+2022;Jawa Timur;Ponorogo;81800;9,32;37,56;83,53
+2022;Jawa Timur;Trenggalek;76750;10,96;43,13;85
+2022;Jawa Timur;Tulungagung;70520;6,71;34,92;73,94
+2022;Jawa Timur;Blitar;101940;8,71;43,07;82,73
+2022;Jawa Timur;Kediri;169460;10,65;46,37;70,88
+2022;Jawa Timur;Malang;252880;9,55;41,4;83,79
+2022;Jawa Timur;Lumajang;95040;9,06;41,73;82,59
+2022;Jawa Timur;Jember;232730;9,39;50,31;87,03
+2022;Jawa Timur;Banyuwangi;122010;7,51;45,15;79,59
+2022;Jawa Timur;Bondowoso;105690;13,47;44,47;86,29
+2022;Jawa Timur;Situbondo;81460;11,78;41,98;81,88
+2022;Jawa Timur;Probolinggo;203230;17,12;44,13;81,92
+2022;Jawa Timur;Pasuruan;148620;8,96;49,19;86,34
+2022;Jawa Timur;Sidoarjo;125690;5,36;45,12;49,84
+2022;Jawa Timur;Mojokerto;111030;9,71;37,14;68,87
+2022;Jawa Timur;Jombang;115480;9,04;39,49;76,26
+2022;Jawa Timur;Nganjuk;113630;10,7;38,66;76,09
+2022;Jawa Timur;Madiun;74070;10,79;47,78;73,43
+2022;Jawa Timur;Magetan;62650;9,84;32,24;62,48
+2022;Jawa Timur;Ngawi;119020;14,15;37,73;75,29
+2022;Jawa Timur;Bojonegoro;153400;12,21;38,61;81,24
+2022;Jawa Timur;Tuban;178050;15,02;41,26;80,36
+2022;Jawa Timur;Lamongan;151080;12,53;41,51;71,23
+2022;Jawa Timur;Gresik;149640;11,06;37,69;66,86
+2022;Jawa Timur;Bangkalan;196110;19,44;41,4;86,59
+2022;Jawa Timur;Sampang;217970;21,61;32,14;85,34
+2022;Jawa Timur;Pamekasan;126020;13,93;25,93;69,99
+2022;Jawa Timur;Sumenep;206200;18,76;37,54;80,53
+2022;Jawa Timur;Kota Kediri;21150;7,23;50,38;62,11
+2022;Jawa Timur;Kota Blitar;10650;7,37;37,81;65,19
+2022;Jawa Timur;Kota Malang;38560;4,37;52,61;62,75
+2022;Jawa Timur;Kota Probolinggo;16160;6,65;36,66;71,47
+2022;Jawa Timur;Kota Pasuruan;13020;6,37;54,16;69,36
+2022;Jawa Timur;Kota Mojokerto;7880;5,98;41,07;60,37
+2022;Jawa Timur;Kota Madiun;8490;4,76;47;40,06
+2022;Jawa Timur;Surabaya;138210;4,72;44,15;60,55
+2022;Jawa Timur;Batu;8050;3,79;55,66;44,58
+2022;Banten;Pandeglang;114650;9,32;51,44;76,8
+2022;Banten;Lebak;117220;8,91;32,81;93,08
+2022;Banten;Tangerang;270520;6,92;53,56;70,71
+2022;Banten;Serang;75450;4,96;59,59;72,42
+2022;Banten;Kota Tangerang;132880;5,77;46,47;69,78
+2022;Banten;Cilegon;16460;3,64;49,43;63,8
+2022;Banten;Kota Serang;42560;5,94;52,13;88,88
+2022;Banten;Tangerang Selatan;44290;2,5;53,98;50,39
+2022;Bali;Jembrana;15000;5,3;34,87;74,72
+2022;Bali;Tabanan;23460;5,18;36,78;73,87
+2022;Bali;Badung;18280;2,53;47,26;79,86
+2022;Bali;Gianyar;24740;4,7;40,19;62,06
+2022;Bali;Klungkung;10890;6,07;36,37;81,93
+2022;Bali;Bangli;12170;5,28;28,44;85,17
+2022;Bali;Karangasem;29450;6,98;31,22;81,37
+2022;Bali;Buleleng;41680;6,21;41,46;69,56
+2022;Bali;Denpasar;30020;2,97;49,03;64,27
+2022;Nusa Tenggara Barat;Lombok Barat;99010;13,39;38,34;85,43
+2022;Nusa Tenggara Barat;Lombok Tengah;128000;12,89;31,29;81,76
+2022;Nusa Tenggara Barat;Lombok Timur;189640;15,14;39,45;78,01
+2022;Nusa Tenggara Barat;Sumbawa;64730;13,5;31,24;76
+2022;Nusa Tenggara Barat;Dompu;33270;12,4;42,04;67,24
+2022;Nusa Tenggara Barat;Bima;74460;14,5;29,63;74,62
+2022;Nusa Tenggara Barat;Sumbawa Barat;21280;13,02;42,19;78,32
+2022;Nusa Tenggara Barat;Lombok Utara;59820;25,93;40,52;82,34
+2022;Nusa Tenggara Barat;Mataram;45300;8,63;44,5;68,64
+2022;Nusa Tenggara Barat;Kota Bima;16440;8,8;53,77;70,39
+2022;Nusa Tenggara Timur;Sumba Barat;37060;27,47;42,63;88,39
+2022;Nusa Tenggara Timur;Sumba Timur;75280;28,22;27,5;81,16
+2022;Nusa Tenggara Timur;Kupang;88020;21,7;41,88;81,57
+2022;Nusa Tenggara Timur;Timor Tengah Selatan;120450;25,45;37,42;85,37
+2022;Nusa Tenggara Timur;Timor Tengah Utara;55880;21,5;24,7;89,4
+2022;Nusa Tenggara Timur;Belu;33980;14,84;36,14;86,55
+2022;Nusa Tenggara Timur;Alor;42300;20,25;31,26;81,66
+2022;Nusa Tenggara Timur;Lembata;37880;25,18;40,17;87,27
+2022;Nusa Tenggara Timur;Flores Timur;28080;10,75;39,92;86,55
+2022;Nusa Tenggara Timur;Sikka;40870;12,61;35,06;94,26
+2022;Nusa Tenggara Timur;Ende;63400;23;24,21;76,24
+2022;Nusa Tenggara Timur;Ngada;20140;11,93;32,45;86,44
+2022;Nusa Tenggara Timur;Manggarai;69680;19,84;38,92;84,34
+2022;Nusa Tenggara Timur;Rote Ndao;52430;27,45;38,82;84,45
+2022;Nusa Tenggara Timur;Manggarai Barat;49950;17,15;28,76;92,44
+2022;Nusa Tenggara Timur;Sumba Tengah;24490;32,51;48,45;82,89
+2022;Nusa Tenggara Timur;Sumba Barat Daya;98500;27,16;30,75;82,13
+2022;Nusa Tenggara Timur;Nagekeo;18010;12,05;33,65;78,52
+2022;Nusa Tenggara Timur;Manggarai Timur;74550;25,35;21,75;88,28
+2022;Nusa Tenggara Timur;Sabu Raijua;30000;28,73;34,06;84,24
+2022;Nusa Tenggara Timur;Malaka;30480;15,26;49,45;83,29
+2022;Nusa Tenggara Timur;Kota Kupang;40200;8,61;60,39;55,62
+2022;Kalimantan Barat;Sambas;37650;6,92;33,51;87,77
+2022;Kalimantan Barat;Bengkayang;15970;6,03;48,7;82,8
+2022;Kalimantan Barat;Landak;38650;10,01;38,6;81,89
+2022;Kalimantan Barat;Pontianak;14300;5,32;60,7;80,98
+2022;Kalimantan Barat;Sanggau;21740;4,51;41,61;90,3
+2022;Kalimantan Barat;Ketapang;49920;9,39;42,64;82,81
+2022;Kalimantan Barat;Sintang;36760;8,57;45,96;84,49
+2022;Kalimantan Barat;Kapuas Hulu;23430;8,59;31,88;83,42
+2022;Kalimantan Barat;Sekadau;11910;5,85;30,09;96,26
+2022;Kalimantan Barat;Melawi;24570;11,44;28,98;87,51
+2022;Kalimantan Barat;Kayong Utara;10520;9,04;37,57;81,89
+2022;Kalimantan Barat;Kubu Raya;24390;4,12;55,67;90,5
+2022;Kalimantan Barat;Kota Pontianak;29610;4,46;41,83;63,22
+2022;Kalimantan Barat;Singkawang;10820;4,67;49,24;85,1
+2022;Kalimantan Tengah;Kotawaringin Barat;12440;3,93;43,65;81,48
+2022;Kalimantan Tengah;Kotawaringin Timur;27560;5,95;49;81,07
+2022;Kalimantan Tengah;Kapuas;20180;5,52;40,98;84,79
+2022;Kalimantan Tengah;Barito Selatan;6830;4,88;63,04;88,09
+2022;Kalimantan Tengah;Barito Utara;7700;5,8;40,4;65,47
+2022;Kalimantan Tengah;Sukamara;2480;3,72;43,34;68,05
+2022;Kalimantan Tengah;Lamandau;2780;3,34;42,29;77,76
+2022;Kalimantan Tengah;Seruyan;15960;7,43;46,47;71,57
+2022;Kalimantan Tengah;Katingan;9710;5,5;53,43;75,27
+2022;Kalimantan Tengah;Pulang Pisau;6040;4,7;56,02;68,95
+2022;Kalimantan Tengah;Gunung Mas;6700;5,64;44,51;73,87
+2022;Kalimantan Tengah;Barito Timur;8420;6,59;42,9;61,49
+2022;Kalimantan Tengah;Murung Raya;7690;6,4;53,79;75,6
+2022;Kalimantan Tengah;Palangka Raya;10620;3,61;61,64;61,06
+2022;Kalimantan Selatan;Tanah Laut;13540;3,86;55,25;69,08
+2022;Kalimantan Selatan;Kota Baru;15070;4,3;53,28;86,27
+2022;Kalimantan Selatan;Banjar;16710;2,79;56,72;78,47
+2022;Kalimantan Selatan;Barito Kuala;15060;4,75;32,63;89,56
+2022;Kalimantan Selatan;Tapin;6980;3,6;32,77;91,35
+2022;Kalimantan Selatan;Hulu Sungai Selatan;10800;4,54;44,82;89,74
+2022;Kalimantan Selatan;Hulu Sungai Tengah;16140;5,92;37,88;78,64
+2022;Kalimantan Selatan;Hulu Sungai Utara;15500;6,49;50,22;92,93
+2022;Kalimantan Selatan;Tabalong;15240;5,87;33,85;72,3
+2022;Kalimantan Selatan;Tanah Bumbu;17220;4,26;49,03;77,6
+2022;Kalimantan Selatan;Balangan;7830;5,83;46,28;76,03
+2022;Kalimantan Selatan;Banjarmasin;34010;4,74;63,14;70,94
+2022;Kalimantan Selatan;Banjar Baru;11610;4,17;43,86;54,87
+2022;Kalimantan Timur;Paser;27020;9,43;44,22;69,7
+2022;Kalimantan Timur;Kutai Barat;15380;10,2;57,51;74,61
+2022;Kalimantan Timur;Kutai Kartanegara;62870;7,96;61,01;68,23
+2022;Kalimantan Timur;Kutai Timur;36840;9,28;52,15;67,78
+2022;Kalimantan Timur;Berau;13310;5,65;38,52;70,87
+2022;Kalimantan Timur;Penajam Paser Utara;11590;7,25;54,9;67,8
+2022;Kalimantan Timur;Mahakam Hulu;3100;11,55;36,39;72,6
+2022;Kalimantan Timur;Balikpapan;15830;2,45;47,47;38,02
+2022;Kalimantan Timur;Samarinda;41950;4,85;55,27;55,98
+2022;Kalimantan Timur;Bontang;8390;4,54;50,04;73,03
+2022;Kalimantan Utara;Malinau;5930;6,64;52,6;76,82
+2022;Kalimantan Utara;Bulungan;12580;9,32;49,97;81,97
+2022;Kalimantan Utara;Tana Tidung;1350;4,45;62,02;93,06
+2022;Kalimantan Utara;Nunukan;12860;6,13;52,56;85,49
+2022;Kalimantan Utara;Tarakan;16750;6,3;43,72;61,23
+2022;Sulawesi Utara;Bolaang Mongondow;17960;7,04;45,1;83,14
+2022;Sulawesi Utara;Minahasa;24340;7,05;53,46;60,3
+2022;Sulawesi Utara;Kepulauan Sangihe;13890;10,5;57,16;74,33
+2022;Sulawesi Utara;Kepulauan Talaud;7720;8,25;39,99;64,48
+2022;Sulawesi Utara;Minahasa Selatan;19070;9;57,69;61,58
+2022;Sulawesi Utara;Minahasa Utara;13500;6,6;57,15;55,64
+2022;Sulawesi Utara;Bolaang Mongondow Utara;6010;7,31;50,43;73,52
+2022;Sulawesi Utara;Siau Tagulandang Biaro;5530;8,2;59,14;81,55
+2022;Sulawesi Utara;Minahasa Tenggara;12610;11,78;48,47;78,78
+2022;Sulawesi Utara;Bolaang Mongondow Selatan;8100;11,92;47,95;81,02
+2022;Sulawesi Utara;Bolaang Mongondow Timur;4320;5,85;56,41;82,44
+2022;Sulawesi Utara;Manado;25380;5,85;64,47;64,12
+2022;Sulawesi Utara;Bitung;14000;6,2;44,66;79,57
+2022;Sulawesi Utara;Tomohon;5790;5,26;42,26;62,09
+2022;Sulawesi Utara;Kotamobagu;6940;5,19;60,87;66,79
+2022;Sulawesi Tengah;Banggai Kepulauan;16070;13,44;48,86;87,36
+2022;Sulawesi Tengah;Banggai;28550;7,33;42,35;85,18
+2022;Sulawesi Tengah;Morowali;15860;12,58;58,8;61,45
+2022;Sulawesi Tengah;Poso;40780;15,18;42,97;81,96
+2022;Sulawesi Tengah;Donggala;50220;16,3;53,41;81,06
+2022;Sulawesi Tengah;Toli-Toli;30610;12,74;53,71;73,75
+2022;Sulawesi Tengah;Buol;21840;12,85;52,84;75,3
+2022;Sulawesi Tengah;Parigi Moutong;74600;14,63;46,62;84,56
+2022;Sulawesi Tengah;Tojo Una-Una;25330;16,12;39,22;83,59
+2022;Sulawesi Tengah;Sigi;29940;12,3;33,39;81,66
+2022;Sulawesi Tengah;Banggai Laut;10320;13,17;53,88;82,21
+2022;Sulawesi Tengah;Morowali Utara;17490;12,97;38,17;79,42
+2022;Sulawesi Tengah;Palu;26750;6,63;58,2;60,11
+2022;Sulawesi Selatan;Kepulauan Selayar;16740;12,24;47,69;78,37
+2022;Sulawesi Selatan;Bulukumba;31290;7,39;46,61;85,78
+2022;Sulawesi Selatan;Bantaeng;17220;9,07;46,34;82,88
+2022;Sulawesi Selatan;Jeneponto;50590;13,73;38,44;79,61
+2022;Sulawesi Selatan;Takalar;24750;8,25;43,38;78,17
+2022;Sulawesi Selatan;Gowa;57960;7,36;37,22;83,26
+2022;Sulawesi Selatan;Sinjai;21670;8,8;43,51;87,52
+2022;Sulawesi Selatan;Maros;33900;9,43;51,08;77,3
+2022;Sulawesi Selatan;Pangkajene Dan Kepulauan;47530;13,92;45,8;75,67
+2022;Sulawesi Selatan;Barru;14730;8,4;58,08;81,82
+2022;Sulawesi Selatan;Bone;80340;10,58;56,33;79,06
+2022;Sulawesi Selatan;Soppeng;17210;7,49;48,38;87,91
+2022;Sulawesi Selatan;Wajo;26750;6,57;47,73;89,31
+2022;Sulawesi Selatan;Sidenreng Rappang;15560;5,11;63,05;75,78
+2022;Sulawesi Selatan;Pinrang;33640;8,79;47,52;76,76
+2022;Sulawesi Selatan;Enrekang;26150;12,39;34,98;80,43
+2022;Sulawesi Selatan;Luwu;46500;12,49;60,2;59,06
+2022;Sulawesi Selatan;Tana Toraja;29310;12,18;23,94;61,84
+2022;Sulawesi Selatan;Luwu Utara;42290;13,22;46,74;74,36
+2022;Sulawesi Selatan;Luwu Timur;20890;6,81;49,68;65,73
+2022;Sulawesi Selatan;Toraja Utara;27790;11,65;40,99;79,92
+2022;Sulawesi Selatan;Makassar;71830;4,58;52,95;57,28
+2022;Sulawesi Selatan;Parepare;8010;5,41;57,78;72,61
+2022;Sulawesi Selatan;Palopo;14780;7,78;59,8;54,23
+2022;Sulawesi Tenggara;Buton;13610;13,27;51,13;74,31
+2022;Sulawesi Tenggara;Muna;30480;13,41;47,06;77,54
+2022;Sulawesi Tenggara;Konawe;32090;12,75;54,62;62,84
+2022;Sulawesi Tenggara;Kolaka;31560;11,51;43,38;70,88
+2022;Sulawesi Tenggara;Konawe Selatan;35790;11,08;45,62;73,64
+2022;Sulawesi Tenggara;Bombana;19210;10,26;48,79;71,84
+2022;Sulawesi Tenggara;Wakatobi;15010;14,55;44,57;80,35
+2022;Sulawesi Tenggara;Kolaka Utara;20630;13,08;32,19;79,87
+2022;Sulawesi Tenggara;Buton Utara;9130;14,26;49,29;71,71
+2022;Sulawesi Tenggara;Konawe Utara;9020;13,72;53,11;72,35
+2022;Sulawesi Tenggara;Kolaka Timur;19330;13,57;43,64;73,15
+2022;Sulawesi Tenggara;Konawe Kepulauan;5470;16,15;38,93;65,94
+2022;Sulawesi Tenggara;Muna Barat;11560;13,85;44,28;67,08
+2022;Sulawesi Tenggara;Buton Tengah;13920;14,9;42,79;66,21
+2022;Sulawesi Tenggara;Buton Selatan;11570;14,41;55,03;73,65
+2022;Sulawesi Tenggara;Kendari;18720;4,57;56,07;61,56
+2022;Sulawesi Tenggara;Bau-Bau;12690;7,31;49,42;62,61
+2022;Gorontalo;Boalemo;31970;18,74;39,61;78,86
+2022;Gorontalo;Gorontalo;66640;17,71;41,84;78,42
+2022;Gorontalo;Pohuwato;29320;17,87;42,52;80,28
+2022;Gorontalo;Bone Bolango;25470;16,05;52,96;81,44
+2022;Gorontalo;Gorontalo Utara;19380;17,24;47,96;88,86
+2022;Gorontalo;Kota Gorontalo;12670;5,73;53,92;77,41
+2022;Sulawesi Barat;Majene;26620;15,13;48,99;73,7
+2022;Sulawesi Barat;Polewali Mandar;72870;16,39;34,96;80,75
+2022;Sulawesi Barat;Mamasa;23700;14,51;41,17;74,24
+2022;Sulawesi Barat;Mamuju;23260;7,63;48,31;81,95
+2022;Sulawesi Barat;Mamuju Utara;9300;5,09;46,79;88,66
+2022;Sulawesi Barat;Mamuju Tengah;9980;7,17;49,84;69,62
+2022;Maluku;Maluku Tenggara Barat;26940;23,88;47,76;63,16
+2022;Maluku;Maluku Tenggara;21380;21,19;39,85;64,23
+2022;Maluku;Maluku Tengah;65730;17,46;55,61;60,23
+2022;Maluku;Buru;23600;15,82;58,73;67,53
+2022;Maluku;Kepulauan Aru;22360;23,51;42,27;76,88
+2022;Maluku;Seram Bagian Barat;38570;22,25;45,41;66,35
+2022;Maluku;Seram Bagian Timur;23710;20,73;56,52;73,92
+2022;Maluku;Maluku Barat Daya;20360;27,64;36,75;68,43
+2022;Maluku;Buru Selatan;9350;14,75;39,96;83,94
+2022;Maluku;Ambon;22580;4,68;57,11;46,5
+2022;Maluku;Tual;16010;20,56;53,98;52,6
+2022;Maluku Utara;Halmahera Barat;10060;8,43;51,96;79,13
+2022;Maluku Utara;Halmahera Tengah;6930;12;31,41;59,8
+2022;Maluku Utara;Kepulauan Sula;7840;7,64;66,01;73,19
+2022;Maluku Utara;Halmahera Selatan;11890;4,99;52,71;77,58
+2022;Maluku Utara;Halmahera Utara;9010;4,58;53,81;77,88
+2022;Maluku Utara;Halmahera Timur;13000;13,14;50,93;71,09
+2022;Maluku Utara;Pulau Morotai;3770;5,42;63,72;88,4
+2022;Maluku Utara;Pulau Taliabu;3760;6,88;48,9;61,07
+2022;Maluku Utara;Ternate;7540;3,11;55,74;51,75
+2022;Maluku Utara;Tidore Kepulauan;6080;5,99;40,65;71,06
+2022;Papua Barat;Fakfak;18130;22,06;52,66;63,24
+2022;Papua Barat;Kaimana;10110;15,29;38,17;65,97
+2022;Papua Barat;Teluk Wondama;10440;30,06;43,06;76,78
+2022;Papua Barat;Teluk Bintuni;20450;29,73;53,15;60,65
+2022;Papua Barat;Manokwari;34960;19,9;49,97;61,98
+2022;Papua Barat;Sorong Selatan;9330;18,48;32,35;75,04
+2022;Papua Barat;Sorong;26340;27,58;48;66,26
+2022;Papua Barat;Raja Ampat;8690;17,32;59,49;68,56
+2022;Papua Barat;Tambrauw;5200;32,45;41,7;61,01
+2022;Papua Barat;Maybrat;13660;31,14;35,06;61,18
+2022;Papua Barat;Manokwari Selatan;7680;28,55;35,46;75,19
+2022;Papua Barat;Pegunungan Arfak;11870;33,71;25,72;69,81
+2022;Papua Barat;Kota Sorong;41930;14,96;62,29;50,98
+2022;Papua;Merauke;23960;10,1;32,7;64,89
+2022;Papua;Jayawijaya;75590;35,8;17,36;79,09
+2022;Papua;Jayapura;15430;11,94;48,96;64,25
+2022;Papua;Nabire;35430;23,9;36,18;63,52
+2022;Papua;Kepulauan Yapen;26010;26,15;43,03;61,04
+2022;Papua;Biak Numfor;36800;24,48;41,89;54,63
+2022;Papua;Paniai;62970;36,63;17,51;87,9
+2022;Papua;Puncak Jaya;47610;36,3;30,03;80,47
+2022;Papua;Mimika;31580;14,28;46,1;86,95
+2022;Papua;Boven Digoel;14200;20,04;43,49;76,26
+2022;Papua;Mappi;26760;26,04;53,47;77,65
+2022;Papua;Asmat;25600;24,87;29,41;83,41
+2022;Papua;Yahukimo;71610;36,21;16,3;90,92
+2022;Papua;Pegunungan Bintang;23500;30,32;26,8;84
+2022;Papua;Tolikara;47130;31,31;14,05;93,93
+2022;Papua;Sarmi;5600;13,76;56,93;76,66
+2022;Papua;Keerom;9270;15,77;44,46;76,35
+2022;Papua;Waropen;10020;30,22;51,18;65,5
+2022;Papua;Supiori;7940;37,7;53,26;55,45
+2022;Papua;Mamberamo Raya;7680;30,73;51,72;67,04
+2022;Papua;Nduga;41760;36,73;10,64;89,89
+2022;Papua;Lanny Jaya;76460;37,76;9,79;87,32
+2022;Papua;Mamberamo Tengah;19660;35,92;8,93;76,99
+2022;Papua;Yalimo;21720;31,68;15,29;89,99
+2022;Papua;Puncak;41280;36,25;11,15;96,11
+2022;Papua;Dogiyai;29320;29,48;9,45;84,82
+2022;Papua;Intan Jaya;21860;42,03;18,4;87,49
+2022;Papua;Deiyai;31040;40,31;50,78;89,08
+2022;Papua;Kota Jayapura;34360;11,12;61,94;35,92
+2021;Aceh;Simeulue;18250;18,98;47,67;71,72
+2021;Aceh;Aceh Singkil;25480;20,36;53,31;71,72
+2021;Aceh;Aceh Selatan;32250;13,18;50,63;77,15
+2021;Aceh;Aceh Tenggara;29310;13,41;42,14;59,49
+2021;Aceh;Aceh Timur;63690;14,45;52,6;73,05
+2021;Aceh;Aceh Tengah;32720;15,26;33,6;69,18
+2021;Aceh;Aceh Barat;39830;18,81;52,06;68,32
+2021;Aceh;Aceh Besar;60260;14,05;46,17;57,26
+2021;Aceh;Pidie;88530;19,59;46,43;65,39
+2021;Aceh;Bireuen;63020;13,25;44,52;65,13
+2021;Aceh;Aceh Utara;109490;17,43;52,37;61,54
+2021;Aceh;Aceh Barat Daya;25060;16,34;58,38;66,67
+2021;Aceh;Gayo Lues;18610;19,64;35,77;73,69
+2021;Aceh;Aceh Tamiang;40030;13,34;47,92;74,2
+2021;Aceh;Nagan Raya;30710;18,23;42,91;57,44
+2021;Aceh;Aceh Jaya;12630;13,23;36,54;73,4
+2021;Aceh;Bener Meriah;28690;19,16;40,99;49,42
+2021;Aceh;Pidie Jaya;31790;19,55;52,38;60,47
+2021;Aceh;Banda Aceh;20950;7,61;43,31;46,17
+2021;Aceh;Sabang;5330;15,32;45,27;44,69
+2021;Aceh;Langsa;19780;10,96;47,09;53,52
+2021;Aceh;Lhokseumawe;23380;11,16;50,5;45,16
+2021;Aceh;Subulussalam;14460;17,65;50,22;73,92
+2021;Sumatera Utara;Nias;24330;16,82;27,71;82,37
+2021;Sumatera Utara;Mandailing Natal;43240;9,49;29,45;70,4
+2021;Sumatera Utara;Tapanuli Selatan;25010;8,8;23,91;88,21
+2021;Sumatera Utara;Tapanuli Tengah;49950;12,67;32,41;82,86
+2021;Sumatera Utara;Tapanuli Utara;29720;9,72;31,77;58,32
+2021;Sumatera Utara;Toba Samosir;16610;8,99;27,65;56,99
+2021;Sumatera Utara;Labuhanbatu;45030;8,74;53,2;69,64
+2021;Sumatera Utara;Asahan;69290;9,35;44,84;50,78
+2021;Sumatera Utara;Simalungun;76990;8,81;39,12;61,84
+2021;Sumatera Utara;Dairi;23720;8,31;19,12;51,97
+2021;Sumatera Utara;Karo;38010;8,79;19,98;56,91
+2021;Sumatera Utara;Deli Serdang;92520;4,01;52,57;48,19
+2021;Sumatera Utara;Langkat;106590;10,12;39,85;74,67
+2021;Sumatera Utara;Nias Selatan;55160;16,92;28,4;84,84
+2021;Sumatera Utara;Humbang Hasundutan;18710;9,65;16,86;64
+2021;Sumatera Utara;Pakpak Barat;4790;9,35;14,15;67,68
+2021;Sumatera Utara;Samosir;16080;12,68;29,77;54,38
+2021;Sumatera Utara;Serdang Bedagai;51160;8,3;48,25;65,63
+2021;Sumatera Utara;Batu Bara;52590;12,38;46,5;75,14
+2021;Sumatera Utara;Padang Lawas Utara;28370;9,92;24,71;57,27
+2021;Sumatera Utara;Padang Lawas;25780;8,69;39,99;72,28
+2021;Sumatera Utara;Labuhanbatu Selatan;30360;8,53;32,68;70,94
+2021;Sumatera Utara;Labuhanbatu Utara;37130;10,02;50,64;71,33
+2021;Sumatera Utara;Nias Utara;35840;25,66;33,62;79,54
+2021;Sumatera Utara;Nias Barat;21750;26,42;24,35;75,49
+2021;Sumatera Utara;Sibolga;10800;12,33;45,23;61,9
+2021;Sumatera Utara;Kota Tanjungbalai;24100;13,4;45,32;69,52
+2021;Sumatera Utara;Pematangsiantar;22060;8,52;35,64;56,31
+2021;Sumatera Utara;Tebingtinggi;17370;10,3;36,03;61,08
+2021;Sumatera Utara;Kota Medan;193030;8,34;46,07;51,15
+2021;Sumatera Utara;Kota Binjai;16460;5,81;41,55;63,97
+2021;Sumatera Utara;Padangsidimpuan;17280;7,53;38,17;68,52
+2021;Sumatera Utara;Gunungsitoli;24020;16,45;38,5;75,85
+2021;Sumatera Barat;Kepulauan Mentawai;14310;14,84;30,59;91,1
+2021;Sumatera Barat;Pesisir Selatan;37410;7,92;52,02;72,02
+2021;Sumatera Barat;Solok;30360;8,01;34,93;81,13
+2021;Sumatera Barat;Sijunjung;16810;6,8;41,92;85,42
+2021;Sumatera Barat;Tanah Datar;15890;4,54;32,02;75,42
+2021;Sumatera Barat;Padang Pariaman;30410;7,22;48,72;81,84
+2021;Sumatera Barat;Agam;34260;6,85;37,33;74,25
+2021;Sumatera Barat;Lima Puluh Kota;28510;7,29;35,04;79,25
+2021;Sumatera Barat;Pasaman;21570;7,48;34,26;79,99
+2021;Sumatera Barat;Solok Selatan;13410;7,52;41,56;75,07
+2021;Sumatera Barat;Dharmasraya;17600;6,67;34,67;85,9
+2021;Sumatera Barat;Pasaman Barat;34970;7,51;43,7;65,01
+2021;Sumatera Barat;Padang;48440;4,94;57,07;56,37
+2021;Sumatera Barat;Kota Solok;2310;3,12;52,1;87,02
+2021;Sumatera Barat;Sawahlunto;1520;2,38;36,86;78,89
+2021;Sumatera Barat;Padang Panjang;3280;5,92;37,42;61,82
+2021;Sumatera Barat;Bukittinggi;6980;5,14;37,32;51,62
+2021;Sumatera Barat;Payakumbuh;8660;6,16;48,41;70,64
+2021;Sumatera Barat;Pariaman;3990;4,38;47,65;76,52
+2021;Riau;Kuantan Singingi;28900;8,97;44,99;75,1
+2021;Riau;Indragiri Hulu;27350;6,18;61,29;77,61
+2021;Riau;Indragiri Hilir;44610;6,18;42,3;91,15
+2021;Riau;Pelalawan;49300;9,63;45,61;69,47
+2021;Riau;Siak;25770;5,18;52,87;50,97
+2021;Riau;Kampar;68740;7,82;53,67;71,07
+2021;Riau;Rokan Hulu;74730;10,4;48,39;75,84
+2021;Riau;Bengkalis;37660;6,64;56,76;59,88
+2021;Riau;Rokan Hilir;51970;7,18;52,48;68,73
+2021;Riau;Kepulauan Meranti;48500;25,68;45,75;75,7
+2021;Riau;Pekanbaru;32730;2,83;40,47;67,82
+2021;Riau;Dumai;10570;3,42;48,73;63,46
+2021;Jambi;Kerinci;18450;7,71;49,15;85,41
+2021;Jambi;Merangin;35440;9,11;45,67;75,81
+2021;Jambi;Sarolangun;27060;8,87;48,64;80,42
+2021;Jambi;Batang Hari;27240;10,05;44,78;76,1
+2021;Jambi;Muaro Jambi;20490;4,53;50;78,8
+2021;Jambi;Tanjung Jabung T;24420;11,39;36,95;80,24
+2021;Jambi;Tanjung Jabung B;36100;10,75;40,15;85,85
+2021;Jambi;Tebo;23770;6,68;43,28;79,07
+2021;Jambi;Bungo;23640;6,23;42,79;91,06
+2021;Jambi;Jambi;54230;9,02;48,87;50,76
+2021;Jambi;Sungai Penuh;3030;3,41;49,77;51,45
+2021;Sumatera Selatan;Ogan Komering Ulu;47500;12,62;39,18;77,65
+2021;Sumatera Selatan;Ogan Komering Ilir;124780;14,68;39,79;86
+2021;Sumatera Selatan;Muara Enim;80400;12,32;37,37;72,63
+2021;Sumatera Selatan;Lahat;68400;16,46;33,89;74,12
+2021;Sumatera Selatan;Musi Rawas;57460;13,89;36,04;80,69
+2021;Sumatera Selatan;Musi Banyuasin;105230;15,84;42,2;84,3
+2021;Sumatera Selatan;Banyu Asin;94080;10,75;49,14;78,48
+2021;Sumatera Selatan;Ogan Komering Ulu Selatan;41230;11,12;35,1;83,39
+2021;Sumatera Selatan;Ogan Komering Ulu Timur;72890;10,6;47,92;85,81
+2021;Sumatera Selatan;Ogan Ilir;60500;13,82;42,31;79,34
+2021;Sumatera Selatan;Empat Lawang;34110;13,35;36,74;80,84
+2021;Sumatera Selatan;Penukal Abab Lematang llir;25100;12,91;36,27;79,31
+2021;Sumatera Selatan;Musi Rawas Utara;39500;20,11;48,34;79,38
+2021;Sumatera Selatan;Palembang;194120;11,34;45,29;57,18
+2021;Sumatera Selatan;Prabumulih;23600;12,2;39,71;66,61
+2021;Sumatera Selatan;Pagar Alam;13270;9,4;37,55;73,23
+2021;Sumatera Selatan;Lubuklinggau;31610;13,23;44,13;76,12
+2021;Bengkulu;Bengkulu Selatan;31650;18,16;36,04;68,14
+2021;Bengkulu;Rejang Lebong;43300;15,85;29,61;75,47
+2021;Bengkulu;Bengkulu Utara;35550;11,61;37,88;79,68
+2021;Bengkulu;Kaur;22990;18,62;28,82;77,28
+2021;Bengkulu;Seluma;37050;18,72;35,81;75,88
+2021;Bengkulu;Mukomuko;22500;11,93;50,82;72,03
+2021;Bengkulu;Lebong;13970;12;42,56;74,99
+2021;Bengkulu;Kepahiang;20940;14,83;22,42;75,99
+2021;Bengkulu;Bengkulu Tengah;11120;9,68;38,32;80,84
+2021;Bengkulu;Bengkulu;66940;17,89;40,56;56,16
+2021;Lampung;Lampung Barat;39360;12,82;21,05;82,95
+2021;Lampung;Tanggamus;71890;11,81;47,12;86,36
+2021;Lampung;Lampung Selatan;145850;14,19;42,19;83,56
+2021;Lampung;Lampung Timur;159790;15,08;39,7;78,07
+2021;Lampung;Lampung Tengah;155770;11,99;36,24;83,55
+2021;Lampung;Lampung Utara;121910;19,63;45,5;73,12
+2021;Lampung;Way Kanan;59890;13,09;39;79,94
+2021;Lampung;Tulangbawang;44530;9,67;45,89;83,23
+2021;Lampung;Pesawaran;68310;15,11;45,32;85,29
+2021;Lampung;Pringsewu;41040;10,11;41,96;82,96
+2021;Lampung;Mesuji;15240;7,54;35,5;91,17
+2021;Lampung;Tulang Bawang Barat;23030;8,32;50,97;92,71
+2021;Lampung;Pesisir Barat;23230;14,81;37,71;68,26
+2021;Lampung;Bandar Lampung;98760;9,11;46,08;59,94
+2021;Lampung;Metro;15320;8,93;46,32;68,16
+2021;Bangka Belitung;Bangka;16190;4,81;44,27;86,24
+2021;Bangka Belitung;Belitung;13530;7,15;40,83;77,35
+2021;Bangka Belitung;Bangka Barat;5850;2,75;46,59;89,12
+2021;Bangka Belitung;Bangka Tengah;10030;5,13;51,38;91,1
+2021;Bangka Belitung;Bangka Selatan;7720;3,69;41,52;79,96
+2021;Bangka Belitung;Belitung Timur;9290;7,2;37,06;81,2
+2021;Bangka Belitung;Pangkalpinang;10100;4,76;51,89;56,14
+2021;Kepulauan Riau;Karimun;16280;6,85;54,43;85,96
+2021;Kepulauan Riau;Bintan;10540;6,42;57,32;82,14
+2021;Kepulauan Riau;Natuna;3980;4,95;48,84;56,67
+2021;Kepulauan Riau;Lingga;12580;13,93;44,73;86,1
+2021;Kepulauan Riau;Kepulauan Anambas;3080;7,09;48,64;85,28
+2021;Kepulauan Riau;Batam;77170;5,05;43,15;54,82
+2021;Kepulauan Riau;Tanjungpinang;20850;9,57;42,67;62,63
+2021;DKI Jakarta;Kepulauan Seribu;3860;15,06;53,03;67,08
+2021;DKI Jakarta;Jakarta Selatan;81500;3,56;53,62;43,13
+2021;DKI Jakarta;Jakarta Timur;125370;4,28;51,3;56,42
+2021;DKI Jakarta;Jakarta Pusat;45100;4,94;45,41;64,93
+2021;DKI Jakarta;Jakarta Barat;113370;4,31;45,88;46,1
+2021;DKI Jakarta;Jakarta Utara;132730;7,24;45,83;64,6
+2021;Jawa Barat;Bogor;491240;8,13;49,74;84,45
+2021;Jawa Barat;Sukabumi;194350;7,7;54,05;91
+2021;Jawa Barat;Cianjur;260020;11,18;51,5;92,29
+2021;Jawa Barat;Bandung;269180;7,15;46,91;82,9
+2021;Jawa Barat;Garut;281360;10,65;51,25;84,65
+2021;Jawa Barat;Tasikmalaya;200590;11,15;41,59;93,43
+2021;Jawa Barat;Ciamis;96600;7,97;41,97;91,15
+2021;Jawa Barat;Kuningan;143350;13,1;49,13;80,63
+2021;Jawa Barat;Cirebon;271020;12,3;51,61;74,29
+2021;Jawa Barat;Majalengka;151140;12,33;46,45;84,14
+2021;Jawa Barat;Sumedang;126280;10,71;43,26;83,29
+2021;Jawa Barat;Indramayu;228590;13,04;46,57;83,94
+2021;Jawa Barat;Subang;158970;10,03;49,71;87,85
+2021;Jawa Barat;Purwakarta;84270;8,83;48,93;83,17
+2021;Jawa Barat;Karawang;210780;8,95;54,28;84,59
+2021;Jawa Barat;Bekasi;202730;5,21;57,91;75,49
+2021;Jawa Barat;Bandung Barat;190770;11,3;53,26;90,26
+2021;Jawa Barat;Pangandaran;39070;9,65;31,17;87,56
+2021;Jawa Barat;Kota Bogor;80090;7,24;52,31;70,75
+2021;Jawa Barat;Kota Sukabumi;27190;8,25;56,09;68,82
+2021;Jawa Barat;Kota Bandung;112500;4,37;42,16;69,86
+2021;Jawa Barat;Kota Cirebon;31980;10,03;55,87;77,87
+2021;Jawa Barat;Kota Bekasi;144120;4,74;50,69;60,73
+2021;Jawa Barat;Depok;63860;2,58;44,44;77,65
+2021;Jawa Barat;Cimahi;32480;5,35;57,17;66,5
+2021;Jawa Barat;Kota Tasikmalaya;89460;13,13;53,13;77,61
+2021;Jawa Barat;Kota Banjar;13370;7,11;47,09;80,52
+2021;Jawa Tengah;Cilacap;201710;11,67;47,68;86,54
+2021;Jawa Tengah;Banyumas;232910;13,66;49,37;88,64
+2021;Jawa Tengah;Purbalingga;153080;16,24;39,19;90,24
+2021;Jawa Tengah;Banjarnegara;150190;16,23;36,85;91,01
+2021;Jawa Tengah;Kebumen;212920;17,83;42,17;85,39
+2021;Jawa Tengah;Purworejo;88800;12,4;38,17;83,36
+2021;Jawa Tengah;Wonosobo;139670;17,67;36,93;90,82
+2021;Jawa Tengah;Magelang;154910;11,91;30,56;83,82
+2021;Jawa Tengah;Boyolali;104820;10,62;34,88;80,56
+2021;Jawa Tengah;Klaten;158230;13,49;46,9;62,43
+2021;Jawa Tengah;Sukoharjo;73840;8,23;35,05;72,03
+2021;Jawa Tengah;Wonogiri;110460;11,55;34,64;80,6
+2021;Jawa Tengah;Karanganyar;95410;10,68;43,65;79,07
+2021;Jawa Tengah;Sragen;122910;13,83;40,57;78,73
+2021;Jawa Tengah;Grobogan;175720;12,74;38,84;83,03
+2021;Jawa Tengah;Blora;107050;12,39;33,1;87,12
+2021;Jawa Tengah;Rembang;101400;15,8;46,47;79,99
+2021;Jawa Tengah;Pati;128740;10,21;37,82;79,05
+2021;Jawa Tengah;Kudus;67060;7,6;37,86;74,16
+2021;Jawa Tengah;Jepara;95220;7,44;39,04;80,26
+2021;Jawa Tengah;Demak;151740;12,92;40,59;72,52
+2021;Jawa Tengah;Semarang;83610;7,82;40,75;78,09
+2021;Jawa Tengah;Temanggung;79090;10,17;27,29;86,09
+2021;Jawa Tengah;Kendal;100000;10,24;36,32;89,5
+2021;Jawa Tengah;Batang;74910;9,68;44,44;91,74
+2021;Jawa Tengah;Pekalongan;95260;10,57;39,97;92,12
+2021;Jawa Tengah;Pemalang;215080;16,56;45,48;84,81
+2021;Jawa Tengah;Tegal;123520;8,6;49,73;87,41
+2021;Jawa Tengah;Brebes;314950;17,43;44,19;88,83
+2021;Jawa Tengah;Kota Magelang;9440;7,75;47,12;53,71
+2021;Jawa Tengah;Surakarta;48790;9,4;37,1;63,91
+2021;Jawa Tengah;Salatiga;10140;5,14;49,02;69,68
+2021;Jawa Tengah;Kota Semarang;84450;4,56;49;59,16
+2021;Jawa Tengah;Kota Pekalongan;23490;7,59;29,17;64,57
+2021;Jawa Tengah;Kota Tegal;20270;8,12;38,76;72,96
+2021;DI Yogyakarta;Kulon Progo;81140;18,38;31,98;70,47
+2021;DI Yogyakarta;Bantul;146980;14,04;44,27;68,74
+2021;DI Yogyakarta;Gunung Kidul;135330;17,69;28,42;84,57
+2021;DI Yogyakarta;Sleman;108930;8,64;40,07;58,71
+2021;DI Yogyakarta;Kota Yogyakarta;34070;7,69;51,12;53,94
+2021;Jawa Timur;Pacitan;84190;15,11;34,36;79,56
+2021;Jawa Timur;Ponorogo;89940;10,26;32,58;83,63
+2021;Jawa Timur;Trenggalek;84890;12,14;40,3;86,9
+2021;Jawa Timur;Tulungagung;78590;7,51;42,76;73,79
+2021;Jawa Timur;Blitar;112620;9,65;41,21;84,38
+2021;Jawa Timur;Kediri;184490;11,64;45,76;77,09
+2021;Jawa Timur;Malang;276580;10,5;41,52;85,53
+2021;Jawa Timur;Lumajang;105250;10,05;44,11;87,9
+2021;Jawa Timur;Jember;257090;10,41;47,4;84,73
+2021;Jawa Timur;Banyuwangi;130930;8,07;40,64;82,79
+2021;Jawa Timur;Bondowoso;115180;14,73;36,06;86,46
+2021;Jawa Timur;Situbondo;86950;12,63;41,22;88,27
+2021;Jawa Timur;Probolinggo;223320;18,91;45,99;83,47
+2021;Jawa Timur;Pasuruan;159780;9,7;40,99;80,16
+2021;Jawa Timur;Sidoarjo;137150;5,93;49,1;54,1
+2021;Jawa Timur;Mojokerto;120540;10,62;47,02;74,08
+2021;Jawa Timur;Jombang;127300;10;49,2;80,75
+2021;Jawa Timur;Nganjuk;125530;11,85;47,06;74,7
+2021;Jawa Timur;Madiun;81610;11,91;42,72;81
+2021;Jawa Timur;Magetan;67750;10,66;37,46;75,58
+2021;Jawa Timur;Ngawi;130810;15,57;40,93;74,94
+2021;Jawa Timur;Bojonegoro;166520;13,27;36,98;80,8
+2021;Jawa Timur;Tuban;192580;16,31;39,95;82,69
+2021;Jawa Timur;Lamongan;166820;13,86;43,45;72,91
+2021;Jawa Timur;Gresik;166350;12,42;40,46;65,09
+2021;Jawa Timur;Bangkalan;215970;21,57;35,7;88,04
+2021;Jawa Timur;Sampang;237230;23,76;29,94;89,57
+2021;Jawa Timur;Pamekasan;137120;15,3;27,79;70,26
+2021;Jawa Timur;Sumenep;224730;20,51;29,49;85,05
+2021;Jawa Timur;Kota Kediri;22550;7,75;45,38;58,91
+2021;Jawa Timur;Kota Blitar;11330;7,89;44,67;63,72
+2021;Jawa Timur;Kota Malang;40620;4,62;51,23;70,1
+2021;Jawa Timur;Kota Probolinggo;17910;7,44;45,3;66,34
+2021;Jawa Timur;Kota Pasuruan;13970;6,88;43,77;74,74
+2021;Jawa Timur;Kota Mojokerto;8370;6,39;45,84;56,07
+2021;Jawa Timur;Kota Madiun;9060;5,09;46,56;54,01
+2021;Jawa Timur;Surabaya;152490;5,23;43,03;66,76
+2021;Jawa Timur;Batu;8630;4,09;42,82;67,98
+2021;Banten;Pandeglang;131430;10,72;57,55;89,6
+2021;Banten;Lebak;134750;10,29;42,45;91,33
+2021;Banten;Tangerang;272350;7,12;49,89;78,5
+2021;Banten;Serang;83090;5,49;52,12;90,77
+2021;Banten;Kota Tangerang;134240;5,93;52,49;56,13
+2021;Banten;Cilegon;18890;4,24;58,67;60,51
+2021;Banten;Kota Serang;47910;6,79;57,73;85,38
+2021;Banten;Tangerang Selatan;44570;2,57;55,3;37,6
+2021;Bali;Jembrana;14240;5,06;46,25;72,41
+2021;Bali;Tabanan;23110;5,12;40,44;54,79
+2021;Bali;Badung;18520;2,62;47,62;59,68
+2021;Bali;Gianyar;25360;4,85;35,86;70,84
+2021;Bali;Klungkung;10190;5,64;35,23;83,16
+2021;Bali;Bangli;11680;5,09;23,04;76,92
+2021;Bali;Karangasem;28520;6,78;25,29;92,33
+2021;Bali;Buleleng;40920;6,12;38,98;81,33
+2021;Bali;Denpasar;29410;2,96;40,85;54,45
+2021;Nusa Tenggara Barat;Lombok Barat;105240;14,47;37,57;83,42
+2021;Nusa Tenggara Barat;Lombok Tengah;131940;13,44;36,08;77,37
+2021;Nusa Tenggara Barat;Lombok Timur;190840;15,38;42,82;76,74
+2021;Nusa Tenggara Barat;Sumbawa;66000;13,91;36,5;74,93
+2021;Nusa Tenggara Barat;Dompu;33260;12,6;38,02;68,96
+2021;Nusa Tenggara Barat;Bima;75490;14,88;28,05;68,35
+2021;Nusa Tenggara Barat;Sumbawa Barat;21510;13,54;34,77;74,26
+2021;Nusa Tenggara Barat;Lombok Utara;61700;27,04;40,73;85,48
+2021;Nusa Tenggara Barat;Mataram;44450;8,65;42,71;77,27
+2021;Nusa Tenggara Barat;Kota Bima;16220;8,88;33,25;49,11
+2021;Nusa Tenggara Timur;Sumba Barat;37780;28,39;39,28;90,82
+2021;Nusa Tenggara Timur;Sumba Timur;78330;29,68;24,57;84,14
+2021;Nusa Tenggara Timur;Kupang;91250;22,98;35,07;81,55
+2021;Nusa Tenggara Timur;Timor Tengah Selatan;125680;26,64;40,69;89,9
+2021;Nusa Tenggara Timur;Timor Tengah Utara;58330;22,62;33,53;81,01
+2021;Nusa Tenggara Timur;Belu;35410;15,68;40,16;84,48
+2021;Nusa Tenggara Timur;Alor;43830;21,09;31,3;81,47
+2021;Nusa Tenggara Timur;Lembata;38750;26,21;39,06;89,23
+2021;Nusa Tenggara Timur;Flores Timur;28900;11,14;42,9;85,94
+2021;Nusa Tenggara Timur;Sikka;43090;13,35;31,94;90,74
+2021;Nusa Tenggara Timur;Ende;66380;24,13;23,99;80,79
+2021;Nusa Tenggara Timur;Ngada;20980;12,58;37,96;81,62
+2021;Nusa Tenggara Timur;Manggarai;71030;20,48;35,24;83,93
+2021;Nusa Tenggara Timur;Rote Ndao;51710;28,08;38,44;79,31
+2021;Nusa Tenggara Timur;Manggarai Barat;51150;17,92;24,95;85,23
+2021;Nusa Tenggara Timur;Sumba Tengah;25480;34,27;39,07;85,65
+2021;Nusa Tenggara Timur;Sumba Barat Daya;100420;28,18;30,29;91
+2021;Nusa Tenggara Timur;Nagekeo;19110;12,91;46,75;86,72
+2021;Nusa Tenggara Timur;Manggarai Timur;77170;26,5;30,27;89,46
+2021;Nusa Tenggara Timur;Sabu Raijua;30600;30,13;38,94;90,47
+2021;Nusa Tenggara Timur;Malaka;32170;16,33;39,72;93,49
+2021;Nusa Tenggara Timur;Kota Kupang;41770;9,17;51,93;60,51
+2021;Kalimantan Barat;Sambas;41490;7,66;35,94;87,74
+2021;Kalimantan Barat;Bengkayang;16920;6,48;50,86;86,82
+2021;Kalimantan Barat;Landak;42010;10,99;34,1;80,37
+2021;Kalimantan Barat;Pontianak;13820;5,18;48,88;86,41
+2021;Kalimantan Barat;Sanggau;21700;4,55;33,19;96,52
+2021;Kalimantan Barat;Ketapang;53040;10,13;46,95;82,62
+2021;Kalimantan Barat;Sintang;39400;9,28;26,02;89,15
+2021;Kalimantan Barat;Kapuas Hulu;24030;8,93;25,9;84,13
+2021;Kalimantan Barat;Sekadau;12690;6,26;29,52;84,81
+2021;Kalimantan Barat;Melawi;25470;12,01;32,98;87,38
+2021;Kalimantan Barat;Kayong Utara;10720;9,33;46,02;87,01
+2021;Kalimantan Barat;Kubu Raya;25470;4,34;53,57;81,98
+2021;Kalimantan Barat;Kota Pontianak;30110;4,58;52,56;69,38
+2021;Kalimantan Barat;Singkawang;11030;4,83;54,6;86
+2021;Kalimantan Tengah;Kotawaringin Barat;12290;3,95;40,25;77,5
+2021;Kalimantan Tengah;Kotawaringin Timur;27060;5,91;49,81;77,27
+2021;Kalimantan Tengah;Kapuas;19450;5,35;42,32;84,83
+2021;Kalimantan Tengah;Barito Selatan;6420;4,62;45,96;61,34
+2021;Kalimantan Tengah;Barito Utara;7400;5,61;44,65;70,22
+2021;Kalimantan Tengah;Sukamara;2380;3,66;57,57;89,49
+2021;Kalimantan Tengah;Lamandau;2920;3,56;46,47;90,53
+2021;Kalimantan Tengah;Seruyan;15070;7,22;46,14;85,7
+2021;Kalimantan Tengah;Katingan;9150;5,25;40,45;87,88
+2021;Kalimantan Tengah;Pulang Pisau;5430;4,24;32,41;85,2
+2021;Kalimantan Tengah;Gunung Mas;6300;5,35;43,39;90,24
+2021;Kalimantan Tengah;Barito Timur;8020;6,38;25,55;83,85
+2021;Kalimantan Tengah;Murung Raya;7310;6,15;59,38;84,98
+2021;Kalimantan Tengah;Palangka Raya;10860;3,75;50,31;72,26
+2021;Kalimantan Selatan;Tanah Laut;15860;4,57;45,28;85,67
+2021;Kalimantan Selatan;Kota Baru;16830;4,86;50,15;68,39
+2021;Kalimantan Selatan;Banjar;18070;3,04;33,49;92,98
+2021;Kalimantan Selatan;Barito Kuala;16100;5,11;37,14;86,09
+2021;Kalimantan Selatan;Tapin;6930;3,6;34,89;92,26
+2021;Kalimantan Selatan;Hulu Sungai Selatan;11470;4,84;41,22;91,53
+2021;Kalimantan Selatan;Hulu Sungai Tengah;16770;6,18;42,43;89,04
+2021;Kalimantan Selatan;Hulu Sungai Utara;16190;6,83;29,4;86,53
+2021;Kalimantan Selatan;Tabalong;16130;6,27;14,88;81,06
+2021;Kalimantan Selatan;Tanah Bumbu;18920;4,82;51,96;80,62
+2021;Kalimantan Selatan;Balangan;8060;6,07;39,46;80,01
+2021;Kalimantan Selatan;Banjarmasin;34840;4,89;47,75;77,58
+2021;Kalimantan Selatan;Banjar Baru;11950;4,4;51,6;63,71
+2021;Kalimantan Timur;Paser;27560;9,73;45,38;80,92
+2021;Kalimantan Timur;Kutai Barat;15380;10,24;44,63;69,65
+2021;Kalimantan Timur;Kutai Kartanegara;62360;7,99;52,43;67,97
+2021;Kalimantan Timur;Kutai Timur;37780;9,81;46,92;58,76
+2021;Kalimantan Timur;Berau;13620;5,88;49,82;78,26
+2021;Kalimantan Timur;Penajam Paser Utara;12130;7,61;56,82;77,11
+2021;Kalimantan Timur;Mahakam Hulu;3180;11,9;28,39;72,14
+2021;Kalimantan Timur;Balikpapan;18530;2,89;51,97;43,08
+2021;Kalimantan Timur;Samarinda;42840;4,99;47,38;67,03
+2021;Kalimantan Timur;Bontang;8410;4,62;48,21;66,69
+2021;Kalimantan Utara;Malinau;6390;7,3;48,74;79,7
+2021;Kalimantan Utara;Bulungan;13480;10,03;43,42;70,41
+2021;Kalimantan Utara;Tana Tidung;1490;5,15;50,47;66,31
+2021;Kalimantan Utara;Nunukan;13940;6,79;56,79;95,2
+2021;Kalimantan Utara;Tarakan;17570;6,71;51,92;77,53
+2021;Sulawesi Utara;Bolaang Mongondow;19080;7,58;47,78;78,98
+2021;Sulawesi Utara;Minahasa;26300;7,67;58,32;54,57
+2021;Sulawesi Utara;Kepulauan Sangihe;14550;11,02;60,23;86,98
+2021;Sulawesi Utara;Kepulauan Talaud;8370;9;37,19;68,34
+2021;Sulawesi Utara;Minahasa Selatan;19770;9,37;54,55;64,24
+2021;Sulawesi Utara;Minahasa Utara;14490;7,11;59,06;69,37
+2021;Sulawesi Utara;Bolaang Mongondow Utara;6530;8,03;41,37;82,41
+2021;Sulawesi Utara;Siau Tagulandang Biaro;6000;8,94;61,34;75,55
+2021;Sulawesi Utara;Minahasa Tenggara;13310;12,47;57,99;72,95
+2021;Sulawesi Utara;Bolaang Mongondow Selatan;8630;12,85;57,25;84,61
+2021;Sulawesi Utara;Bolaang Mongondow Timur;4470;6,1;52,93;88,93
+2021;Sulawesi Utara;Manado;26780;6,19;61,49;73,69
+2021;Sulawesi Utara;Bitung;14330;6,43;62,36;66,54
+2021;Sulawesi Utara;Tomohon;6180;5,69;58,19;61,89
+2021;Sulawesi Utara;Kotamobagu;7560;5,74;57,84;77,22
+2021;Sulawesi Tengah;Banggai Kepulauan;16330;13,72;38,51;80,45
+2021;Sulawesi Tengah;Banggai;30100;7,83;40,51;85,34
+2021;Sulawesi Tengah;Morowali;17070;13,75;50,71;88,53
+2021;Sulawesi Tengah;Poso;41990;15,92;33,77;74,31
+2021;Sulawesi Tengah;Donggala;51230;16,73;40,49;80,03
+2021;Sulawesi Tengah;Toli-Toli;32190;13,51;55,84;83,12
+2021;Sulawesi Tengah;Buol;23460;14,06;48,06;77,92
+2021;Sulawesi Tengah;Parigi Moutong;76790;15,28;34,32;86,98
+2021;Sulawesi Tengah;Tojo Una-Una;25860;16,6;33,06;84,32
+2021;Sulawesi Tengah;Sigi;31510;13,05;38,38;81,91
+2021;Sulawesi Tengah;Banggai Laut;10920;14,17;55,8;85,81
+2021;Sulawesi Tengah;Morowali Utara;18400;13,9;42,85;75,16
+2021;Sulawesi Tengah;Palu;28600;7,17;46,16;63,86
+2021;Sulawesi Selatan;Kepulauan Selayar;16930;12,45;36,28;81,18
+2021;Sulawesi Selatan;Bulukumba;31310;7,43;51,02;84,9
+2021;Sulawesi Selatan;Bantaeng;17780;9,41;35,91;87,38
+2021;Sulawesi Selatan;Jeneponto;52350;14,28;39,36;83,46
+2021;Sulawesi Selatan;Takalar;24600;8,25;49,26;80,7
+2021;Sulawesi Selatan;Gowa;58660;7,54;30,8;87,86
+2021;Sulawesi Selatan;Sinjai;21690;8,84;49,23;83,64
+2021;Sulawesi Selatan;Maros;34110;9,57;43,97;87,89
+2021;Sulawesi Selatan;Pangkajene Dan Kepulauan;48400;14,28;50,59;81,04
+2021;Sulawesi Selatan;Barru;15180;8,68;52,92;78,7
+2021;Sulawesi Selatan;Bone;79650;10,52;53,08;86,46
+2021;Sulawesi Selatan;Soppeng;17270;7,53;58,74;82,63
+2021;Sulawesi Selatan;Wajo;26220;6,46;61,7;80,69
+2021;Sulawesi Selatan;Sidenreng Rappang;15250;5,04;43,01;83,1
+2021;Sulawesi Selatan;Pinrang;33510;8,81;51,91;88,48
+2021;Sulawesi Selatan;Enrekang;26130;12,47;48,71;76,93
+2021;Sulawesi Selatan;Luwu;46260;12,53;50,22;75,11
+2021;Sulawesi Selatan;Tana Toraja;29330;12,27;27,4;76,6
+2021;Sulawesi Selatan;Luwu Utara;43150;13,59;48,89;69,68
+2021;Sulawesi Selatan;Luwu Timur;20990;6,94;54,93;71,3
+2021;Sulawesi Selatan;Toraja Utara;28390;11,99;38,13;67,86
+2021;Sulawesi Selatan;Makassar;74690;4,82;55,97;61,26
+2021;Sulawesi Selatan;Parepare;7930;5,4;48,91;62,97
+2021;Sulawesi Selatan;Palopo;15210;8,14;57,42;69,97
+2021;Sulawesi Tenggara;Buton;14250;13,92;48,25;73,95
+2021;Sulawesi Tenggara;Muna;30540;13,54;39,97;77,96
+2021;Sulawesi Tenggara;Konawe;32460;13,03;52,13;72,86
+2021;Sulawesi Tenggara;Kolaka;33450;12,43;46,05;72,57
+2021;Sulawesi Tenggara;Konawe Selatan;36170;11,34;27,13;81,71
+2021;Sulawesi Tenggara;Bombana;19730;10,76;41,73;85,79
+2021;Sulawesi Tenggara;Wakatobi;15300;14,91;43,07;74,17
+2021;Sulawesi Tenggara;Kolaka Utara;21360;13,79;34,52;79,66
+2021;Sulawesi Tenggara;Buton Utara;9450;14,89;41,76;80,01
+2021;Sulawesi Tenggara;Konawe Utara;9260;14,32;40,16;69,24
+2021;Sulawesi Tenggara;Kolaka Timur;20030;14,35;39,37;79,92
+2021;Sulawesi Tenggara;Konawe Kepulauan;5980;17,81;45,65;71,35
+2021;Sulawesi Tenggara;Muna Barat;11550;13,96;35,41;83,34
+2021;Sulawesi Tenggara;Buton Tengah;14730;15,8;29,9;76,64
+2021;Sulawesi Tenggara;Buton Selatan;11710;14,62;48,99;84,08
+2021;Sulawesi Tenggara;Kendari;19460;4,87;43,66;62,35
+2021;Sulawesi Tenggara;Bau-Bau;13300;7,78;39,02;74,72
+2021;Gorontalo;Boalemo;31830;19;44,64;83,6
+2021;Gorontalo;Gorontalo;67210;17,89;42,35;84,26
+2021;Gorontalo;Pohuwato;29220;18,08;45,58;84,62
+2021;Gorontalo;Bone Bolango;25760;16,3;52,14;80,27
+2021;Gorontalo;Gorontalo Utara;19340;17,23;39,03;80,98
+2021;Gorontalo;Kota Gorontalo;12940;5,93;59,34;66,06
+2021;Sulawesi Barat;Majene;25010;14,34;45,22;76,12
+2021;Sulawesi Barat;Polewali Mandar;69320;15,68;35,72;83,48
+2021;Sulawesi Barat;Mamasa;22290;13,77;27,46;80,77
+2021;Sulawesi Barat;Mamuju;22300;7,46;30,71;79,78
+2021;Sulawesi Barat;Mamuju Utara;8530;4,77;44,6;77,19
+2021;Sulawesi Barat;Mamuju Tengah;9740;7,13;50,84;80,6
+2021;Maluku;Maluku Tenggara Barat;30700;27,27;46,23;70,25
+2021;Maluku;Maluku Tenggara;22890;22,73;49,96;60,66
+2021;Maluku;Maluku Tengah;74590;19,84;55,18;60,69
+2021;Maluku;Buru;25230;17,28;54,41;68,41
+2021;Maluku;Kepulauan Aru;25110;26,53;42,49;81,34
+2021;Maluku;Seram Bagian Barat;43720;25,27;43,59;69,22
+2021;Maluku;Seram Bagian Timur;26410;23,25;45,73;73,11
+2021;Maluku;Maluku Barat Daya;21740;29,55;35,39;70,06
+2021;Maluku;Buru Selatan;9990;15,89;35,79;86,93
+2021;Maluku;Ambon;23670;5,02;49,04;62,42
+2021;Maluku;Tual;17760;23,26;51,2;61,51
+2021;Maluku Utara;Halmahera Barat;10590;8,95;36,88;71,89
+2021;Maluku Utara;Halmahera Tengah;7650;13,52;41,03;76,58
+2021;Maluku Utara;Kepulauan Sula;8360;8,23;54,01;73,38
+2021;Maluku Utara;Halmahera Selatan;12240;5,19;37,33;66,37
+2021;Maluku Utara;Halmahera Utara;10160;5,22;63,03;74,57
+2021;Maluku Utara;Halmahera Timur;14580;15,04;51,63;70,16
+2021;Maluku Utara;Pulau Morotai;4450;6,52;52,11;76,95
+2021;Maluku Utara;Pulau Taliabu;4050;7,49;50,62;85,1
+2021;Maluku Utara;Ternate;8450;3,55;62,33;44,92
+2021;Maluku Utara;Tidore Kepulauan;6640;6,58;51,58;67,85
+2021;Papua Barat;Fakfak;18510;22,86;44,82;58,63
+2021;Papua Barat;Kaimana;10310;16,04;40,56;75,91
+2021;Papua Barat;Teluk Wondama;10740;31,61;38,29;63,94
+2021;Papua Barat;Teluk Bintuni;20070;29,79;44,47;66,1
+2021;Papua Barat;Manokwari;35630;20,56;32,78;69,27
+2021;Papua Barat;Sorong Selatan;9160;18,55;43,26;70,78
+2021;Papua Barat;Sorong;25930;27,78;39,73;73,63
+2021;Papua Barat;Raja Ampat;8690;17,5;48,36;70,28
+2021;Papua Barat;Tambrauw;5310;33,86;34,03;68,96
+2021;Papua Barat;Maybrat;13480;31,39;27,44;54,7
+2021;Papua Barat;Manokwari Selatan;7650;29,3;28,95;76,53
+2021;Papua Barat;Pegunungan Arfak;11850;34,7;22,56;76,29
+2021;Papua Barat;Kota Sorong;41750;15,35;59,09;54,67
+2021;Papua;Merauke;23830;10,16;46,58;82,03
+2021;Papua;Jayawijaya;78180;37,09;21,64;84,57
+2021;Papua;Jayapura;15560;12,13;45,42;67,25
+2021;Papua;Nabire;35080;23,83;43,33;61,87
+2021;Papua;Kepulauan Yapen;25670;26,09;41,82;69,4
+2021;Papua;Biak Numfor;36380;24,45;39,69;59,11
+2021;Papua;Paniai;62570;36,59;29,08;89,94
+2021;Papua;Puncak Jaya;46390;36;14,56;93,31
+2021;Papua;Mimika;30950;14,17;42,34;87,77
+2021;Papua;Boven Digoel;13880;19,9;35,26;78,78
+2021;Papua;Mappi;26360;26,05;41,57;86,12
+2021;Papua;Asmat;25040;24,83;22,65;89,35
+2021;Papua;Yahukimo;73620;37,64;21,57;92,25
+2021;Papua;Pegunungan Bintang;23380;30,46;17,88;82,75
+2021;Papua;Tolikara;48160;32,6;2,67;95,92
+2021;Papua;Sarmi;5560;13,84;53,81;74,6
+2021;Papua;Keerom;9300;16;41,93;76,27
+2021;Papua;Waropen;9690;29,85;57,53;69,45
+2021;Papua;Supiori;7830;37,91;51,66;62,64
+2021;Papua;Mamberamo Raya;7040;28,78;54,49;58,56
+2021;Papua;Nduga;41170;37,18;9,49;87,14
+2021;Papua;Lanny Jaya;76750;38,73;9,76;89,5
+2021;Papua;Mamberamo Tengah;19660;36,76;6,27;81,17
+2021;Papua;Yalimo;22320;33,25;16,36;91,73
+2021;Papua;Puncak;40780;36,26;8,43;96,8
+2021;Papua;Dogiyai;28380;28,81;17,38;94,62
+2021;Papua;Intan Jaya;21310;41,66;38,71;85,93
+2021;Papua;Deiyai;30830;40,59;38,93;91,98
+2021;Papua;Kota Jayapura;34790;11,39;61,55;44,53

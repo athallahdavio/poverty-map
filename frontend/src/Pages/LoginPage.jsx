@@ -71,7 +71,7 @@ const LoginPage = () => {
               onChange={handlePasswordChange}
             />
           </div>
-          <button type="submit">Login</button>
+          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md w-fit self-center mt-2">Login</button>
         </form>
         {error && <div style={{ color: "red" }}>{error}</div>}
       </div>

@@ -7,7 +7,7 @@ function calculateStdDev(arr) {
   const mean = arr.reduce((acc, val) => acc + val, 0) / arr.length;
   const squareDiffs = arr.map((val) => Math.pow(val - mean, 2));
   const avgSquareDiff =
-    squareDiffs.reduce((acc, val) => acc + val, 0) / arr.length;
+    squareDiffs.reduce((acc, val) => acc + val, 0) / (arr.length - 1);
   return Math.sqrt(avgSquareDiff);
 }
 
@@ -132,8 +132,8 @@ const getPovertyDataByOption = async (req, res) => {
     const stdDev = calculateStdDev(povertyAmount);
     const mean =
       povertyAmount.reduce((acc, val) => acc + val, 0) / povertyAmount.length;
-    const upper = mean + stdDev;
-    const lower = mean - stdDev;
+    const upper = mean + (stdDev * 0.4);
+    const lower = mean - (stdDev * 0.4);
 
     const result = {
       std_dev: stdDev,

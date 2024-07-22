@@ -16,7 +16,7 @@ const ChartPage = () => {
     label: "Provinsi",
   });
   const [provinces, setProvinces] = useState([]);
-  const [selectedProvince, setSelectedProvince] = useState(null);
+  const [selectedProvince, setSelectedProvince] = useState({value: "Aceh", label: "Aceh"});
   const [regencies, setRegencies] = useState([]);
   const [selectedRegency, setSelectedRegency] = useState(null);
   const [povertyData, setPovertyData] = useState(null);

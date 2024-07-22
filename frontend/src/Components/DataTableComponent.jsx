@@ -27,7 +27,7 @@ const DataTableComponent = ({ data, columns, filtering }) => {
   });
 
   return (
-    <div className="">
+    <div className="w-full">
       <table className="min-w-full bg-white border">
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
@@ -36,10 +36,10 @@ const DataTableComponent = ({ data, columns, filtering }) => {
                 <th
                   key={header.id}
                   onClick={header.column.getToggleSortingHandler()}
-                  className="py-2 px-4 border-b bg-gray-100 font-medium cursor-pointer"
+                  className="py-2 px-4 border-b border-x-2 bg-gray-100 font-medium cursor-pointer w-1/6"
                 >
                   {header.isPlaceholder ? null : (
-                    <div className="flex items-center">
+                    <div className="flex items-center justify-center">
                       {flexRender(
                         header.column.columnDef.header,
                         header.getContext()

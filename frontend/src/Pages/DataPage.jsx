@@ -9,7 +9,7 @@ const DataPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
   const [columns, setColumns] = useState([]);
   const [povertyData, setPovertyData] = useState(null);
-  const [year, setYear] = useState({value: 2022, label: 2022});
+  const [year, setYear] = useState({value: 2023, label: 2023});
   const [yearOptions, setYearOptions] = useState(null);
   const [level, setLevel] = useState({ value: "province", label: "Provinsi" });
   const [filtering, setFiltering] = useState("");

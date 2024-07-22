@@ -12,7 +12,8 @@ const AdminPage = () => {
   const navigate = useNavigate();
   const [columns, setColumns] = useState([]);
   const [povertyData, setPovertyData] = useState(null);
-  const [year, setYear] = useState({ value: 2020, label: "2020" });
+  const [year, setYear] = useState({ value: 2023, label: "2023" });
+  const [yearOptions, setYearOptions] = useState(null);
   const [level, setLevel] = useState({ value: "province", label: "Provinsi" });
   const [filtering, setFiltering] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -41,6 +42,39 @@ const AdminPage = () => {
       navigate("/login");
     }
   }, [navigate]);
+
+  useEffect(() => {
+    const fetchYearOptions = async () => {
+      if (level.value == "province") {
+        const response = await axios.get(
+          `${API_URL}/api/poverties/province-year`
+        );
+        try {
+          const yearOptionsFromApi = response.data.map((year) => ({
+            value: year,
+            label: year.toString(),
+          }));
+          setYearOptions(yearOptionsFromApi);
+        } catch (error) {
+          console.error("Error fetching year options:", error);
+        }
+      } else {
+        const response = await axios.get(
+          `${API_URL}/api/poverties/regency-year`
+        );
+        try {
+          const yearOptionsFromApi = response.data.map((year) => ({
+            value: year,
+            label: year.toString(),
+          }));
+          setYearOptions(yearOptionsFromApi);
+        } catch (error) {
+          console.error("Error fetching year options:", error);
+        }
+      }
+    };
+    fetchYearOptions();
+  }, [API_URL, level, successMessage]);
 
   useEffect(() => {
     const fetchProvincesAndRegencies = async () => {
@@ -77,15 +111,15 @@ const AdminPage = () => {
             <div className="flex space-x-2">
               <button
                 onClick={() => handleUpdate(row.original)}
-                className="bg-yellow-500 text-white px-2 py-1 rounded"
+                className="bg-yellow-500 text-white px-2 py-1 w-14 rounded"
               >
-                Update
+                Edit
               </button>
               <button
                 onClick={() => handleDelete(row.original._id)}
-                className="bg-red-500 text-white px-2 py-1 rounded"
+                className="bg-red-500 text-white px-2 py-1 w-14 rounded"
               >
-                Delete
+                Hapus
               </button>
             </div>
           );
@@ -148,7 +182,7 @@ const AdminPage = () => {
     }
 
     fetchPovertyData();
-  }, [year, level, API_URL]);
+  }, [year, yearOptions, level, API_URL]);
 
   const fetchPovertyData = () => {
     const endpoint =
@@ -160,13 +194,6 @@ const AdminPage = () => {
       .then((response) => response.json())
       .then((data) => setPovertyData(data));
   };
-
-  const yearOptions = [
-    { value: 2020, label: "2020" },
-    { value: 2021, label: "2021" },
-    { value: 2022, label: "2022" },
-    { value: 2023, label: "2023" },
-  ];
 
   const levelOptions = [
     { value: "province", label: "Provinsi" },
@@ -222,6 +249,7 @@ const AdminPage = () => {
       .then((response) => {
         setSuccessMessage("Data deleted successfully");
         console.log("Data deleted successfully:", response.data);
+        setYear({ value: 2023, label: "2023" })
         fetchPovertyData();
         setTimeout(() => setSuccessMessage(""), 3000);
       })
@@ -297,7 +325,7 @@ const AdminPage = () => {
           to={"/admin"}
           active={true}
         />
-        <SidebarItem text={"Logout"} icon={<LogOut />} to={"/login"} onClick={handleLogout}/>
+        <SidebarItem text={"Logout"} icon={<LogOut />} to={"/"} onClick={handleLogout}/>
       </Sidebar>
       <div className="h-full w-full">
         <div className="m-12 flex flex-col gap-8">
