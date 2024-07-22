@@ -4,7 +4,7 @@ import { House, Map, BarChart3, Database } from "lucide-react";
 import LandingPage from "../assets/landing-page.png";
 import axios from "axios";
 import BarChartComponent from "../Components/BarChartComponent";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -21,6 +21,10 @@ const HomePage = () => {
         borderWidth: 1,
       },
     ],
+  };
+
+  const formatNumber = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   };
 
   useEffect(() => {
@@ -78,18 +82,18 @@ const HomePage = () => {
           </div>
         </section>
         <section className="flex flex-row relative" id="overall">
-          <div className="flex flex-col mx-20 my-8 gap-8 w-full">
+          <div className="flex flex-col my-8 mx-10 gap-8 w-full">
             <div className="text-4xl font-semibold text-blue-800">
               Rangkuman Data
             </div>
-            <div className="flex flex-row gap-6">
-              <div className="flex flex-col w-1/2 gap-6 h-full">
+            <div className="flex flex-row gap-5">
+              <div className="flex flex-col w-1/2 gap-5 h-full">
                 <div className="flex flex-col shadow-md border p-5 h-56 w-full">
                   <div className="text-2xl font-medium">
                     Jumlah Penduduk Miskin Indonesia
                   </div>
                   <div className="text-center text-4xl my-auto">
-                    {povertyData.totalPovertyAmount}
+                    {formatNumber(povertyData.totalPovertyAmount)}
                   </div>
                 </div>
                 <div className="flex flex-col shadow-md border p-5 h-2/3 w-full">
@@ -101,7 +105,7 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-6 w-1/2 h-full">
+              <div className="grid grid-cols-2 gap-5 w-1/2 h-full">
                 <div className="flex flex-col shadow-md border p-5 h-56 w-76 justify-between">
                   <div className="text-lg font-medium">
                     Provinsi dengan Persentase Penduduk Miskin Tertinggi
