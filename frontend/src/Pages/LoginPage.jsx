@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const LoginPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -46,6 +47,9 @@ const LoginPage = () => {
 
   return (
     <div className="flex h-screen">
+      <Helmet>
+        <title>Poverty Map | Login</title>
+      </Helmet>
       <div className="flex flex-col p-8 m-auto shadow-md rounded border-2">
         <div className="text-blue-700 text-3xl font-medium mb-8 m-auto">Login Admin</div>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4">

@@ -6,6 +6,7 @@ import Select from "react-select";
 import DataTableComponent from "../Components/DataTableComponent";
 import Modal from "react-modal";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const AdminPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -249,7 +250,7 @@ const AdminPage = () => {
       .then((response) => {
         setSuccessMessage("Data deleted successfully");
         console.log("Data deleted successfully:", response.data);
-        setYear({ value: 2023, label: "2023" })
+        setYear({ value: 2023, label: "2023" });
         fetchPovertyData();
         setTimeout(() => setSuccessMessage(""), 3000);
       })
@@ -311,13 +312,16 @@ const AdminPage = () => {
         );
       });
   };
-  
+
   const handleLogout = () => {
     localStorage.removeItem("token");
-  }
+  };
 
   return (
     <div className="h-full flex flex-row">
+      <Helmet>
+        <title>Poverty Map | Admin</title>
+      </Helmet>
       <Sidebar>
         <SidebarItem
           text={"Data"}
@@ -325,7 +329,12 @@ const AdminPage = () => {
           to={"/admin"}
           active={true}
         />
-        <SidebarItem text={"Logout"} icon={<LogOut />} to={"/"} onClick={handleLogout}/>
+        <SidebarItem
+          text={"Logout"}
+          icon={<LogOut />}
+          to={"/"}
+          onClick={handleLogout}
+        />
       </Sidebar>
       <div className="h-full w-full">
         <div className="m-12 flex flex-col gap-8">

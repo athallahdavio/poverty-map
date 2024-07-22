@@ -6,6 +6,7 @@ import BatasProvinsi from "../assets/provinsi.json";
 import MapComponent from "../Components/MapComponent";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const MapPage = () => {
   const [API_URL] = useState(import.meta.env.VITE_API_URL);
@@ -60,6 +61,9 @@ const MapPage = () => {
 
   return (
     <div className="flex h-screen">
+      <Helmet>
+        <title>Poverty Map | Peta</title>
+      </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} active={true} />

@@ -4,6 +4,7 @@ import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import DataTableComponent from "../Components/DataTableComponent";
 import axios from "axios";
+import { Helmet } from "react-helmet";
 
 const DataPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -127,7 +128,10 @@ const DataPage = () => {
   ];
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-full">
+      <Helmet>
+        <title>Poverty Map | Data</title>
+      </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} />

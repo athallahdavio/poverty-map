@@ -60,7 +60,8 @@ const HomePage = () => {
             </div>
             <div className="text-xl font-normal text-white">
               Selamat datang di situs yang didedikasikan untuk memberikan
-              informasi tentang kemiskinan di Indonesia. Situs ini bertujuan
+              informasi tentang kemiskinan di Indonesia dengan menggunakan
+              teknologi Sistem Informasi Geografis (SIG). Situs ini bertujuan
               untuk memberikan wawasan, data, dan analisis yang mendalam
               mengenai isu kemiskinan di berbagai wilayah Indonesia. Dengan
               adanya informasi ini, diharapkan dapat membantu dalam penyusunan

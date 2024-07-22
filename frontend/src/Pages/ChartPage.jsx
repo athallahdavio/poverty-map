@@ -3,7 +3,8 @@ import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import BarChartComponent from "../Components/BarChartComponent";
 import axios from "axios";
-import Select from "react-select";
+import Select from "react-select"
+import { Helmet } from "react-helmet";
 
 const ChartPage = () => {
   const [API_URL] = useState(import.meta.env.VITE_API_URL);
@@ -184,6 +185,9 @@ const ChartPage = () => {
 
   return (
     <div className="flex h-screen">
+      <Helmet>
+        <title>Poverty Map | Grafik</title>
+      </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} />
