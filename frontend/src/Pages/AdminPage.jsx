@@ -408,7 +408,7 @@ const AdminPage = () => {
             onRequestClose={handleCloseModal}
             className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75"
           >
-            <div className="bg-white rounded-lg p-6 w-96">
+            <div className="bg-white rounded-lg p-6 w-1/2">
               <h2 className="text-2xl font-semibold mb-4">
                 Tambah Data Kemiskinan
               </h2>
@@ -421,7 +421,7 @@ const AdminPage = () => {
                     onChange={setFormLevel}
                     options={levelOptions}
                     placeholder="Pilih Tingkat..."
-                    className="mt-2"
+                    className="mt-2 w-52"
                   />
                 </label>
                 {formLevel.value === "province" && (
@@ -445,7 +445,7 @@ const AdminPage = () => {
                   </label>
                 )}
                 {formLevel.value === "regency" && (
-                  <>
+                  <div className="grid grid-cols-2 gap-4">
                     <label className="flex flex-col">
                       Provinsi:
                       <Select
@@ -482,28 +482,30 @@ const AdminPage = () => {
                         className="mt-2"
                       />
                     </label>
-                  </>
+                  </div>
                 )}
-                <label className="flex flex-col">
-                  Tahun:
-                  <input
-                    type="number"
-                    name="year"
-                    value={formData.year}
-                    onChange={handleInputChange}
-                    className="border border-gray-300 rounded p-2"
-                  />
-                </label>
-                <label className="flex flex-col">
-                  Jumlah Penduduk Miskin:
-                  <input
-                    type="number"
-                    name="poverty_amount"
-                    value={formData.poverty_amount}
-                    onChange={handleInputChange}
-                    className="border border-gray-300 rounded p-2"
-                  />
-                </label>
+                <div className="grid grid-cols-2 gap-4">
+                  <label className="flex flex-col">
+                    Tahun:
+                    <input
+                      type="number"
+                      name="year"
+                      value={formData.year}
+                      onChange={handleInputChange}
+                      className="border border-gray-300 rounded p-2 mt-2"
+                    />
+                  </label>
+                  <label className="flex flex-col">
+                    Jumlah Penduduk Miskin:
+                    <input
+                      type="number"
+                      name="poverty_amount"
+                      value={formData.poverty_amount}
+                      onChange={handleInputChange}
+                      className="border border-gray-300 rounded p-2 mt-2"
+                    />
+                  </label>
+                </div>
                 <label className="flex flex-col">
                   Persentase Kemiskinan:
                   <input
@@ -512,7 +514,7 @@ const AdminPage = () => {
                     name="poverty_percentage"
                     value={formData.poverty_percentage}
                     onChange={handleInputChange}
-                    className="border border-gray-300 rounded p-2"
+                    className="border border-gray-300 rounded p-2 mt-2"
                   />
                 </label>
                 <label className="flex flex-col">
@@ -523,7 +525,7 @@ const AdminPage = () => {
                     name="unemployed_percentage"
                     value={formData.unemployed_percentage}
                     onChange={handleInputChange}
-                    className="border border-gray-300 rounded p-2"
+                    className="border border-gray-300 rounded p-2 mt-2"
                   />
                 </label>
                 <label className="flex flex-col">
@@ -534,7 +536,7 @@ const AdminPage = () => {
                     name="uneducated_percentage"
                     value={formData.uneducated_percentage}
                     onChange={handleInputChange}
-                    className="border border-gray-300 rounded p-2"
+                    className="border border-gray-300 rounded p-2 mt-2"
                   />
                 </label>
                 <div className="flex justify-end gap-4">
