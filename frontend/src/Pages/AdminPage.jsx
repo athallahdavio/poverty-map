@@ -36,6 +36,7 @@ const AdminPage = () => {
   const [provinces, setProvinces] = useState([]);
   const [regencies, setRegencies] = useState([]);
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -310,6 +311,7 @@ const AdminPage = () => {
           "Error submitting data:",
           error.response ? error.response.data : error.message
         );
+        setErrorMessage(error.response.data.message);
       });
   };
 
@@ -412,6 +414,11 @@ const AdminPage = () => {
               <h2 className="text-2xl font-semibold mb-4">
                 Tambah Data Kemiskinan
               </h2>
+              {errorMessage && (
+                <div className="mb-4 p-2 bg-red-100 border border-red-300 text-red-700 rounded">
+                  {errorMessage}
+                </div>
+              )}
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <label className="flex flex-col">
                   Pilih Tingkat:
