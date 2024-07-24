@@ -4,11 +4,13 @@ import { House, Map, BarChart3, Database } from "lucide-react";
 import LandingPage from "../assets/landing-page.png";
 import axios from "axios";
 import BarChartComponent from "../Components/BarChartComponent";
+import { ClipLoader } from "react-spinners";
 // import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
   const [povertyData, setPovertyData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const chartData = {
     labels: ["2021", "2022", "2023"],
@@ -33,14 +35,19 @@ const HomePage = () => {
       .get(API_URL + `/api/poverties/overall/${year}`)
       .then((response) => {
         setPovertyData(response.data);
+        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching poverty data:", error);
       });
   }, []);
 
-  if (!povertyData) {
-    return <div className="h-full flex flex-row"></div>;
+  if (loading) {
+    return (
+      <div className="h-screen flex justify-center items-center my-auto">
+        <ClipLoader size={50} color={"#123abc"} loading={loading} />
+      </div>
+    );
   }
 
   return (

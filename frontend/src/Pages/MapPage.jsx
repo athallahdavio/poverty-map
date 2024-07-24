@@ -7,6 +7,7 @@ import MapComponent from "../Components/MapComponent";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { ClipLoader } from "react-spinners";
 
 const MapPage = () => {
   const [API_URL] = useState(import.meta.env.VITE_API_URL);
@@ -76,11 +77,11 @@ const MapPage = () => {
       </Sidebar>
       {isLoading ? (
         <div className="flex justify-center items-center w-full h-full">
-          <div className="text-lg font-bold">Loading...</div>
+          <ClipLoader size={50} color={"#123abc"} loading={isLoading} />
         </div>
       ) : (
         <MapComponent
-          key={`${level}-${year}`} // Tambahkan key untuk memastikan rerender
+          key={`${level}-${year}`}
           geojson={geojson}
           data={povertyData}
           upper={upper}
