@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 
-const MapComponent = ({ data, geojson, upper, lower, level }) => {
+const MapComponent = ({ data, geojson, upper, lower, level, type }) => {
   const logMismatchedNames = (geojsonNames, dataNames) => {
     const missingInData = geojsonNames.filter(
       (name) => !dataNames.includes(name)
@@ -81,7 +81,7 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
     if (level === "regency") {
       const regencyName = feature.properties.NAME_2;
       const povertyInfo = data?.find((p) => p.regency_id?.name === regencyName);
-      const povertyAmount = povertyInfo?.poverty_amount;
+      const povertyAmount = povertyInfo?.[type];
 
       return {
         fillColor: getColor(povertyAmount),
@@ -95,7 +95,7 @@ const MapComponent = ({ data, geojson, upper, lower, level }) => {
       const povertyInfo = data?.find(
         (p) => p.province_id?.name === provinceName
       );
-      const povertyAmount = povertyInfo?.poverty_amount;
+      const povertyAmount = povertyInfo?.[type];
 
       return {
         fillColor: getColor(povertyAmount),

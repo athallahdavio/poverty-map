@@ -14,6 +14,7 @@ const MapPage = () => {
   const [povertyData, setPovertyData] = useState(null);
   const [upper, setUpper] = useState(0);
   const [lower, setLower] = useState(0);
+  const [type, setType] = useState("poverty_amount");
   const [level, setLevel] = useState("province");
   const [year, setYear] = useState(2023);
   const [geojson, setGeojson] = useState();
@@ -27,7 +28,10 @@ const MapPage = () => {
       setGeojson(BatasKabupatenKota);
     }
     axios
-      .get(API_URL + `/api/poverties/option?year=${year}&level=${level}`)
+      .get(
+        API_URL +
+          `/api/poverties/option?year=${year}&level=${level}&type=${type}`
+      )
       .then((response) => {
         const data = response.data;
         setPovertyData(data.data);
@@ -39,7 +43,7 @@ const MapPage = () => {
         console.error("Error fetching poverty data:", error);
         setIsLoading(false); // Set loading state to false even if there is an error
       });
-  }, [API_URL, level, year]);
+  }, [API_URL, level, year, type]);
 
   const levelOptions = [
     { value: "province", label: "Provinsi" },
@@ -52,12 +56,21 @@ const MapPage = () => {
     { value: 2023, label: "2023" },
   ];
 
+  const typeOptions = [
+    { value: "poverty_amount", label: "Jumlah Penduduk Miskin" },
+    { value: "poverty_percentage", label: "Persentase Kemiskinan" },
+  ];
+
   const handleLevelChange = (selectedOption) => {
     setLevel(selectedOption.value);
   };
 
   const handleYearChange = (selectedOption) => {
     setYear(selectedOption.value);
+  };
+
+  const handleTypeChange = (selectedOption) => {
+    setType(selectedOption.value);
   };
 
   return (
@@ -68,11 +81,7 @@ const MapPage = () => {
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
         <SidebarItem text={"Peta"} icon={<Map />} to={"/map"} active={true} />
-        <SidebarItem
-          text={"Grafik"}
-          icon={<BarChart3 />}
-          to={"/chart"}
-        />
+        <SidebarItem text={"Grafik"} icon={<BarChart3 />} to={"/chart"} />
         <SidebarItem text={"Data"} icon={<Database />} to={"/data"} />
       </Sidebar>
       {isLoading ? (
@@ -87,10 +96,20 @@ const MapPage = () => {
           upper={upper}
           lower={lower}
           level={level}
+          type={type}
         />
       )}
 
       <div className="absolute top-5 right-4 z-50 flex flex-row gap-4">
+        <div className="flex flex-col bg-white p-4 rounded shadow-xl border-black border-1 w-68">
+          <label className="font-medium">Pilih Jenis Data:</label>
+          <Select
+            options={typeOptions}
+            value={typeOptions.find((option) => option.value === type)}
+            onChange={handleTypeChange}
+            className="mt-2"
+          />
+        </div>
         <div className="flex flex-col bg-white p-4 rounded shadow-xl border-black border-1 w-52">
           <label className="font-medium">Pilih Tingkat:</label>
           <Select
@@ -113,24 +132,37 @@ const MapPage = () => {
 
       <div className="absolute bottom-3 right-3 bg-white p-4 rounded shadow-lg z-50 flex flex-col gap-1">
         <div className="font-medium mb-1">
-          Klasifikasi Berdasarkan Jumlah Penduduk Miskin:
+          Klasifikasi Berdasarkan{" "}
+          {type === "poverty_amount"
+            ? "Jumlah Penduduk Miskin"
+            : "Persentase Kemiskinan"}
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-red-500 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : Jumlah Penduduk Miskin &gt; {upper.toFixed(0)}
+            :{" "}
+            {type === "poverty_amount"
+              ? `Jumlah Penduduk Miskin > ${upper.toFixed(0)}`
+              : `Persentase Kemiskinan > ${upper.toFixed(2)}`}
           </div>
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-yellow-200 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : {upper.toFixed(0)} ≤ Jumlah Penduduk Miskin ≥ {lower.toFixed(0)}
+            : {upper.toFixed(type === "poverty_amount" ? 0 : 2)} ≤{" "}
+            {type === "poverty_amount"
+              ? "Jumlah Penduduk Miskin"
+              : "Persentase Kemiskinan"}{" "}
+            ≥ {lower.toFixed(type === "poverty_amount" ? 0 : 2)}
           </div>
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-green-600 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
-            : Jumlah Penduduk Miskin &lt; {lower.toFixed(0)}
+            :{" "}
+            {type === "poverty_amount"
+              ? `Jumlah Penduduk Miskin < ${lower.toFixed(0)}`
+              : `Persentase Kemiskinan < ${lower.toFixed(2)}`}
           </div>
         </div>
       </div>

@@ -32,52 +32,69 @@ const getAllRegencyPovertyData = async (req, res) => {
 };
 
 const getOverallPovertyData = async (req, res) => {
-    const { year } = req.params;
-    
-    try {
-      // Ambil data ProvincePoverty untuk tahun yang diberikan
-      const provinceData = await ProvincePoverty.find({ year }).populate("province_id");
-  
-      // Ambil data RegencyPoverty untuk tahun yang diberikan
-      const regencyData = await RegencyPoverty.find({ year }).populate("province_id").populate("regency_id");
-  
-      // Hitung total poverty_amount dari ProvincePoverty
-      const totalPovertyAmount = provinceData.reduce((acc, item) => acc + item.poverty_amount, 0);
-  
-      // Dapatkan regency dengan poverty_percentage tertinggi
-      const highestPovertyRegency = regencyData.reduce((prev, current) => (prev.poverty_percentage > current.poverty_percentage) ? prev : current);
-  
-      // Dapatkan regency dengan unemployed_percentage tertinggi
-      const highestUnemployedRegency = regencyData.reduce((prev, current) => (prev.unemployed_percentage > current.unemployed_percentage) ? prev : current);
-  
-      // Dapatkan regency dengan uneducated_percentage tertinggi
-      const highestUneducatedRegency = regencyData.reduce((prev, current) => (prev.uneducated_percentage > current.uneducated_percentage) ? prev : current);
-  
-      // Dapatkan province dengan poverty_percentage tertinggi
-      const highestPovertyProvince = provinceData.reduce((prev, current) => (prev.poverty_percentage > current.poverty_percentage) ? prev : current);
-  
-      // Dapatkan province dengan unemployed_percentage tertinggi
-      const highestUnemployedProvince = provinceData.reduce((prev, current) => (prev.unemployed_percentage > current.unemployed_percentage) ? prev : current);
-  
-      // Dapatkan province dengan uneducated_percentage tertinggi
-      const highestUneducatedProvince = provinceData.reduce((prev, current) => (prev.uneducated_percentage > current.uneducated_percentage) ? prev : current);
-  
-      // Siapkan respon JSON
-      const response = {
-        totalPovertyAmount,
-        highestPovertyRegency,
-        highestUnemployedRegency,
-        highestUneducatedRegency,
-        highestPovertyProvince,
-        highestUnemployedProvince,
-        highestUneducatedProvince
-      };
-  
-      res.json(response);
-    } catch (error) {
-      res.status(500).send(error.message);
-    }
-  };
+  const { year } = req.params;
+
+  try {
+    const provinceData = await ProvincePoverty.find({ year }).populate(
+      "province_id"
+    );
+
+    const regencyData = await RegencyPoverty.find({ year })
+      .populate("province_id")
+      .populate("regency_id");
+
+    const totalPovertyAmount = provinceData.reduce(
+      (acc, item) => acc + item.poverty_amount,
+      0
+    );
+
+    const highestPovertyRegency = regencyData.reduce((prev, current) =>
+      prev.poverty_percentage > current.poverty_percentage ? prev : current
+    );
+
+    const highestUnemployedRegency = regencyData.reduce((prev, current) =>
+      prev.unemployed_percentage > current.unemployed_percentage
+        ? prev
+        : current
+    );
+
+    const highestUneducatedRegency = regencyData.reduce((prev, current) =>
+      prev.uneducated_percentage > current.uneducated_percentage
+        ? prev
+        : current
+    );
+
+    const highestPovertyProvince = provinceData.reduce((prev, current) =>
+      prev.poverty_percentage > current.poverty_percentage ? prev : current
+    );
+
+    const highestUnemployedProvince = provinceData.reduce((prev, current) =>
+      prev.unemployed_percentage > current.unemployed_percentage
+        ? prev
+        : current
+    );
+
+    const highestUneducatedProvince = provinceData.reduce((prev, current) =>
+      prev.uneducated_percentage > current.uneducated_percentage
+        ? prev
+        : current
+    );
+
+    const response = {
+      totalPovertyAmount,
+      highestPovertyRegency,
+      highestUnemployedRegency,
+      highestUneducatedRegency,
+      highestPovertyProvince,
+      highestUnemployedProvince,
+      highestUneducatedProvince,
+    };
+
+    res.json(response);
+  } catch (error) {
+    res.status(500).send(error.message);
+  }
+};
 
 const getProvincePovertyYear = async (req, res) => {
   try {
@@ -100,6 +117,7 @@ const getRegencyPovertyYear = async (req, res) => {
 const getPovertyDataByOption = async (req, res) => {
   const year = parseInt(req.query.year);
   const level = req.query.level;
+  const type = req.query.type;
 
   if (!year) {
     return res.status(400).send("Year query parameter is required");
@@ -109,6 +127,12 @@ const getPovertyDataByOption = async (req, res) => {
     return res
       .status(400)
       .send("Level query parameter must be 'province' or 'regency'");
+  }
+
+  if (!type || (type !== "poverty_amount" && type !== "poverty_percentage")) {
+    return res
+      .status(400)
+      .send("Type query parameter must be 'poverty_amount' or 'poverty_percentage'");
   }
 
   try {
@@ -128,12 +152,12 @@ const getPovertyDataByOption = async (req, res) => {
       return res.status(404).send("No data found for the given year and level");
     }
 
-    const povertyAmount = poverties.map((p) => p.poverty_amount);
-    const stdDev = calculateStdDev(povertyAmount);
+    const povertyData = poverties.map((p) => p[type]);
+    const stdDev = calculateStdDev(povertyData);
     const mean =
-      povertyAmount.reduce((acc, val) => acc + val, 0) / povertyAmount.length;
-    const upper = mean + (stdDev * 0.4);
-    const lower = mean - (stdDev * 0.4);
+      povertyData.reduce((acc, val) => acc + val, 0) / povertyData.length;
+    const upper = mean + stdDev * 0.4;
+    const lower = mean - stdDev * 0.4;
 
     const result = {
       std_dev: stdDev,

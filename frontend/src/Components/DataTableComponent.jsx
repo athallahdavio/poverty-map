@@ -6,7 +6,15 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import { ChevronRight, ChevronLast, ChevronLeft, ChevronFirst } from "lucide-react";
+import {
+  ChevronRight,
+  ChevronLast,
+  ChevronLeft,
+  ChevronFirst,
+  ArrowUpDown,
+  ArrowUp,
+  ArrowDown,
+} from "lucide-react";
 import { useState } from "react";
 
 const DataTableComponent = ({ data, columns, filtering }) => {
@@ -39,16 +47,20 @@ const DataTableComponent = ({ data, columns, filtering }) => {
                   className="py-2 px-4 border-b border-x-2 bg-gray-100 font-medium cursor-pointer w-1/6"
                 >
                   {header.isPlaceholder ? null : (
-                    <div className="flex items-center justify-center">
+                    <div className="flex items-center justify-between">
                       {flexRender(
                         header.column.columnDef.header,
                         header.getContext()
                       )}
-                      {
-                        { asc: "🔼", desc: "🔽" }[
-                          header.column.getIsSorted() ?? null
-                        ]
-                      }
+                      {header.column.getIsSorted() ? (
+                        header.column.getIsSorted() === "asc" ? (
+                          <ArrowUp className="ml-2 w-4 h-4" />
+                        ) : (
+                          <ArrowDown className="ml-2 w-4 h-4" />
+                        )
+                      ) : (
+                        <ArrowUpDown className="ml-2 w-4 h-4" />
+                      )}
                     </div>
                   )}
                 </th>

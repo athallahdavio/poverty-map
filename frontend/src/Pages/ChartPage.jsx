@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import BarChartComponent from "../Components/BarChartComponent";
@@ -68,6 +68,8 @@ const ChartPage = () => {
         );
         const data = response.data;
 
+        data.sort((a, b) => a.year - b.year);
+
         const labels = data.map((item) => item.year);
 
         setPovertyData({
@@ -115,6 +117,8 @@ const ChartPage = () => {
           API_URL + `/api/poverties/regency/name?name=${selectedRegency.value}`
         );
         const data = response.data;
+
+        data.sort((a, b) => a.year - b.year);
 
         const labels = data.map((item) => item.year);
 
