@@ -1,4 +1,5 @@
-import React from "react";
+import { Chart } from "react-chartjs-2";
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,8 +10,9 @@ import {
   Title,
   Tooltip,
   Legend,
+  BarController,
+  LineController,
 } from "chart.js";
-import { Chart } from "react-chartjs-2";
 
 ChartJS.register(
   CategoryScale,
@@ -20,8 +22,11 @@ ChartJS.register(
   PointElement,
   Title,
   Tooltip,
-  Legend
+  Legend,
+  BarController,
+  LineController
 );
+
 
 const BarChartComponent = ({ title, data }) => {
   const options = {
