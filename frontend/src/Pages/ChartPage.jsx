@@ -3,7 +3,7 @@ import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import BarChartComponent from "../Components/BarChartComponent";
 import axios from "axios";
-import Select from "react-select"
+import Select from "react-select";
 import { Helmet } from "react-helmet";
 
 const ChartPage = () => {
@@ -17,7 +17,10 @@ const ChartPage = () => {
     label: "Provinsi",
   });
   const [provinces, setProvinces] = useState([]);
-  const [selectedProvince, setSelectedProvince] = useState({value: "Aceh", label: "Aceh"});
+  const [selectedProvince, setSelectedProvince] = useState({
+    value: "Aceh",
+    label: "Aceh",
+  });
   const [regencies, setRegencies] = useState([]);
   const [selectedRegency, setSelectedRegency] = useState(null);
   const [povertyData, setPovertyData] = useState(null);
@@ -79,6 +82,13 @@ const ChartPage = () => {
               label: "Persentase Kemiskinan",
               data: data.map((item) => item.poverty_percentage),
               backgroundColor: "rgba(255, 99, 132, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.poverty_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              type: "line",
             },
           ],
         });
@@ -90,6 +100,14 @@ const ChartPage = () => {
               label: "Persentase Tidak Bekerja",
               data: data.map((item) => item.unemployed_percentage),
               backgroundColor: "rgba(54, 162, 235, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.unemployed_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              fill: false,
+              type: "line",
             },
           ],
         });
@@ -101,6 +119,14 @@ const ChartPage = () => {
               label: "Persentase Tidak Menyelesaikan Pendidikan",
               data: data.map((item) => item.uneducated_percentage),
               backgroundColor: "rgba(75, 192, 192, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.uneducated_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              fill: false,
+              type: "line",
             },
           ],
         });
@@ -129,6 +155,14 @@ const ChartPage = () => {
               label: "Persentase Kemiskinan",
               data: data.map((item) => item.poverty_percentage),
               backgroundColor: "rgba(255, 99, 132, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.poverty_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              fill: false,
+              type: "line",
             },
           ],
         });
@@ -140,6 +174,14 @@ const ChartPage = () => {
               label: "Persentase Tidak Bekerja",
               data: data.map((item) => item.unemployed_percentage),
               backgroundColor: "rgba(54, 162, 235, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.unemployed_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              fill: false,
+              type: "line",
             },
           ],
         });
@@ -151,6 +193,14 @@ const ChartPage = () => {
               label: "Persentase Tidak Menyelesaikan Pendidikan",
               data: data.map((item) => item.uneducated_percentage),
               backgroundColor: "rgba(75, 192, 192, 0.5)",
+              type: "bar",
+            },
+            {
+              label: "Line Example",
+              data: data.map((item) => item.uneducated_percentage),
+              borderColor: "rgba(0, 0, 0, 1)",
+              fill: false,
+              type: "line",
             },
           ],
         });
@@ -176,7 +226,7 @@ const ChartPage = () => {
   const handleLevelChange = (selectedOption) => {
     setSelectedLevel(selectedOption);
     setSelectedProvince(null);
-    setSelectedRegency(null)
+    setSelectedRegency(null);
   };
 
   const handleProvinceChange = (selectedOption) => {

@@ -129,10 +129,10 @@ const getPovertyDataByOption = async (req, res) => {
       .send("Level query parameter must be 'province' or 'regency'");
   }
 
-  if (!type || (type !== "poverty_amount" && type !== "poverty_percentage")) {
+  if (!type) {
     return res
       .status(400)
-      .send("Type query parameter must be 'poverty_amount' or 'poverty_percentage'");
+      .send("Type query parameter is required");
   }
 
   try {

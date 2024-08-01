@@ -35,10 +35,8 @@ const LoginPage = () => {
         password,
       });
 
-      // Save token to localStorage (or handle the token accordingly)
       localStorage.setItem("token", response.data.token);
 
-      // Redirect to another page after successful login
       navigate("/admin");
     } catch (err) {
       setError(err.response?.data?.message || "Something went wrong");

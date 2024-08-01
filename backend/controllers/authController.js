@@ -6,19 +6,16 @@ const login = async (req, res) => {
   const { username, password } = req.body;
 
   try {
-    // Check if the user exists
     const user = await User.findOne({ username });
     if (!user) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    // Check if the password is correct
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
       return res.status(400).json({ message: "Invalid credentials" });
     }
 
-    // Create and sign a token
     const payload = {
       user: {
         id: user.id,

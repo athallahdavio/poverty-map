@@ -14,7 +14,10 @@ const MapPage = () => {
   const [povertyData, setPovertyData] = useState(null);
   const [upper, setUpper] = useState(0);
   const [lower, setLower] = useState(0);
-  const [type, setType] = useState("poverty_amount");
+  const [type, setType] = useState({
+    value: "poverty_amount",
+    label: "Jumlah Penduduk Miskin",
+  });
   const [level, setLevel] = useState("province");
   const [year, setYear] = useState(2023);
   const [geojson, setGeojson] = useState();
@@ -30,7 +33,7 @@ const MapPage = () => {
     axios
       .get(
         API_URL +
-          `/api/poverties/option?year=${year}&level=${level}&type=${type}`
+          `/api/poverties/option?year=${year}&level=${level}&type=${type.value}`
       )
       .then((response) => {
         const data = response.data;
@@ -59,6 +62,11 @@ const MapPage = () => {
   const typeOptions = [
     { value: "poverty_amount", label: "Jumlah Penduduk Miskin" },
     { value: "poverty_percentage", label: "Persentase Kemiskinan" },
+    { value: "unemployed_percentage", label: "Persentase Tidak Bekerja" },
+    {
+      value: "uneducated_percentage",
+      label: "Persentase Tidak Menyelesaikan Pendidikan",
+    },
   ];
 
   const handleLevelChange = (selectedOption) => {
@@ -70,7 +78,7 @@ const MapPage = () => {
   };
 
   const handleTypeChange = (selectedOption) => {
-    setType(selectedOption.value);
+    setType(selectedOption);
   };
 
   return (
@@ -96,7 +104,7 @@ const MapPage = () => {
           upper={upper}
           lower={lower}
           level={level}
-          type={type}
+          type={type.value}
         />
       )}
 
@@ -105,7 +113,7 @@ const MapPage = () => {
           <label className="font-medium">Pilih Jenis Data:</label>
           <Select
             options={typeOptions}
-            value={typeOptions.find((option) => option.value === type)}
+            value={typeOptions.find((option) => option.value === type.value)}
             onChange={handleTypeChange}
             className="mt-2"
           />
@@ -133,9 +141,7 @@ const MapPage = () => {
       <div className="absolute bottom-3 right-3 bg-white p-4 rounded shadow-lg z-50 flex flex-col gap-1">
         <div className="font-medium mb-1">
           Klasifikasi Berdasarkan{" "}
-          {type === "poverty_amount"
-            ? "Jumlah Penduduk Miskin"
-            : "Persentase Kemiskinan"}
+          {type === "poverty_amount" ? "Jumlah Penduduk Miskin" : type.label}
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-red-500 p-2 mr-1 border-2 border-gray-600"></div>
@@ -143,16 +149,14 @@ const MapPage = () => {
             :{" "}
             {type === "poverty_amount"
               ? `Jumlah Penduduk Miskin > ${upper.toFixed(0)}`
-              : `Persentase Kemiskinan > ${upper.toFixed(2)}`}
+              : `${type.label} > ${upper.toFixed(2)}`}
           </div>
         </div>
         <div className="flex flex-row items-center">
           <div className="bg-yellow-200 p-2 mr-1 border-2 border-gray-600"></div>
           <div className="">
             : {upper.toFixed(type === "poverty_amount" ? 0 : 2)} ≤{" "}
-            {type === "poverty_amount"
-              ? "Jumlah Penduduk Miskin"
-              : "Persentase Kemiskinan"}{" "}
+            {type === "poverty_amount" ? "Jumlah Penduduk Miskin" : type.label}{" "}
             ≥ {lower.toFixed(type === "poverty_amount" ? 0 : 2)}
           </div>
         </div>
@@ -162,7 +166,7 @@ const MapPage = () => {
             :{" "}
             {type === "poverty_amount"
               ? `Jumlah Penduduk Miskin < ${lower.toFixed(0)}`
-              : `Persentase Kemiskinan < ${lower.toFixed(2)}`}
+              : `${type.label} < ${lower.toFixed(2)}`}
           </div>
         </div>
       </div>

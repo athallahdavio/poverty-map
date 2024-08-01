@@ -22,6 +22,12 @@ const HomePage = () => {
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
       },
+      {
+        label: "Line Example",
+        data: [10.14, 9.54, 9.36],
+        borderColor: "rgba(0, 0, 0, 1)",
+        type: "line",
+      },
     ],
   };
 
