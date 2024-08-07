@@ -17,7 +17,7 @@ export default function Sidebar({ children }) {
               expanded ? "w-40" : "w-0"
             }`}
           >
-            Poverty Map
+            SIG Kemiskinan
           </Link>
           <button
             onClick={() => setExpanded((curr) => !curr)}

@@ -10,7 +10,7 @@ const DataPage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
   const [columns, setColumns] = useState([]);
   const [povertyData, setPovertyData] = useState(null);
-  const [year, setYear] = useState({value: 2023, label: 2023});
+  const [year, setYear] = useState({ value: 2023, label: 2023 });
   const [yearOptions, setYearOptions] = useState(null);
   const [level, setLevel] = useState({ value: "province", label: "Provinsi" });
   const [filtering, setFiltering] = useState("");
@@ -48,11 +48,30 @@ const DataPage = () => {
     fetchYearOptions();
   }, [API_URL, level]);
 
+  const formatNumber = (number) => {
+    return new Intl.NumberFormat("id-ID").format(number);
+  };
+
   useEffect(() => {
     const endpoint =
       level.value === "province"
         ? "/api/poverties/province/year"
         : "/api/poverties/regency/year";
+
+    const commonColumns = [
+      {
+        header: "Persentase Kemiskinan",
+        accessorKey: "poverty_percentage",
+      },
+      {
+        header: "Persentase Tidak Bekerja",
+        accessorKey: "unemployed_percentage",
+      },
+      {
+        header: "Persentase Tidak Menyelesaikan Pendidikan",
+        accessorKey: "uneducated_percentage",
+      },
+    ];
 
     if (level.value === "province") {
       setColumns([
@@ -63,19 +82,9 @@ const DataPage = () => {
         {
           header: "Jumlah Penduduk Miskin",
           accessorKey: "poverty_amount",
+          cell: (info) => formatNumber(info.getValue()),
         },
-        {
-          header: "Persentase Kemiskinan",
-          accessorKey: "poverty_percentage",
-        },
-        {
-          header: "Persentase Tidak Bekerja",
-          accessorKey: "unemployed_percentage",
-        },
-        {
-          header: "Persentase Tidak Menyelesaikan Pendidikan",
-          accessorKey: "uneducated_percentage",
-        },
+        ...commonColumns,
       ]);
     } else {
       setColumns([
@@ -90,19 +99,9 @@ const DataPage = () => {
         {
           header: "Jumlah Penduduk Miskin",
           accessorKey: "poverty_amount",
+          cell: (info) => formatNumber(info.getValue()),
         },
-        {
-          header: "Persentase Kemiskinan",
-          accessorKey: "poverty_percentage",
-        },
-        {
-          header: "Persentase Tidak Bekerja",
-          accessorKey: "unemployed_percentage",
-        },
-        {
-          header: "Persentase Tidak Menyelesaikan Pendidikan",
-          accessorKey: "uneducated_percentage",
-        },
+        ...commonColumns,
       ]);
     }
 
@@ -130,7 +129,7 @@ const DataPage = () => {
   return (
     <div className="flex h-full">
       <Helmet>
-        <title>Poverty Map | Data</title>
+        <title>SIG Pemetaan Kemiskinan | Data</title>
       </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />

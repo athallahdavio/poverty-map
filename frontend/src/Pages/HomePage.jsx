@@ -71,11 +71,11 @@ const HomePage = () => {
             alt="poverty"
             className="h-screen w-full object-cover"
           />
-          <div className="h-screen flex flex-col mx-20 w-3/5 justify-center absolute top-0 left-0 gap-8">
+          <div className="h-screen flex flex-col mx-20 w-4/5 justify-center absolute top-0 left-0 gap-8">
             <div className="text-5xl font-bold text-white">
-              Selamat Datang di Poverty Map
+              Selamat Datang di SIG Pemetaan Kemiskinan
             </div>
-            <div className="text-xl font-normal text-white">
+            <div className="text-xl font-normal text-white w-4/5">
               Selamat datang di situs yang didedikasikan untuk memberikan
               informasi tentang kemiskinan di Indonesia dengan menggunakan
               teknologi Sistem Informasi Geografis (SIG). Situs ini bertujuan

@@ -322,7 +322,7 @@ const AdminPage = () => {
   return (
     <div className="h-full flex flex-row">
       <Helmet>
-        <title>Poverty Map | Admin</title>
+        <title>SIG Pemetaan Kemiskinan | Admin</title>
       </Helmet>
       <Sidebar>
         <SidebarItem

@@ -46,7 +46,7 @@ const LoginPage = () => {
   return (
     <div className="flex h-screen">
       <Helmet>
-        <title>Poverty Map | Login</title>
+        <title>SIG Pemetaan Kemiskinan</title>
       </Helmet>
       <div className="flex flex-col p-8 m-auto shadow-md rounded border-2">
         <div className="text-blue-700 text-3xl font-medium mb-8 m-auto">Login Admin</div>

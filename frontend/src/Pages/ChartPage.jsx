@@ -240,7 +240,7 @@ const ChartPage = () => {
   return (
     <div className="flex h-screen">
       <Helmet>
-        <title>Poverty Map | Grafik</title>
+        <title>SIG Pemetaan Kemiskinan | Grafik</title>
       </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />

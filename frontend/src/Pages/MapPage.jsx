@@ -84,7 +84,7 @@ const MapPage = () => {
   return (
     <div className="flex h-screen">
       <Helmet>
-        <title>Poverty Map | Peta</title>
+        <title>SIG Pemetaan Kemiskinan | Peta</title>
       </Helmet>
       <Sidebar>
         <SidebarItem text={"Beranda"} icon={<House />} to={"/"} />
