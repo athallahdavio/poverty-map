@@ -22,7 +22,10 @@ const ChartPage = () => {
     label: "Aceh",
   });
   const [regencies, setRegencies] = useState([]);
-  const [selectedRegency, setSelectedRegency] = useState(null);
+  const [selectedRegency, setSelectedRegency] = useState({
+    value: "Aceh Jaya",
+    label: "Aceh Jaya",
+  });
   const [povertyData, setPovertyData] = useState(null);
   const [unemployedData, setUnemployedData] = useState(null);
   const [uneducatedData, setUneducatedData] = useState(null);
@@ -74,18 +77,19 @@ const ChartPage = () => {
         data.sort((a, b) => a.year - b.year);
 
         const labels = data.map((item) => item.year);
+        const provinceName = selectedProvince.label;
 
         setPovertyData({
           labels,
           datasets: [
             {
-              label: "Persentase Kemiskinan",
+              label: `Persentase Kemiskinan ${provinceName}`,
               data: data.map((item) => item.poverty_percentage),
               backgroundColor: "rgba(255, 99, 132, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.poverty_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               type: "line",
@@ -97,13 +101,13 @@ const ChartPage = () => {
           labels,
           datasets: [
             {
-              label: "Persentase Tidak Bekerja",
+              label: `Persentase Tidak Bekerja ${provinceName}`,
               data: data.map((item) => item.unemployed_percentage),
               backgroundColor: "rgba(54, 162, 235, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.unemployed_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               fill: false,
@@ -116,13 +120,13 @@ const ChartPage = () => {
           labels,
           datasets: [
             {
-              label: "Persentase Tidak Menyelesaikan Pendidikan",
+              label: `Persentase Tidak Menyelesaikan Pendidikan ${provinceName}`,
               data: data.map((item) => item.uneducated_percentage),
               backgroundColor: "rgba(75, 192, 192, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.uneducated_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               fill: false,
@@ -147,18 +151,19 @@ const ChartPage = () => {
         data.sort((a, b) => a.year - b.year);
 
         const labels = data.map((item) => item.year);
+        const regencyName = selectedRegency.label;
 
         setPovertyData({
           labels,
           datasets: [
             {
-              label: "Persentase Kemiskinan",
+              label: `Persentase Kemiskinan ${regencyName}`,
               data: data.map((item) => item.poverty_percentage),
               backgroundColor: "rgba(255, 99, 132, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.poverty_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               fill: false,
@@ -171,13 +176,13 @@ const ChartPage = () => {
           labels,
           datasets: [
             {
-              label: "Persentase Tidak Bekerja",
+              label: `Persentase Tidak Bekerja ${regencyName}`,
               data: data.map((item) => item.unemployed_percentage),
               backgroundColor: "rgba(54, 162, 235, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.unemployed_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               fill: false,
@@ -190,13 +195,13 @@ const ChartPage = () => {
           labels,
           datasets: [
             {
-              label: "Persentase Tidak Menyelesaikan Pendidikan",
+              label: `Persentase Tidak Menyelesaikan Pendidikan ${regencyName}`,
               data: data.map((item) => item.uneducated_percentage),
               backgroundColor: "rgba(75, 192, 192, 0.5)",
               type: "bar",
             },
             {
-              label: "Line Example",
+              label: `Line Example`,
               data: data.map((item) => item.uneducated_percentage),
               borderColor: "rgba(0, 0, 0, 1)",
               fill: false,
@@ -225,8 +230,6 @@ const ChartPage = () => {
 
   const handleLevelChange = (selectedOption) => {
     setSelectedLevel(selectedOption);
-    setSelectedProvince(null);
-    setSelectedRegency(null);
   };
 
   const handleProvinceChange = (selectedOption) => {
@@ -304,19 +307,33 @@ const ChartPage = () => {
             )}
           </div>
           <div className="grid grid-cols-3 gap-8">
-            <div className="flex flex-col rounded shadow-md grow p-4">
-              <div className="font-medium text-xl">Persentase Kemiskinan</div>
+            <div className="flex flex-col rounded shadow-md grow p-4 justify-between">
+              <div className="font-medium text-xl">
+                {`Persentase Kemiskinan ${
+                  selectedLevel.value === "province"
+                    ? selectedProvince?.label
+                    : selectedRegency?.label
+                }`}
+              </div>
               {povertyData && <BarChartComponent data={povertyData} />}
             </div>
-            <div className="flex flex-col rounded shadow-md grow p-4">
+            <div className="flex flex-col rounded shadow-md grow p-4 justify-between">
               <div className="font-medium text-xl">
-                Persentase Tidak Bekerja
+                {`Persentase Tidak Bekerja ${
+                  selectedLevel.value === "province"
+                    ? selectedProvince?.label
+                    : selectedRegency?.label
+                }`}
               </div>
               {unemployedData && <BarChartComponent data={unemployedData} />}
             </div>
-            <div className="flex flex-col rounded shadow-md grow p-4">
+            <div className="flex flex-col rounded shadow-md grow p-4 justify-between">
               <div className="font-medium text-xl">
-                Persentase Tidak Menyelesaikan Pendidikan
+                {`Persentase Tidak Menyelesaikan Pendidikan ${
+                  selectedLevel.value === "province"
+                    ? selectedProvince?.label
+                    : selectedRegency?.label
+                }`}
               </div>
               {uneducatedData && <BarChartComponent data={uneducatedData} />}
             </div>
@@ -329,13 +346,25 @@ const ChartPage = () => {
                     Tahun
                   </th>
                   <th className="py-2 px-4 border-b bg-gray-100 text-center font-medium w-1/3">
-                    Persentase Kemiskinan
+                    {`Persentase Kemiskinan ${
+                      selectedLevel.value === "province"
+                        ? selectedProvince?.label
+                        : selectedRegency?.label
+                    }`}
                   </th>
                   <th className="py-2 px-4 border-b bg-gray-100 text-center font-medium w-1/3">
-                    Persentase Tidak Bekerja
+                    {`Persentase Tidak Bekerja ${
+                      selectedLevel.value === "province"
+                        ? selectedProvince?.label
+                        : selectedRegency?.label
+                    }`}
                   </th>
                   <th className="py-2 px-4 border-b bg-gray-100 text-center font-medium w-1/3">
-                    Persentase Tidak Menyelesaikan Pendidikan
+                    {`Persentase Tidak Menyelesaikan Pendidikan ${
+                      selectedLevel.value === "province"
+                        ? selectedProvince?.label
+                        : selectedRegency?.label
+                    }`}
                   </th>
                 </tr>
               </thead>

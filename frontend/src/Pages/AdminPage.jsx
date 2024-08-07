@@ -129,6 +129,10 @@ const AdminPage = () => {
       },
     ];
 
+    const formatNumber = (number) => {
+      return new Intl.NumberFormat("id-ID").format(number);
+    };
+
     if (level.value === "province") {
       setColumns([
         {
@@ -138,6 +142,7 @@ const AdminPage = () => {
         {
           header: "Jumlah Penduduk Miskin",
           accessorKey: "poverty_amount",
+          cell: (info) => formatNumber(info.getValue()),
         },
         {
           header: "Persentase Kemiskinan",
@@ -166,6 +171,7 @@ const AdminPage = () => {
         {
           header: "Jumlah Penduduk Miskin",
           accessorKey: "poverty_amount",
+          cell: (info) => formatNumber(info.getValue()),
         },
         {
           header: "Persentase Kemiskinan",
