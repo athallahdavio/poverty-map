@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Sidebar, { SidebarItem } from "../Components/SidebarComponent";
 import { House, Map, BarChart3, Database } from "lucide-react";
 import LandingPage from "../assets/landing-page.png";
 import axios from "axios";
 import BarChartComponent from "../Components/BarChartComponent";
 import { ClipLoader } from "react-spinners";
-// import { Link } from "react-router-dom";
 
 const HomePage = () => {
   const API_URL = import.meta.env.VITE_API_URL;
@@ -73,7 +72,7 @@ const HomePage = () => {
           />
           <div className="h-screen flex flex-col mx-20 w-4/5 justify-center absolute top-0 left-0 gap-8">
             <div className="text-5xl font-bold text-white">
-              Selamat Datang di SIG Pemetaan Kemiskinan
+              Sistem Informasi Geografis Pemetaan Kemiskinan
             </div>
             <div className="text-xl font-normal text-white w-4/5">
               Selamat datang di situs yang didedikasikan untuk memberikan
