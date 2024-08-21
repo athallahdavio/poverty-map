@@ -33,6 +33,21 @@ const MapComponent = ({ data, geojson, upper, lower, level, type }) => {
   const onEachFeature = (feature, layer) => {
     let properties = feature.properties;
     let additionalInfo = "";
+    let regionName = "";
+
+    if (level === "regency") {
+      regionName = properties.NAME_2;
+    } else {
+      regionName = properties.NAME_1;
+    }
+
+    layer.on("mouseover", function () {
+      layer
+        .bindTooltip(regionName, {
+          sticky: true,
+        })
+        .openTooltip();
+    });
 
     if (level === "regency") {
       let regencyName = properties.NAME_2;

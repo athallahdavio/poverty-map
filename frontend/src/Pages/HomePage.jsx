@@ -96,7 +96,7 @@ const HomePage = () => {
         <section className="flex flex-row relative" id="overall">
           <div className="flex flex-col my-8 mx-10 gap-8 w-full">
             <div className="text-4xl font-semibold text-blue-800">
-              Rangkuman Data
+              Rangkuman Data Tahun 2023
             </div>
             <div className="flex flex-row gap-5">
               <div className="flex flex-col w-1/2 gap-5 h-full">
